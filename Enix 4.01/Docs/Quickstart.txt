@@ -1,0 +1,40 @@
+Dependencies:
+-------------
+Development readline libraries are required for ENiX. Make is also required. psmisc is also required.
+
+Under debian to install:
+
+apt-get install make libreadline-dev psmisc
+
+Compiling:
+----------
+No configure is necessary. Just run:
+
+make
+
+Running:
+--------
+The ENiX4 services need to be started, as root run:
+
+./Services.sh start
+
+To stop the services:
+
+./Services.sh stop
+
+To run the ENiX shell, Witchcraft as a normal user run:
+
+./WitchCraft.bin
+
+Training:
+---------
+To erase the data in WitchCraft:
+
+!load TRAINING/Erase.txt
+
+Then to load the training data:
+
+!load TRAINING/SetupNLP.txt
+!load TRAINING/ENGLISHGRAMMAR.TRAINING
+
+It could take a couple of minutes to run depending on the speed of your system.
