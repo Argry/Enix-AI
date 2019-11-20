@@ -1,0 +1,6 @@
+<PERSON> :force adam :load
+<PERSON> :quote whq feel ? :verbtableadd :sentenceemo :answer
+<PERSON> :quote indicative is ? :verbtableadd :sentenceassign 
+<PERSON> :quote a cat is a furry animal :verbpostproc
+<PERSON> :quote imperative define ? :verbtableadd :sentenceexp
+<PERSON> :force naxi :save

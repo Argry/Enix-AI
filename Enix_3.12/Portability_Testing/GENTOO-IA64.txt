@@ -1,0 +1,1280 @@
+<PERSON> :purge
+<ENiX>   Startup datablock created.
+Memory destroyed.
+<PERSON> :purge
+<ENiX>   Startup datablock created.
+Memory destroyed.
+<PERSON> :force grammarenglish :define :quote startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+<ENiX>   Startup datablock created.
+<PERSON> :force grammarenglish :language
+<PERSON> :sentenceunit :force verb
+<PERSON> :quote . ? ! :endpunct
+<PERSON> :quote if causes caused because when then :setcond
+<PERSON> :force ? :setquestion
+<PERSON> :force verb :setyn
+<PERSON> :quote what who how why which when where :setwh
+<PERSON> :quote noun propernoun pronoun preposition adjective conjunction definitearticle indefinitearticle comma :subj
+<PERSON> :quote verb adverb :predverbs
+<PERSON> :quote noun pronoun propernoun :nouns
+<PERSON> :force yes :argue
+<PERSON> :force off :locklang
+<PERSON> :force nothing :setnull
+<PERSON> :force off :tol
+<PERSON> :force on :sentiency
+<PERSON> :quote ynq whq indicative imperative :graphs
+<PERSON> :force ynq :ynqevent
+<PERSON> :force whq :whqevent
+<PERSON> :quote imperative :impevent
+<PERSON> :quote indicative :infoevent
+<PERSON> :force tenses :tenses
+<PERSON> :quote i he she it we you they them who whom us :pronouns
+<PERSON> :quote i he she it we you they them who whom us :grammar pronoun
+<ENiX>   Setting: "i", "he", "she", "it", "we", "you", "they", "them", "who", "whom" and "us" to pronoun.
+<PERSON> 4 :limits
+<PERSON> :quote sat :purpose past
+<ENiX>   Setting: "sat" to past.
+<PERSON> :quote passive simple future :apvf will be
+<PERSON> :quote passive future perfect :apvf will have been
+<PERSON> :quote passive simple present one :apvf am
+<PERSON> :quote passive simple present two :apvf are
+<PERSON> :quote passive simple present three :apvf is
+<PERSON> :quote passive present progressive one :apvf am being
+<PERSON> :quote passive present progressive two :apvf are being
+<PERSON> :quote passive present progressive three :apvf is being
+<PERSON> :quote passive present perfect one :apvf have been
+<PERSON> :quote passive present perfect two :apvf has been
+<PERSON> :quote passive simple past one :apvf was
+<PERSON> :quote passive simple past two :apvf were
+<PERSON> :quote passive past progressive one :apvf was being
+<PERSON> :quote passive past progressive two :apvf were being
+<PERSON> :quote passive past perfect :apvf had been
+<PERSON> :quote passive future progressive passive :apvf will be being
+<PERSON> :quote passive perfect progressive passive :apvf has been being
+<PERSON> :quote passive future unreal :apvf would be
+<PERSON> :quote passive past unreal :apvf would have been
+<PERSON> :quote active simple future :aavf will
+<PERSON> :quote active future progressive :aavf will be
+<PERSON> :quote active future perfect :aavf will have
+<PERSON> :quote active future perfect progressive :aavf will have been
+<PERSON> :quote active present progressive one :aavf am
+<PERSON> :quote active present progressive two :aavf are
+<PERSON> :quote active present progressive three :aavf is
+<PERSON> :quote active present progressive one :aavf have
+<PERSON> :quote active present progressive two :aavf has
+<PERSON> :quote active present perfect progressive one :aavf have been
+<PERSON> :quote active present perfect progressive two :aavf has been
+<PERSON> :quote active past progressive one :aavf was
+<PERSON> :quote active past progressive two :aavf were
+<PERSON> :quote active past perfect :aavf had
+<PERSON> :quote active past perfect progressive :aavf had been
+<PERSON> :quote active present unreal :aavf would
+<PERSON> :meldvf
+<PERSON> :quote at by about with of in :spa
+<PERSON> :quote . :grammar fullstop
+<ENiX>   Setting: "." to fullstop.
+<PERSON> :quote ? :grammar questionmark
+<ENiX>   Setting: "?" to questionmark.
+<PERSON> :quote ! :grammar exclamationmark
+<ENiX>   Setting: "!" to exclamationmark.
+<PERSON> :quote ; :grammar semicolon
+<ENiX>   Setting: ";" to semicolon.
+<PERSON> :quote , :grammar comma
+<ENiX>   Setting: "," to comma.
+<PERSON> :quote the :grammar definitearticle
+<ENiX>   Setting: "the" to definitearticle.
+<PERSON> :quote a an :grammar indefinitearticle
+<ENiX>   Setting: "a" and "an" to indefinitearticle.
+<PERSON> :quote mouse cat mat name computer home bed plant dog :grammar noun
+<ENiX>   Setting: "mouse", "cat", "mat", "name", "computer", "home", "bed", "plant" and "dog" to noun.
+<PERSON> :quote run sat be been being were had have am are will would is scared runs was did sit sitting teach go :grammar verb
+<ENiX>   Setting: "run", "sat", "be", "been", "being", "were", "had", "have", "am", "are", "will", "would", "is", "scared", "runs", "was", "did", "sit", "sitting", "teach" and "go" to verb.
+<PERSON> :quote on of down where to there near :grammar preposition
+<ENiX>   Setting: "on", "of", "down", "where", "to", "there" and "near" to preposition.
+<PERSON> :quote grey large small black white afraid his quiet :grammar adjective
+<ENiX>   Setting: "grey", "large", "small", "black", "white", "afraid", "his" and "quiet" to adjective.
+<PERSON> :quote not quietly very calmly patiently quickly also :grammar adverb
+<ENiX>   Setting: "not", "quietly", "very", "calmly", "patiently", "quickly" and "also" to adverb.
+<PERSON> :quote and or nor either neither :grammar conjunction
+<ENiX>   Setting: "and", "or", "nor", "either" and "neither" to conjunction.
+<PERSON> :quote enix martyn :grammar propernoun
+<ENiX>   Setting: "enix" and "martyn" to propernoun.
+<PERSON> :quote i she her what who me :grammar pronoun
+<ENiX>   Setting: "i", "she", "her", "what", "who" and "me" to pronoun.
+<PERSON> :quote by :grammar preposition
+<ENiX>   Setting: "by" to preposition.
+<PERSON> :quote s pv pn :creategraph indicative
+<ENiX>   s pv pn 
+<PERSON> :quote the cat sat on a mat :study indicative
+<PERSON> :quote the cat was sitting on a mat :study indicative
+<PERSON> :quote enix and a dog sat near a plant and the cat! :study indicative
+<PERSON> :quote she sat near enix! :study indicative
+<PERSON> :quote enix sat very near martyn. :study indicative
+<PERSON> :quote the quiet black and white cat sat near enix :study indicative
+<PERSON> :quote enix is a name :study indicative
+<PERSON> :quote enix runs the computer :study indicative
+<PERSON> :quote enix runs her :study indicative
+<PERSON> :quote enix is afraid of her. :study indicative
+<PERSON> :quote martyn is also afraid of her! :study indicative
+<PERSON> :quote martyn also is very very afraid of the cat :study indicative
+<PERSON> :quote his name was martyn :study indicative
+<PERSON> :quote martyn is quiet! :study indicative
+<PERSON> :quote martyn sat near the dog and enix :study indicative
+<PERSON> :quote martyn sat near the plant and her :study indicative
+<PERSON> :quote a large cat quietly sat on the large mat. :study indicative
+<PERSON> :quote the cat sat on the mat! :study indicative
+<PERSON> :quote the cat sat on her mat! :study indicative
+<PERSON> :quote the cat sat on her large mat! :study indicative
+<PERSON> :quote she will run quickly :study indicative
+<PERSON> :quote the mat was sat on by the cat :study indicative
+<PERSON> :quote i was sat on :study indicative
+<PERSON> :quote either the cat or the dog sat on the mat :study indicative
+<PERSON> :quote he sat on them :study indicative
+<PERSON> :quote pv s pv pn :creategraph ynq
+<ENiX>   pv s pv pn 
+<PERSON> :quote sit :define sat
+<PERSON> :quote did the cat sit on the mat? :study ynq
+<PERSON> :quote did a cat sit on a mat? :study ynq
+<PERSON> :quote did enix sit on martyn? :study ynq
+<PERSON> :quote did she sit near enix? :study ynq
+<PERSON> :quote did the large cat and the dog sit near martyn and enix? :study ynq
+<PERSON> :quote did martyn and a small black dog quietly sit near enix? :study ynq
+<PERSON> :quote did martyn calmly and patiently teach enix? :study ynq
+<PERSON> :quote did martyn sit quietly down ? :study ynq
+<PERSON> :quote did martyn sit near her ? :study ynq
+<PERSON> :quote did martyn sit near the cat and her ? :study ynq
+<PERSON> :quote did martyn sit near her cat? :study ynq
+<PERSON> :quote did martyn sit near her black cat? :study ynq
+<PERSON> :quote was the mat sat on by the cat? :study ynq
+<PERSON> :quote was the mat being sat on by the black cat? :study ynq
+<PERSON> :quote was the mat sat on by either the cat or the dog? :study ynq
+<PERSON> :quote was either the cat or the dog sat on the mat? :study ynq
+<PERSON> :quote was either the black cat, the grey cat or the white cat sat on the black mat and the white mat? :study ynq
+<PERSON> :quote s pv pn :creategraph whq
+<ENiX>   s pv pn 
+<PERSON> :quote what sat on a mat? :study whq
+<PERSON> :quote who sat on a mat? :study whq
+<PERSON> :quote who sat near a large plant? :study whq
+<PERSON> :quote where is enix and martyn? :study whq
+<PERSON> :quote where is a black and white cat? :study whq
+<PERSON> :quote where is the cat? :study whq
+<PERSON> :quote who is very quiet? :study whq
+<PERSON> :quote where is the large white cat and the dog? :study whq
+<PERSON> :quote where is a cat and a plant? :study whq
+<PERSON> :quote where is she? :study whq
+<PERSON> :quote who was near the dog? :study whq
+<PERSON> :quote who was near the dog and me? :study whq
+<PERSON> :quote who was near her dog? :study whq
+<PERSON> :quote who was near her large dog? :study whq
+<PERSON> :quote what was being sat on by the cat? :study whq
+<PERSON> :quote what was sat on? :study whq
+<PERSON> :quote what sat quietly on the mat? :study whq
+<PERSON> :quote what quietly sat on the mat? :study whq
+<PERSON> :quote what sat on either the white cat or the black cat? :study whq
+<PERSON> :quote what sat on the white cat, the grey cat or the black cat? :study whq
+<PERSON> :quote pv pn :creategraph imperative
+<ENiX>   pv pn 
+<PERSON> :quote go home :study imperative
+<PERSON> :quote go quickly home to bed. :study imperative
+<PERSON> :quote quietly go home! :study imperative
+<PERSON> :quote quickly be quiet. :study imperative
+<PERSON> :quote quickly be quiet :study imperative
+<PERSON> :quote quickly be quiet! :study imperative
+<PERSON> :quote go quietly! :study imperative
+<PERSON> :quote go quietly. :study imperative
+<PERSON> :quote go quietly :study imperative
+<PERSON> :quote go home to martyn and enix :study imperative
+<PERSON> :quote go home to enix! :study imperative
+<PERSON> :quote go home to martyn. :study imperative
+<PERSON> :quote go home to a plant and a small black dog :study imperative
+<PERSON> :quote go home to the plant and the black and white cat :study imperative
+<PERSON> :quote go to her :study imperative
+<PERSON> :quote go to her. :study imperative
+<PERSON> :quote go to her! :study imperative
+<PERSON> :quote go there :study imperative
+<PERSON> :quote go there. :study imperative
+<PERSON> :quote go there! :study imperative
+<PERSON> :quote go martyn :study imperative
+<PERSON> :quote go to her home. :study imperative
+<PERSON> :quote go to her large home. :study imperative
+<PERSON> :quote happy neutral sad :addemo
+<PERSON> :force 0.9 :setbias
+<PERSON> :assignemo :) :/ :(
+<PERSON> :force eve :save
+<ENiX>   Saving personality profile as eve...
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> 1 2 3 :ADD 2 :ANSWER
+<ENiX>   Startup datablock created.
+3 4 5 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 1000 50 0 :ADDEMODEBUG HAPPY
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE HAPPY :DEBUG
+<ENiX>   =[Datablock 00006]==========================================
+Name                   happy Grammar                       ?
+Purpose                    ? Emotion               1000 50 0
+First Time          22:37:11-2010/11/24
+Last Time           22:37:11-2010/11/24
+Probability       1.00000000 Commands                      ?
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE MATHS LANGUAGE :ADDSCOPE
+<ENiX>   Startup datablock created.
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local maths language 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SIT :ADDVREF SAT
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE SIT :DEBUG
+<ENiX>   =[Datablock 00003]==========================================
+Name                     sit Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:37:11-2010/11/24
+Last Time           22:37:11-2010/11/24
+Probability       1.00000000 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+:baseverb                                                sat
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :ALL :ANSWER
+<ENiX>   Startup datablock created.
+:memory :mode :scoperesolution 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 0 1 :AND 1 :ANSWER
+<ENiX>   Startup datablock created.
+0 1 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 2 :ANSWER
+<ENiX>   Startup datablock created.
+2 
+<PERSON> :ANSWER
+<ENiX>   2 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 6 7 :STORE A
+<ENiX>   Startup datablock created.
+<PERSON> 1 2 3 4 5 :APPEND :FORCE A :ANSWER
+<ENiX>   1 2 3 4 5 6 7 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> LS :ASSIMILATE :ANSWER
+<ENiX>   Startup datablock created.
+CORES ENiX Esh Makefile Package RND.c SETUP SHELL2.bin SHELL2.c SHELL2.c~ SHELL2.old.c TEST TRAINING WitchCraft.tar.gz gamma.txt main.c runShell.bash setup.c shell.c test.c test1.txt test1.txt test1.txt~ 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SEQA 0 1 0 3 ? ? 0 7 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> 0 1 2 3 4 5 6 7 :CALCULATE SEQA :ANSWER
+<ENiX>   0 1 0 3 0 5 0 7 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE A :DEFINE :STATISTICS
+<ENiX>   Startup datablock created.
+<PERSON> :CMD A
+<ENiX>   Datablocks: 4, relationships: 0. Since last sleep: 5.
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE APPLES :CONTEXT
+<PERSON> :TOPIC
+<ENiX>   We are currently discussing apples.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SEQC 2 1 3 3 2 5 2 7 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :ODDMAN SEQC
+<PERSON> :CORRECT SEQC :ANSWER
+<ENiX>   seqc 2 1 :unknown 3 2 5 2 7 
+<PERSON> :LEARN
+<PERSON> 0 7 :DOMAIN :CALCULATE SEQC :ANSWER
+<ENiX>   2 1 2 3 2 5 2 7 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE MATHS LANG :ADDSCOPE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE :SETSCOPE MATHS -
+<PERSON> :QUOTE - :DEFINE :SUB
+<PERSON> :QUOTE :SETSCOPE LANG -
+<PERSON> :QUOTE - :DEFINE :ADD
+<PERSON> :QUOTE THIRTY :DEFINE 30
+<PERSON> :QUOTE FIVE :DEFINE 5
+<PERSON> THIRTY - FIVE :ANSWER
+<ENiX>   35 
+<PERSON> :QUOTE :SETSCOPE MATHS
+<PERSON> THIRTY - FIVE :ANSWER
+<ENiX>   25 
+<PERSON> :QUOTE LANG :CPYSCOPE MATHS
+<PERSON> :QUOTE :SETSCOPE LANG 
+<PERSON> THIRTY - FIVE :ANSWER
+<ENiX>   25 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D E :CSSAVE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE A B C D E :CSADDR :ANSWER
+<ENiX>   cs4 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D E :CSSAVE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE CS4 :CSDEBUG
+<ENiX>   =[Metablock 00000]==========================================
+Address                                            a b c d e
+Grammar                                                    ?
+Purpose                    ? Emotion                       ?
+First Time          22:37:15-2010/11/24
+Last Time           22:37:15-2010/11/24
+Probability       1.00000000 Commands                      ?
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE HELLO WORLD :STORE BUFFER
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 2 3 5 7 11 :CSSAVE BUFFER
+<PERSON> :QUOTE 2 3 5 7 11 :CSLOAD :ANSWER
+<ENiX>   hello world 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE Q W E R T Y :CSSAVE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE Q W E R T Y :CSADDR :ANSWER
+<ENiX>   cs5 
+<PERSON> :QUOTE CS5 :CSRECON :ANSWER
+<ENiX>   q w e r t y 
+<PERSON> :QUOTE CS4 :CSRECON :ANSWER
+<ENiX>   q w e r t 
+<PERSON> :QUOTE CS3 :CSRECON :ANSWER
+<ENiX>   q w e r 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE FEMALE :STORE A
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE MALE :STORE B
+<PERSON> :QUOTE THE WHITE CAT :CSSAVE A
+<PERSON> :QUOTE THE BLACK CAT :CSSAVE B
+<PERSON> :QUOTE THE BLACK CAT :CSLOAD :ANSWER
+<ENiX>   male 
+<PERSON> :QUOTE THE WHITE CAT :CSLOAD :ANSWER
+<ENiX>   female 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE WIBBLE :STORE WOBBLE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE WOBBLE :DEBUG
+<ENiX>   =[Datablock 00004]==========================================
+Name                  wobble Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:37:17-2010/11/24
+Last Time           22:37:17-2010/11/24
+Probability       1.00000000 Commands                 wibble
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> IS :DEFINE :DEFINE
+<ENiX>   Startup datablock created.
+<PERSON> EXPLAIN IS :DEFINITION
+<PERSON> SAY IS :DEFINITION :FORCE QUOTE
+<PERSON> EXPLAIN EXPLAIN
+<ENiX>   :definition 
+<PERSON> :DEFINITION
+<PERSON> SAY EXPLAIN
+<ENiX>   quote :definition 
+<PERSON> AM ARE IS IS
+<PERSON> ME IS I
+<PERSON> YOU ARE ENIX
+<PERSON> I AM OWL
+<PERSON> EXPLAIN ME
+<ENiX>   owl 
+<PERSON> EXPLAIN YOU
+<ENiX>   enix 
+<PERSON> SAY HI
+<ENiX>   quote hi 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE A :DEFINE WIBBLE
+<ENiX>   Startup datablock created.
+<PERSON> :DEFINITION A
+<ENiX>   wibble 
+<PERSON> :DEFINITION :FORCE A
+<ENiX>   a 
+<PERSON> :QUOTE :DEFINITION A
+<ENiX>   a 
+<PERSON> :QUOTE TRUE :DEFINE FALSE
+<PERSON> :QUOTE FALSE :DEFINE TRUE
+<PERSON> :DEFINITION TRUE
+<ENiX>   Paradox Handling: Ignoring paradox or cyclic definition...
+true 
+<PERSON> :QUOTE GNU :DEFINE GNU NOT UNIX
+<PERSON> :DEFINITION GNU
+<ENiX>   Paradox Handling: Ignoring paradox or cyclic definition...
+gnu 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> A B C
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE A B C :DELETE
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE MATHS :ADDSCOPE
+<ENiX>   Startup datablock created.
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local maths 
+<PERSON> :FORCE MATHS :DELSCOPE
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE B C D F G H J K L M N P Q R S T V W X Y Z :QUALIFY CONSONANTS LETTERS
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE A E I O U Y :QUALIFY VOWELS LETTERS
+<PERSON> :QUOTE VOWELS :STORE SELECTA
+<PERSON> :QUOTE CONSONANTS :STORE SELECTB
+<PERSON> :QUOTE A B C D E F G H I J K L M N O P Q R S T U V W X Y Z :DESCRIBED SELECTA
+<PERSON> :ANSWER
+<ENiX>   a e i o u y 
+<PERSON> :QUOTE A B C D E F G H I J K L M N O P Q R S T U V W X Y Z :DESCRIBED SELECTB
+<PERSON> :ANSWER
+<ENiX>   b c d f g h j k l m n p q r s t v w x y z 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE MAT CAT ON SAT THE THE :DEYODA :FOREACH 1 :ANSWER
+<ENiX>   the cat sat on the mat 
+the mat sat on the cat 
+<PERSON> THE MAT WAS SAT ON BY THE CAT
+<PERSON> :QUOTE MAT CAT ON SAT THE THE :DEYODA :FOREACH 1 :ANSWER
+<ENiX>   the cat sat on the mat 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 2 4 8 16 32 :DIV 2 :ANSWER
+<ENiX>   Startup datablock created.
+1 2 4 8 16 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE START :DEFINE 0
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE FINISH :DEFINE 10
+<PERSON> :FORCE COUNTER :DEFINE START
+<PERSON> :FORCE COUNT :DEFINE :FORCE COUNTER :ADD 1 :STORE :FORCE :FORCE :FORCE COUNTER :ANSWER :SMALLER :FORCE FINISH :SIGNAL
+<PERSON> :FORCE DOCOUNT :DEFINE :TRUE :DO :FORCE :FORCE :FORCE COUNT
+<PERSON> DOCOUNT
+<ENiX>    - CTRL SEQ: DO: [          count]
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+ - CTRL SEQ:           TERMINATED.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 1 5 :DOMAIN :ANSWER
+<ENiX>   Startup datablock created.
+1 2 3 4 5 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 2 3 4 6 8 10 :STORE EVENS
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 2 10 4 :ELEMENT EVENS :ANSWER
+<ENiX>   1 
+<PERSON> :QUOTE 2 10 4 3 :ELEMENT EVENS :ANSWER
+<ENiX>   1 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 1 10 :DOMAIN :FOREACH 1 :EXP 2 :END :ANSWER
+<ENiX>   Startup datablock created.
+1 4 9 16 25 36 49 64 81 100 
+<PERSON> 1 10 :DOMAIN :FOREACH 2 :EXP 2 :ANSWER
+<ENiX>   1 4 
+9 16 
+25 36 
+49 64 
+81 100 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SEQE 0 1 2 3 4 4 6 7 :EQUALIZER :ANSWER
+<ENiX>   Startup datablock created.
+0 1 2 3 4 4 6 6 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 1 :EQUIVALENCE 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 
+<PERSON> :QUOTE 1 0 :EQUIVALENCE 1 :ANSWER
+<ENiX>   0 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C :STORE UNWANTED
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE D E A B A D :EXCEPT UNWANTED :ANSWER
+<ENiX>   d e d 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 4 9 16 :EXP 0.25 :ANSWER
+<ENiX>   Startup datablock created.
+1.41421356 1.7320508 2 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FALSE :ANSWER
+<ENiX>   Startup datablock created.
+0 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D E :FIRST 2 :ANSWER
+<ENiX>   Startup datablock created.
+a b 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE MEANING :STORE MODALITY
+<ENiX>   Startup datablock created.
+<PERSON> :DEFINITION MODALITY
+<ENiX>   meaning 
+<PERSON> :DEFINITION :FORCE MODALITY
+<ENiX>   modality 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 3 2 5 76 3 1 :FOREACH 3 :ANSWER :END
+<ENiX>   Startup datablock created.
+3 2 5 
+76 3 1 
+<PERSON> :QUOTE A . A B . A B C . A B C D . :FOREACH . :ANSWER :END
+<ENiX>   a . 
+a b . 
+a b c . 
+a b c d . 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE COMMAND :DEFINE :HELP :HELP
+<ENiX>   Startup datablock created.
+<PERSON> COMMAND
+<ENiX>   058: NULL :HELP          [B]  Interface,   displays help information on command B, else command list.
+<PERSON> :QUOTE COMMAND :FORGET
+<PERSON> COMMAND
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :GETGRAPH :ANSWER
+<ENiX>   ynq whq indicative imperative 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE PARROT TREE :GRAMMAR NOUN
+<ENiX>   Setting: "parrot" and "tree" to noun.
+<PERSON> :FORCE IN :GRAMMAR PREPOSITION
+<ENiX>   Setting: "in" to preposition.
+<PERSON> THE PARROT SAT IN THE TREE
+<PERSON> WHAT SAT IN THE TREE?
+<ENiX>   The parrot sat in the tree. :/
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 45 12 32 1 :GREATER 1 :ANSWER
+<ENiX>   Startup datablock created.
+0 
+<PERSON> :QUOTE 45 12 32 1 :GREATER 0 :ANSWER
+<ENiX>   1 
+<PERSON> :HELP :HOW
+<ENiX>   059: A    :HOW           B    High-Level,  finds symantic relation between A to B and stores in :ANSWER.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :TRUE :SWAP - :IF :FORCE 2 :ANSWER :OTHERWISE :STATISTICS :END 
+<ENiX>   Startup datablock created.
+2 
+<PERSON> :FALSE :SWAP - :IF :FORCE 2 :ANSWER :OTHERWISE :STATISTICS :END 
+<ENiX>   Datablocks: 5, relationships: 0. Since last sleep: 7.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A D E F K S :INTERSECTION B B E A :ANSWER
+<ENiX>   Startup datablock created.
+b e a 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :LANGUAGEDEBUG
+<ENiX>   =[:LANGUAGEDEBUG]===========================================
+-[COMPONENT]--------------[STATUS]--------------------------
+ :MODE....................OK
+ LANGUAGE.................grammarenglish
+ grammarenglish           OK
+ ENTRIES..................18
+ startsentence............OK
+ endsentence..............OK
+ :SENTENCEUNIT............OK
+ :QUESTION................OK
+ :YN......................OK
+ :WH......................OK
+ :SENTIENCY...............ACTIVATED
+ :NOUNS...................OK
+ :SUBJ....................OK
+ :PREDVERBS...............OK
+ :SETNULL.................OK
+ :ARGUE...................OK
+ :GRAPHS..................ynq whq indicative imperative 
+ :WHQEVENT................whq 
+ :YNQEVENT................ynq 
+ :INFOEVENT...............indicative 
+ :IMPEVENT................imperative 
+ :PVF.....................PRESENT
+ [i] If you see any MISSING language is not setup properly.
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D E F :LAST 2 :ANSWER
+<ENiX>   Startup datablock created.
+e f 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SEQE 0 1 2 3 4 5 ? 7 :LEARN :ANSWER
+<ENiX>   Startup datablock created.
+9 
+<PERSON> 0 7 :DOMAIN :CALCULATE SEQE :ANSWER
+<ENiX>   0 1 2 3 4 5 6 7 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE LION TIGER :LIKE CAT
+<PERSON> :QUOTE LION TIGER :DEBUG
+<ENiX>   =[Datablock 00150]==========================================
+Name                    lion Grammar                    noun
+Purpose                    ? Emotion                       ?
+First Time          22:36:53-2010/11/24
+Last Time           22:37:28-2010/11/24
+Probability       1.00000000 Commands                      ?
+============================================================
+=[Datablock 00151]==========================================
+Name                   tiger Grammar                    noun
+Purpose                    ? Emotion                       ?
+First Time          22:36:53-2010/11/24
+Last Time           22:37:28-2010/11/24
+Probability       1.00000000 Commands                      ?
+============================================================
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B A :LSTCOMB :FOREACH 1 :ANSWER
+<ENiX>   Startup datablock created.
+b a a 
+a a b 
+a b a 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE GRAMMARENGLISH :MAP
+<ENiX>   Moods of grammar:    ynq whq indicative imperative 
+Articles of grammar: startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark 
+ * ynq:
+          startsentence -> verb 
+            endsentence -> N/A 
+                   verb -> preposition verb adverb indefinitearticle definitearticle pronoun propernoun conjunction 
+                   noun -> verb conjunction adverb questionmark comma 
+                pronoun -> verb noun adjective questionmark 
+            preposition -> indefinitearticle propernoun pronoun definitearticle preposition questionmark conjunction 
+                 adverb -> preposition verb conjunction 
+              adjective -> adjective noun 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction verb adverb questionmark 
+            conjunction -> indefinitearticle definitearticle propernoun pronoun adverb 
+           questionmark -> endsentence 
+                  comma -> definitearticle 
+               fullstop -> N/A 
+              semicolon -> N/A 
+        exclamationmark -> N/A 
+          quotationmark -> N/A 
+ * whq:
+          startsentence -> pronoun preposition 
+            endsentence -> N/A 
+                   verb -> preposition verb adverb indefinitearticle definitearticle pronoun propernoun 
+                   noun -> conjunction questionmark comma 
+                pronoun -> verb noun adjective questionmark adverb 
+            preposition -> indefinitearticle pronoun definitearticle preposition questionmark conjunction verb 
+                 adverb -> preposition adjective verb 
+              adjective -> adjective conjunction noun questionmark 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction questionmark 
+            conjunction -> indefinitearticle definitearticle adjective propernoun pronoun 
+           questionmark -> endsentence 
+                  comma -> definitearticle 
+               fullstop -> N/A 
+              semicolon -> N/A 
+        exclamationmark -> N/A 
+          quotationmark -> N/A 
+ * indicative:
+          startsentence -> definitearticle propernoun pronoun adjective indefinitearticle conjunction 
+            endsentence -> N/A 
+                   verb -> preposition verb adverb indefinitearticle definitearticle pronoun adjective propernoun 
+                   noun -> verb endsentence conjunction exclamationmark adverb fullstop 
+                pronoun -> verb endsentence fullstop exclamationmark noun adjective 
+            preposition -> indefinitearticle propernoun pronoun definitearticle preposition endsentence 
+                 adverb -> preposition adjective verb adverb endsentence 
+              adjective -> adjective conjunction noun preposition exclamationmark 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction exclamationmark verb fullstop endsentence adverb 
+            conjunction -> indefinitearticle definitearticle adjective propernoun pronoun 
+           questionmark -> N/A 
+                  comma -> N/A 
+               fullstop -> endsentence 
+              semicolon -> N/A 
+        exclamationmark -> endsentence 
+          quotationmark -> N/A 
+ * imperative:
+          startsentence -> verb adverb 
+            endsentence -> N/A 
+                   verb -> preposition adverb adjective propernoun noun 
+                   noun -> endsentence conjunction exclamationmark fullstop preposition 
+                pronoun -> endsentence fullstop exclamationmark noun adjective 
+            preposition -> indefinitearticle propernoun pronoun definitearticle endsentence noun fullstop exclamationmark 
+                 adverb -> verb endsentence noun exclamationmark fullstop 
+              adjective -> adjective conjunction noun exclamationmark fullstop endsentence 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction exclamationmark fullstop endsentence 
+            conjunction -> indefinitearticle definitearticle adjective propernoun 
+           questionmark -> N/A 
+                  comma -> N/A 
+               fullstop -> endsentence 
+              semicolon -> N/A 
+        exclamationmark -> endsentence 
+          quotationmark -> N/A 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 2 :STORE X
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 3 :STORE Y
+<PERSON> :QUOTE 5 :STORE Z
+<PERSON> X :ADD Y :MUL Z :ANSWER
+<ENiX>   25 
+<PERSON> :MATH ( X :ADD ( Y :MUL Z ) ) 
+<PERSON> :ANSWER
+<ENiX>   17 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE GRAMMARENGLISH :MELD EVE
+<ENiX>   Startup datablock created.
+=[:MELD]========================================[Overwrite][Copy]
+grammarenglish                                   ......Yes  .Yes
+startsentence                                    .......No  .Yes
+endsentence                                      .......No  .Yes
+verb                                             .......No  .Yes
+noun                                             .......No  .Yes
+pronoun                                          .......No  .Yes
+preposition                                      .......No  .Yes
+adverb                                           .......No  .Yes
+adjective                                        .......No  .Yes
+definitearticle                                  .......No  .Yes
+indefinitearticle                                .......No  .Yes
+propernoun                                       .......No  .Yes
+conjunction                                      .......No  .Yes
+questionmark                                     .......No  .Yes
+comma                                            .......No  .Yes
+fullstop                                         .......No  .Yes
+semicolon                                        .......No  .Yes
+exclamationmark                                  .......No  .Yes
+quotationmark                                    .......No  .Yes
+==========================================================[Done]=
+<PERSON> :MEMORY
+<ENiX>   =[Datablock 00000]==========================================
+Name                 :memory Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:37:29-2010/11/24
+Last Time           22:37:29-2010/11/24
+Probability       1.00000000 Commands grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+============================================================
+<PERSON> :FORCE A B C D :MERGE :ANSWER
+<ENiX>   abcd 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :MODE
+<ENiX>   Startup datablock created.
+=[Datablock 00000]==========================================
+Name                   :mode Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:37:30-2010/11/24
+Last Time           22:37:30-2010/11/24
+Probability       1.00000000 Commands                    cs0
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+:memlimit                                         -1.0000000
+:memexp                                           7.00000000
+:memprob                                          0.90000000
+:memrate                                          0.25000000
+:memthresh                                        0.00010000
+:memnew                                           0.00000000
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 5 4 9 8 :MUL 15 :ANSWER
+<ENiX>   Startup datablock created.
+75 60 135 120 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :MUSIC
+<ENiX>   START
+50 2 55 100
+50 2 47 100
+50 2 54 100
+50 2 54 100
+50 0 47 100
+50 2 46 100
+50 0 50 100
+50 2 58 100
+50 2 55 100
+50 2 46 100
+50 2 54 100
+50 2 54 100
+50 0 47 100
+50 2 46 100
+50 0 50 100
+50 2 58 100
+50 2 78 100
+50 2 73 100
+50 2 34 100
+50 2 30 100
+50 0 78 100
+50 2 65 100
+50 0 93 100
+50 2 78 100
+50 0 73 100
+50 3 34 100
+50 0 30 100
+50 2 78 100
+50 1 65 100
+50 3 66 100
+50 2 62 100
+50 0 78 100
+50 0 73 100
+50 2 34 100
+50 0 38 100
+50 2 78 100
+50 1 65 100
+50 3 66 100
+50 2 62 100
+50 0 78 100
+50 0 73 100
+50 2 34 100
+50 0 38 100
+50 2 78 100
+50 1 65 100
+50 3 66 100
+50 2 62 100
+50 2 93 100
+50 0 78 100
+50 2 38 100
+50 0 38 100
+50 2 47 100
+50 3 32 100
+50 3 34 100
+50 2 90 100
+50 2 93 100
+50 0 36 100
+50 2 38 100
+50 0 38 100
+50 0 47 100
+50 0 32 100
+50 0 34 100
+50 0 90 100
+50 2 93 100
+50 0 36 100
+50 2 38 100
+50 0 38 100
+50 0 81 100
+50 0 32 100
+50 0 34 100
+50 0 90 100
+50 2 93 100
+50 0 36 100
+50 0 38 100
+50 0 38 100
+50 0 81 100
+50 0 32 100
+50 0 34 100
+50 0 42 100
+50 2 78 100
+50 0 73 100
+50 0 34 100
+50 0 42 100
+50 0 78 100
+50 0 65 100
+50 0 34 100
+50 0 34 100
+50 0 55 100
+END
+<PERSON> :HELP :HELP
+<ENiX>   058: NULL :HELP          [B]  Interface,   displays help information on command B, else command list.
+<PERSON> :FORCE A :MUTATE 057 :HELP
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :NAND 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 0 
+<PERSON> :QUOTE 0 1 :NAND 0 :ANSWER
+<ENiX>   1 1 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE 0 1 2 3 4 5 5 7 :NICEFY 2 :ANSWER
+<ENiX>    + NICEFY 0 1 2 3 4 5 6 7 
+0 1 2 3 4 5 6 7 
+<PERSON> :QUOTE 0 1 2 3 4 5 5 7 :NICEFY 0 :ANSWER
+<ENiX>    - NICEFY 0 1 2 1 4 5 5 7 
+0 1 2 1 4 5 5 7 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :NOR 1 :ANSWER
+<ENiX>   Startup datablock created.
+0 0 
+<PERSON> :QUOTE 0 1 :NOR 0 :ANSWER
+<ENiX>   1 0 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :NOT :ANSWER
+<ENiX>   Startup datablock created.
+1 0 
+<PERSON> :NULL
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SEQF 0 1 2 3 4 5 5 7 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :ODDMAN :FORCE SEQF :ANSWER :CALCULATE SEQF :ANSWER
+<ENiX>   6 
+5 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :OR 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 1 
+<PERSON> :QUOTE 0 1 :OR 0 :ANSWER
+<ENiX>   0 1 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 2 4 4 5 6 7 :ORTHOGNAL
+<ENiX>   Startup datablock created.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :TRUE :SWAP - :IF 1 10 :DOMAIN :OTHERWISE 1 5 :DOMAIN :END :ANSWER 
+<ENiX>   Startup datablock created.
+1 2 3 4 5 6 7 8 9 10 
+<PERSON> :FALSE :SWAP - :IF 1 10 :DOMAIN :OTHERWISE 1 5 :DOMAIN :END :ANSWER 
+<ENiX>   1 2 3 4 5 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SEQG 1 2 2 2 5 4 4 4 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE SEQG :PATTERN
+<ENiX>   =[Relationship 00000]=======================================
+Name                    seqg Complexity           45509.0000
+Inputs            3.00000000 Outputs              3.00000000
+First Time          22:37:49-2010/11/24
+Last Time           22:37:49-2010/11/24
+Probability                                       1.00000000
+-[Logic Grid]-----------------------------------------------
+             Bitstream Layer Type Gate In1 In2
+                     0     0    2    1   0   1
+                     1     0    2    1   0   1
+                     1     0    2   12   0   2
+                     1     1    2    1   0   1
+                     2     0    1    2   2   2
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :PERSONALITY :ANSWER
+<ENiX>   Startup datablock created.
+ENiX 3 Incarnation ? 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE MAT CAT ON SAT THE THE :PHRASE :FOREACH 1 :ANSWER
+<ENiX>   the cat sat on the mat 
+the mat sat on the cat 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE PP :DEFINE D E
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE A B C :PREPEND PP :ANSWER
+<ENiX>   d e a b c 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE CAT :QUALIFY FURRY ANIMAL
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE TORTOISE :QUALIFY BALD ANIMAL
+<PERSON> :QUOTE FURRY :STORE SELECTB
+<PERSON> :QUOTE BALD :STORE SELECTC 
+<PERSON> :QUOTE CAT TORTOISE :DESCRIBED SELECTB :ANSWER
+<ENiX>   cat 
+<PERSON> :QUOTE CAT TORTOISE :DESCRIBED SELECTC :ANSWER
+<ENiX>   tortoise 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE ALPHA BETA :DEFINE A
+<ENiX>   Startup datablock created.
+<PERSON> :DEFINITION :QUOTE ALPHA BETA :TRANS ALPHA BETA
+<ENiX>   alpha beta a a 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE 5 :RANDOM 10 :ANSWER
+<ENiX>   9 6 4 1 0 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE CONSEQ1 2 3 5 7 11 13 17 19 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE COMSEQ1 :REASON
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D E :REVERSE :ANSWER
+<ENiX>   Startup datablock created.
+e d c b a 
+<PERSON> :FORCE EVE :LOAD 
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE THE CAT SAT ON THE MAT :SENTENCEDEBUG
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]----------------------[VALUE]-----------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sat 
+  Subject Noun(s)                    cat 
+  Predicate Noun(s)                  mat 
+  Context Sensitive Verb Referencing sat past 
+================================================================
+<PERSON> :FORCE EVE :LOAD 
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE ADAM :SETGENDER MALE
+<ENiX>   Setting: "adam" to male.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE EXAMPLE :ADDSCOPE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE :SETSCOPE EXAMPLE VARIABLE 
+<PERSON> :QUOTE VARIABLE :DEFINE IT WORKS
+<PERSON> :QUOTE :SETSCOPE GLOBAL
+<PERSON> :DEFINITION VARIABLE
+<ENiX>   variable 
+<PERSON> :QUOTE :SETSCOPE EXAMPLE
+<PERSON> :DEFINITION VARIABLE
+<ENiX>   it works 
+<PERSON> :SHOWPROF
+<ENiX>   ENiX
+eve
+test
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D A B :SHRINK :ANSWER
+<ENiX>   Startup datablock created.
+d c b a 
+<PERSON> :SHWSCOPE
+<PERSON> 1 :SIGNAL :ANSWER
+<ENiX>   1 
+<PERSON> 3 :SIGNAL :ANSWER
+<ENiX>   0 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 2 3 5 7 11 13 17 19 :QUALIFY NUMBERS PRIMES
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 2 4 6 8 10 12 14 16 :QUALIFY NUMBERS EVENS
+<PERSON> :QUOTE PRIME :STORE SELECTC
+<PERSON> :QUOTE EVEN :STORE SELECTD
+<PERSON> :QUOTE 2 3 4 5 :SIMILAR SELECTC :ANSWER
+<ENiX>   2 3 4 5 
+<PERSON> :QUOTE 2 3 4 5 :SIMILAR SELECTD :ANSWER
+<ENiX>   2 3 4 5 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 2 3 4 5 :SIZE :ANSWER
+<ENiX>   Startup datablock created.
+5 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :SLEEP
+<ENiX>   WARNING: Thinking activated.
+WARNING: Thinking Finished.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 2 3 4 5 6 :SMALLER 6 :ANSWER
+<ENiX>   Startup datablock created.
+0 
+<PERSON> :QUOTE 1 2 3 4 5 6 :SMALLER 7 :ANSWER
+<ENiX>   1 
+<PERSON> :FORCE EVE :LOAD 
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :SMVF
+<ENiX>   =[Datablock 00000]==========================================
+Name                 :meldvf Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:36:52-2010/11/24
+Last Time           22:36:52-2010/11/24
+Probability       1.00000000 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+passive simple future                                will be
+passive future perfect                        will have been
+passive simple present one                                am
+passive simple present two                               are
+passive simple present three                              is
+passive present progressive one                      am being
+passive present progressive two                     are being
+passive present progressive three                      is being
+passive present perfect one                        have been
+passive present perfect two                         has been
+passive simple past one                                  was
+passive simple past two                                 were
+passive past progressive one                       was being
+passive past progressive two                      were being
+passive past perfect                                had been
+passive future progressive passive                 will be being
+passive perfect progressive passive                has been being
+passive future unreal                               would be
+passive past unreal                          would have been
+active simple future                                    will
+active future progressive                            will be
+active future perfect                              will have
+active future perfect progressive                will have been
+active present progressive one                          have
+active present progressive two                           has
+active present progressive three                            is
+active present perfect progressive one                     have been
+active present perfect progressive two                      has been
+active past progressive one                              was
+active past progressive two                             were
+active past perfect                                      had
+active past perfect progressive                      had been
+active present unreal                                  would
+============================================================
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE dfasdfasdfsdf :SPLIT :ANSWER
+<ENiX>   Startup datablock created.
+d f a s d f a s d f s d f 
+<PERSON> :FORCE 12341235 :SPLIT :ANSWER
+<ENiX>   1 2 3 4 1 2 3 5 
+<PERSON> :STATISTICS
+<ENiX>   Datablocks: 5, relationships: 0. Since last sleep: 7.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 45 46 :STORE PAIR
+<ENiX>   Startup datablock created.
+<PERSON> :DEFINITION PAIR
+<ENiX>   45 46 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 15 12 46 78 :SUB 10 :ANSWER
+<ENiX>   Startup datablock created.
+5 2 36 68 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 2 3 4 5 6 :STORE SETA
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 4 5 6 :STORE SETB
+<PERSON> :QUOTE 4 8 :STORE SETC
+<PERSON> SETC :SUBSET :FORCE SETA :ANSWER
+<ENiX>   0 
+<PERSON> SETB :SUBSET :FORCE SETA :ANSWER
+<ENiX>   1 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 1 :SUB 4 :ANSWER
+<ENiX>   Startup datablock created.
+-3 
+<PERSON> 4 :SWAP 1 :SUB :ANSWER
+<ENiX>   -3 
+<PERSON> :QUOTE 1 10 :DOMAIN :FOREACH 1 :SWAP 1 :DIV :END :ANSWER
+<ENiX>   1 0.5 0.33333333 0.25 0.2 0.16666666 0.14285714 0.125 0.11111111 0.1 
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :THINK
+<ENiX>   WARNING: Thinking activated.
+WARNING: Thinking Finished.
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> THE CAT SAT ON THE MAT
+<PERSON> :TOPIC
+<ENiX>   We are currently discussing the cat and the mat.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :TRUE :ANSWER
+<ENiX>   Startup datablock created.
+1 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 25 21 22 23 33 24 28 :TTRANSFORM :ANSWER
+<ENiX>   Startup datablock created.
+27 12 78 97 111 16 
+<PERSON> :QUOTE 11 4 38 49 55 8 :TTRANSFORM :ANSWER
+<ENiX>   25 21 22 33 24 28 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE PRIMES 2 3 5 7 11 13 17 19 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE :UNDERSTAND PRIMES :ANSWER
+<ENiX>   0 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 2 3 4 5 :STORE B
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 3 4 5 6 7 8 :UNION B :ANSWER
+<ENiX>   5 4 3 2 1 0 8 7 6 5 4 3 
+<PERSON> :SHRINK :ANSWER
+<ENiX>   6 7 8 0 1 2 3 4 5 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE DEMOB 0 1024 0 1025 :UNKNOWN :UNKNOWN 0 1027 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 0 7 :DOMAIN :CALCULATE DEMOB :ANSWER
+<ENiX>   0 1024 0 1025 0 1026 0 1027 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE DSGFDGF :SPLIT :STORE LETTERS
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE LETTERS :UNSTORE :ANSWER
+<ENiX>   d s g f d g f 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE START 1 2 3 4 5 6 END :UNWRAP :ANSWER
+<ENiX>   Startup datablock created.
+1 2 3 4 5 6 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :VERSION
+<ENiX>   Startup datablock created.
+ENiX 3, AtlasNet. GPL [OvO]wl.
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D :WRAP :ANSWER
+<ENiX>   Startup datablock created.
+:quote a b c d :trans 
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :XOR 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 0 
+<PERSON> :QUOTE 0 1 :XOR 1 :ANSWER
+<ENiX>   1 0 

@@ -1,0 +1,74 @@
+To Install ENiX:
+----------------
+Please install automake and readline (dev) - these are ENiX 
+dependencies.
+
+Run the following commands:
+
+1) ./configure
+2) make
+
+If this doesn't work, you are having difficulty and you have 
+autotools, please try the following:
+
+1) touch configure.ac configure Makefile.am Makefile.in
+2) rm -f aclocal.m4
+3) autoreconf
+4) ./configure
+5) automake
+6) make
+
+To Run ENiX:
+------------
+Run: ./WitchCraft, this starts up the WitchCraft shell.
+Tap enter once, and this will initialise the memory files.
+ 
+To see a list of commands available within WitchCraft, run
+
+!HELP
+
+To Load Personality Profiles:
+-----------------------------
+Perform ALL of the following commands in WitchCraft:
+
+!LOAD TRAINING/ENGLISHGRAMMAR.TRAINING
+!LOAD TRAINING/EMOTIONS.TRAINING 
+!LOAD TRAINING/ADVANCED.TRAINING 
+!LOAD TRAINING/ROBOTICS.TRAINING
+
+ENiX default personality profiles will now be loaded with a
+minimal functioning training set. 
+
+To test that ENiX functions correctly activate the Unit Test
+framework from within WitchCraft by running the command:
+
+!TEST Examples/
+
+To Use ENiX:
+------------
+Usage examples for ENiX can be found in the Examples directory. 
+These examples can be run directly from WitchCraft using the 
+command:
+
+!LOAD Examples/<filename>
+
+For help inside ENiX type: ":help", ":help :<command>" or 
+":example :<command>".
+
+I highly recommend reading the documentation for this as it's a
+complex project and things WILL malfunction if the system if you
+make mistakes. Please find the latest documentation at:
+
+http://sourceforge.net/projects/enixdev/files/ENiX3/Documentation/
+
+In An Emergency:
+----------------
+To undo a command type: 
+
+:UNDO
+
+This only works once. If the problem is serious you can erase all 
+memory using the command: 
+
+:PURGE
+

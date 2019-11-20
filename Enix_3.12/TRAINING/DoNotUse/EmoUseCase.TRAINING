@@ -1,0 +1,22 @@
+<PERSON> :quote 100 0 0 0 0 :addemodebug bad
+<PERSON> :quote 0 100 0 0 0 :addemodebug good
+<PERSON> :quote bad good :grammar adjective
+<ENiX>   Setting: "bad" and "good" to adjective.
+<PERSON> :quote council tree :grammar noun
+<ENiX>   Setting: "council" and "tree" to noun.
+<PERSON> :quote removed :grammar verb
+<ENiX>   Setting: "removed" to verb.
+<PERSON> :quote under :grammar preposition
+<ENiX>   Setting: "under" to preposition.
+<PERSON> I sat on the mat
+<PERSON> the mat was under the tree
+
+
+<PERSON> unhappy sad :popemodebug kind
+<PERSON> depressed funny :popemodebug kind
+<PERSON> happy happy :popemodebug kind
+<PERSON> bad good :popemodebug kind
+<PERSON> kind :mapemodebug 
+
+<PERSON> bored stoic :popemodebug funny
+

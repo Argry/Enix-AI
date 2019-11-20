@@ -1,0 +1,105 @@
+<PERSON> :force grammarenglish :define :quote startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+<PERSON> :force grammarenglish :language
+<PERSON> :sentenceunit :force verb
+<PERSON> :force ? :setquestion
+<PERSON> :force verb :setyn
+<PERSON> :quote what who how why which when where :setwh
+<PERSON> :quote noun propernoun pronoun preposition adjective conjunction definitearticle indefinitearticle :subj
+<PERSON> :quote verb adverb :predverbs
+<PERSON> :quote noun pronoun propernoun :nouns
+<PERSON> :force yes :argue
+<PERSON> :force off :locklang
+<PERSON> :force nothing :setnull
+<PERSON> :force on :tol
+<PERSON> :force on :sentiency
+<PERSON> :quote ynq whq indicative imperative subjunctive unq :graphs
+<PERSON> :force ynq :ynqevent
+<PERSON> :force whq :whqevent
+<PERSON> :force unq :unqevent
+<PERSON> :force imperative :impevent
+<PERSON> :quote indicative subjunctive :infoevent
+<PERSON> :force tenses :tenses
+<PERSON> 4 :limits
+
+<PERSON> :quote . :grammar fullstop
+<PERSON> :quote ? :grammar questionmark
+<PERSON> :quote ! :grammar exclamationmark
+<PERSON> :quote ; :grammar semicolon
+<PERSON> :quote , :grammar comma
+<PERSON> :quote the :grammar definitearticle
+<PERSON> :quote a an :grammar indefinitearticle
+<PERSON> :quote cat mat name computer home bed plant dog :grammar noun
+<PERSON> :quote sat be is runs was did sit teach go be :grammar verb
+<PERSON> :quote on of down where to there near :grammar preposition
+<PERSON> :quote large small black white afraid his quiet :grammar adjective
+<PERSON> :quote quietly very calmly patiently quickly also :grammar adverb
+<PERSON> :quote and :grammar conjunction
+<PERSON> :quote enix martyn :grammar propernoun
+<PERSON> :quote she her what who me :grammar pronoun
+<PERSON> :quote s pv pn :creategraph indicative
+<PERSON> :quote the cat sat on a mat :study indicative
+<PERSON> :quote enix and a dog sat near a plant and the cat! :study indicative
+<PERSON> :quote she sat near enix! :study indicative
+<PERSON> :quote enix sat very near martyn. :study indicative
+<PERSON> :quote the quiet black and white cat sat near enix :study indicative
+<PERSON> :quote enix is a name :study indicative
+<PERSON> :quote enix runs the computer :study indicative
+<PERSON> :quote enix runs her :study indicative
+<PERSON> :quote enix is afraid of her. :study indicative
+<PERSON> :quote martyn is also afraid of her! :study indicative
+<PERSON> :quote martyn also is very very afraid of the cat :study indicative
+<PERSON> :quote his name was martyn :study indicative
+<PERSON> :quote martyn is quiet! :study indicative
+<PERSON> :quote martyn sat near the dog and enix :study indicative
+<PERSON> :quote martyn sat near the plant and her :study indicative
+<PERSON> :quote a large cat quietly sat on the large mat. :study indicative
+<PERSON> :quote the cat sat on the mat! :study indicative
+
+<PERSON> :quote pv s pv pn :creategraph ynq
+<PERSON> :quote sit :define sat
+<PERSON> :quote did the cat sit on the mat? :study ynq
+<PERSON> :quote did a cat sit on a mat? :study ynq
+<PERSON> :quote did enix sit on martyn? :study ynq
+<PERSON> :quote did she sit near enix? :study ynq
+<PERSON> :quote did the large cat and the dog sit near martyn and enix? :study ynq
+<PERSON> :quote did martyn and a small black dog quietly sit near enix? :study ynq
+<PERSON> :quote did martyn calmly and patiently teach enix? :study ynq
+<PERSON> :quote did martyn sit quietly down ? :study ynq
+<PERSON> :quote did martyn sit near her ? :study ynq
+<PERSON> :quote did martyn sit near the cat and her ? :study ynq
+
+<PERSON> :quote s pv pn :creategraph whq
+<PERSON> :quote what sat on a mat? :study whq
+<PERSON> :quote who sat on a mat? :study whq
+<PERSON> :quote who sat near a large plant? :study whq
+<PERSON> :quote where is enix and martyn? :study whq
+<PERSON> :quote where is a black and white cat? :study whq
+<PERSON> :quote where is the cat? :study whq
+<PERSON> :quote who is very quiet? :study whq
+<PERSON> :quote where is the large white cat and the dog? :study whq
+<PERSON> :quote where is a cat and a plant? :study whq
+<PERSON> :quote where is she? :study whq
+<PERSON> :quote who was near the dog? :study whq
+<PERSON> :quote who was near the dog and me? :study whq
+
+<PERSON> :quote pv pn :creategraph imperative
+<PERSON> :quote go home :study imperative
+<PERSON> :quote go quickly home to bed. :study imperative
+<PERSON> :quote quietly go home! :study imperative
+<PERSON> :quote quickly be quiet. :study imperative
+<PERSON> :quote quickly be quiet :study imperative
+<PERSON> :quote quickly be quiet! :study imperative
+<PERSON> :quote go quietly! :study imperative
+<PERSON> :quote go quietly. :study imperative
+<PERSON> :quote go quietly :study imperative
+<PERSON> :quote go home to martyn and enix :study imperative
+<PERSON> :quote go home to enix! :study imperative
+<PERSON> :quote go home to martyn. :study imperative
+<PERSON> :quote go home to a plant and a small black dog :study imperative
+<PERSON> :quote go home to the plant and the black and white cat :study imperative
+<PERSON> :quote go to her :study imperative
+<PERSON> :quote go to her. :study imperative
+<PERSON> :quote go to her! :study imperative
+<PERSON> :quote go there :study imperative
+<PERSON> :quote go there. :study imperative
+<PERSON> :quote go there! :study imperative

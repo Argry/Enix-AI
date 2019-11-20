@@ -1,0 +1,88 @@
+ENiX 3:
+-------
+
+Bugs:
+1) Issue with :reason.txt two outputs of the answer.
+3) :sleep.txt still produces :qbuf errors
+4) :sentenceexp doesn't look right <-- needs lang processing
+5) :predverbs is incomplete
+6) :tenses testcase looks wrong
+7) nldecision.txt prints the answer twice
+8) :sentenceassign looks wrong
+9) :stemmeld.txt - is it right?
+10) :borg.txt needs updating
+11) pronoun substitution is broken - needs to copy information from topic and substitute it into the pronouns!
+
+13)
+
+Male, female and plural pronoun substitution
+Add a new grammar article: plural as a type of noun
+
+Virtual databases, small collection of virtual databases of a small range of concepts that are semantically related by topic.
+
+Add dependency calculations to :debugaware
+:oddman needs to change and accept input domain.
+
+Separate all the dependencies between libraries.
+
+
+deprecate Get_Sem_CSNouns
+deprecate IsSentence
+deprecate :setcond
+document :setcondcause :setcondeffect :debugaware
+Document sarcasm example in advanced usage.
+document :observe attribute in Language record
+document :observ_* relations for storing cause - effect conditional relationships. 
+document :ms_* relations for storing neural networks of conditional relationships.
+Document 3 types of logic, deductive, reductive and indeterminate logic.
+
+Conjoined sentences need to store the sentences under the context addressible ID of the topic being discussed. 
+
+Nova Documentary - "What are dreams" There are two key states of dreaming, REM sleep and non-REM sleep. In non-REM sleep, the brain associates all the connections that it hasn't yet resolved. ENiX handles this already. However in REM sleep, the brain simulates new scenerios and determines how the learnt models react in these scenerios. ENiX needs to support this as it would be a great source of imagination.
+
+
+for !test we need a time function to calculate how long the processing took.
+<Asmodai_> perhaps add a Unix domain socket so that the db process can ensure it's the only copy running
+
+implement Amoeba.pid file.
+
+<Asmodai_> what happens if two processes attempt that? <-- probably should make it so that only the Queen can safe and restore files
+
+Active_Passive needs to be much more reliable.
+grep through ENiX and fix all the noun overloading bugs.
+
+Languagedebug needs to be updated to remove the argue reference and move it as a grammar article to an emotion article.
+
+Could do with a command to force termination after verbtable processing -> :stop ?
+
+Reason needs to have the single output gates sorted out. ENiX_APPLICATIONS.c.
+
+
+Sort out special records documentation
+The :SLEEP function needs adjusting to the new time metrics.
+
+ENiX3's execute function needs to have an agreed answer of null that doesn't cause problems with syntax.
+
+Finish evaluate response! 
+
+WitchCraft should show the program output before the program segfaults.
+
+Also need to look at "the fast car was being driven"
+And the "the car was being driven fast"
+also: "the cat on the mat is hiding from the dog"
+
+Midden Server:
+--------------
+Implement locking.
+Implement threaded searching. 
+Reintegrate the Amoeba concept. 
+Implement multiple connection handling.
+Optimisation is needed.
+
+
+Voice Recognition:
+emerge sphinxbase pocketsphinx SphinxTrain sphinx3 sphinx2
+
+
+Wishlist:
+Translation system.

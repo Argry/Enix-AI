@@ -1,0 +1,111 @@
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> !CLEAR
+<PERSON> :new
+  <ENiX> Please specify the problem.
+<PERSON> :null :then :null :end
+  <ENiX> 0 
+  <ENiX> Ok
+<PERSON> cat :then cat :end
+  <ENiX> 0 1 
+  <ENiX> Ok
+<PERSON> dog :then dog :end
+  <ENiX> 0 1 2 :unknown 
+  <ENiX> Ok
+<PERSON> mouse :then mouse :end
+  <ENiX> 0 1 2 :unknown 4 :unknown :unknown :unknown 
+  <ENiX> Ok
+<PERSON> dog mouse :then dog mouse :end
+  <ENiX> 0 1 2 :unknown 4 :unknown 6 :unknown 
+  <ENiX> Ok
+<PERSON> dog cat mouse :then dog :end
+  <ENiX> 0 1 2 :unknown 4 :unknown 6 2 
+  <ENiX> Ok
+<PERSON> dog cat :then dog :end
+  <ENiX> 0 1 2 2 4 :unknown 6 2 
+  <ENiX> Ok
+<PERSON> :relationship preditor :learn
+<PERSON> :force preditor :pattern
+  <ENiX> =[Relationship 00001]=======================================
+  <ENiX> Name                preditor Complexity           9.00000000
+  <ENiX> Inputs            3.00000000 Outputs              3.00000000
+  <ENiX> First Time          19:42:24-2009/04/18
+  <ENiX> Last Time           19:42:24-2009/04/18
+  <ENiX> Probability                                       1.00000000
+  <ENiX> -[Logic Grid]-----------------------------------------------
+  <ENiX>              Bitstream Layer Type Gate In1 In2
+  <ENiX>                      0     0    2    2   0   1
+  <ENiX>                      1     0    1    2   1   1
+  <ENiX>                      2     0    2    4   0   2
+  <ENiX> -[Scenerio Bit: Token]--------------------------------------
+  <ENiX> 000: cat	001: dog	002: mouse	
+  <ENiX> -[Outcome  Bit: Token]--------------------------------------
+  <ENiX> 000: cat	001: dog	002: mouse	
+  <ENiX> ============================================================
+<PERSON> :understand preditor :answer
+  <ENiX> 1 
+<PERSON> cat mouse :encode preditor :answer :calculate preditor :answer :decode preditor :answer
+  <ENiX> 5 
+  <ENiX> 1 
+  <ENiX> cat 
+<PERSON> :new
+  <ENiX> Please specify the problem.
+<PERSON> :revise preditor
+<PERSON> cat mouse :then dog :end
+  <ENiX> 0 1 2 2 4 2 6 2 
+  <ENiX> Ok
+<PERSON> :relationship preditor :learn
+<PERSON> :understand preditor :answer
+  <ENiX> 0 
+<PERSON> :force preditor :pattern
+  <ENiX> =[Relationship 00001]=======================================
+  <ENiX> Name                preditor Complexity           92420.0000
+  <ENiX> Inputs            3.00000000 Outputs              3.00000000
+  <ENiX> First Time          19:42:24-2009/04/18
+  <ENiX> Last Time           19:42:24-2009/04/18
+  <ENiX> Probability                                       1.00000000
+  <ENiX> -[Logic Grid]-----------------------------------------------
+  <ENiX>              Bitstream Layer Type Gate In1 In2
+  <ENiX>                      0     0    2   13   0   1
+  <ENiX>                      0     0    2    8   0   2
+  <ENiX>                      0     1    2    1   0   1
+  <ENiX>                      1     0    2    3   0   1
+  <ENiX>                      1     0    2    7   0   2
+  <ENiX>                      1     1    2    7   0   1
+  <ENiX>                      2     0    2    4   0   2
+  <ENiX> -[Scenerio Bit: Token]--------------------------------------
+  <ENiX> 000: cat	001: dog	002: mouse	
+  <ENiX> -[Outcome  Bit: Token]--------------------------------------
+  <ENiX> 000: cat	001: dog	002: mouse	
+  <ENiX> ============================================================
+<PERSON> :oddman preditor :answer :calculate preditor :answer :decode preditor :answer
+  <ENiX> 5 
+  <ENiX> 2 
+  <ENiX> dog 
+<PERSON> :oddman preditor :answer :correct preditor :answer :learn
+  <ENiX> 5 
+  <ENiX> preditor 0 1 2 2 4 :unknown 6 2 
+<PERSON> :understand preditor :answer
+  <ENiX> 1 
+<PERSON> preditor :pattern
+  <ENiX> =[Relationship 00001]=======================================
+  <ENiX> Name                preditor Complexity           9.00000000
+  <ENiX> Inputs            3.00000000 Outputs              3.00000000
+  <ENiX> First Time          19:42:24-2009/04/18
+  <ENiX> Last Time           19:42:24-2009/04/18
+  <ENiX> Probability                                       1.00000000
+  <ENiX> -[Logic Grid]-----------------------------------------------
+  <ENiX>              Bitstream Layer Type Gate In1 In2
+  <ENiX>                      0     0    2    2   0   1
+  <ENiX>                      1     0    1    2   1   1
+  <ENiX>                      2     0    2    4   0   2
+  <ENiX> -[Scenerio Bit: Token]--------------------------------------
+  <ENiX> 000: cat	001: dog	002: mouse	
+  <ENiX> -[Outcome  Bit: Token]--------------------------------------
+  <ENiX> 000: cat	001: dog	002: mouse	
+  <ENiX> ============================================================
+<PERSON> cat mouse :encode preditor :calculate preditor :decode preditor :answer
+  <ENiX> cat 
+
+
+
+

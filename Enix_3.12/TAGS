@@ -1,0 +1,1388 @@
+
+Amoeba-API.c,407
+void AL3_Log(32,1152
+void AL3_Interpret(38,1267
+void AL3_ContentsReg(110,3507
+void AL3_Reread(148,4720
+void AL3_SrvDisplay(158,4903
+struct Datablock *AL3_Acquire(AL3_Acquire168,5090
+void AL3_Store(180,5367
+void AL3_TransmitAll(192,5630
+struct Datablock  *AL3_ReceiveAll(AL3_ReceiveAll214,6197
+struct Datablock *AL3_Blob2WMS(AL3_Blob2WMS231,6598
+struct Blob *AL3_WMS2Blob(AL3_WMS2Blob255,7260
+
+Amoeba-Colony.c,1323
+struct Colony SizeColony[SizeColony36,1273
+struct Colony *Nucleii[Nucleii37,1302
+int Nucleii_Initialised=43,1404
+int CACHE_DELETED=44,1431
+int AllowQueen=46,1453
+void AL1_FreeBlob(48,1472
+void AL1_FreeAmoeba(54,1554
+int AL1_RepDBEntry(75,2019
+int AL1_AddDBEntry(118,3911
+void AL1_DefragAllocTable(150,5314
+void AL1_Relocate(194,6520
+void AL1_Rename(226,7445
+struct Blob *AL1_GetRecName(AL1_GetRecName235,7683
+void AL1_ReadHeader(253,8359
+void AL1_WriteHeader(269,8845
+void AL1_InitHeader(279,9297
+int AL1_DelDBEntry(310,10270
+void *AL1_SearchThread(AL1_SearchThread326,10749
+unsigned long int AL1_FindDBEntry(343,11180
+void AL1_AttachColony(366,11991
+void AL1_DetachColony(373,12149
+void AL1_CreateColony(378,12254
+void AL1_DeleteColony(403,12834
+void AL1_LoadColony(411,13035
+void AL1_SaveColony(427,13372
+struct Cytoskelenton *AL1_GetDBEntry(AL1_GetDBEntry442,13718
+void *AL1_ExtColony(AL1_ExtColony481,15347
+void *AL1_IntColony(AL1_IntColony485,15478
+void AL1_Defrag(489,15609
+int AL1_UpdateHeader(553,17602
+unsigned long int AL1_GetStartHeader(570,18381
+unsigned long int AL1_GetFinishHeader(576,18606
+unsigned long int AL1_GetCacheHeader(582,18833
+void AL1_RecacheHeader(588,19056
+void AL1_DelIDHeader(597,19415
+void AL1_UnlockColony(609,20061
+void AL1_LockColony(613,20132
+
+Amoeba-Cytoskelenton.c,66
+struct Blob *CreateBlob(CreateBlob34,1197
+int BlobSame(45,1466
+
+Amoeba-Daemon.c,77
+void Amoeba_ASCII_Art(38,1307
+void SignalHandler(53,2210
+int main(70,2590
+
+Amoeba-FS.c,155
+void Help(11,151
+void Contents(20,539
+struct Datablock *FSContents(FSContents31,733
+void Amoeba_Con(40,937
+void Amoeba_Dis(52,1141
+int main(58,1228
+
+Amoeba-File.c,56
+struct Blob *GetFile(GetFile3,26
+void PutFile(24,480
+
+Amoeba-Microtubules.c,1831
+void AL2_CacheFreqUsed(32,1161
+struct Datablock *AL2_GetDBContents(AL2_GetDBContents116,4073
+void AL2_PutDBContents(134,4581
+struct Datablock *Amoeba2WMS(Amoeba2WMS149,5028
+unsigned long int WMS2Amoeba(169,5689
+unsigned long int NewRec(305,10035
+unsigned long int AL2_Recognise(342,11547
+unsigned long int RepEntry(357,11902
+unsigned long int AL2_RepLink(381,12644
+unsigned long int AL2_AddLink(411,13919
+unsigned long int AddEntry(439,15011
+struct Mitochondrion *FindEntry(FindEntry467,15840
+struct Blob *GetEntry(GetEntry494,16524
+unsigned long int RepPair(508,16954
+unsigned long int DelPair(517,17257
+struct Mitochondrion *FindPair(FindPair545,18088
+unsigned long int AddPair(587,19075
+unsigned long int RepRec(614,20008
+struct Cytoskelenton *DeleteEntry(DeleteEntry622,20210
+unsigned long int DelRec(674,22097
+struct Pseudopod *AL2_DuplicPseudo(AL2_DuplicPseudo720,23691
+unsigned long int AL2_DelLink(731,24096
+struct Mitochondrion *AL2_FindMito(AL2_FindMito749,24677
+struct Cytoskelenton *AL2_DeleteMito(AL2_DeleteMito766,25205
+struct Mitochondrion *AL2_ReturnMito(AL2_ReturnMito778,25915
+struct Mitochondrion *AL2_DuplicMito(AL2_DuplicMito787,26202
+struct Cytoskelenton *AL2_NullCyto(AL2_NullCyto794,26417
+struct Cytoskelenton *AL2_Add2Cyto(AL2_Add2Cyto805,26665
+struct Pseudopod *AL2_NullPseudo(AL2_NullPseudo821,27135
+struct Pseudopod *AL2_Add2Pseudo(AL2_Add2Pseudo829,27373
+struct Mitochondrion *AL2_CreateMito(AL2_CreateMito844,27859
+struct Pseudopod *AL2_CreateHeader(AL2_CreateHeader853,28125
+unsigned long int AL2_CreateBlankR(858,28228
+void Amoeba_P_DB_Entry(874,28759
+struct List_Str *AL2_ReportReferences(AL2_ReportReferences905,29852
+struct List_Str *AL2_ReportLinks(AL2_ReportLinks924,30432
+struct List_Str *AL2_ReportContents(AL2_ReportContents944,31034
+
+Amoeba-Nucleus.c,194
+struct Colony Middens[Middens33,1190
+int FIRSTRUN=36,1240
+const char *FILE1=FILE137,1256
+const char *FILE2=FILE238,1290
+void MainHandler(40,1325
+void Queen(53,1567
+void Worker(59,1673
+
+Amoeba-Nuke.c,15
+int main(9,91
+
+Amoeba-Test.c,87
+void Amoeba_Con(35,1221
+void Amoeba_Dis(44,1381
+void CLI(50,1468
+int main(170,5208
+
+Amoeba-Unit-Tests.c,765
+void DEBUG_ClientRefresh(35,1226
+void DEBUG_TXClient(46,1508
+void DEBUG_RXClient(55,1686
+void DEBUG_RXServer(68,1968
+void DEBUG_TXServer(72,2020
+void DEBUG_Function(77,2086
+void DEBUG_NetServer(85,2274
+void DEBUG_NetClient(102,2683
+void DEBUG_DefragAll(116,3111
+void DEBUG_ColonySummary(120,3177
+void DEBUG_WMS2ABA(126,3367
+void DEBUG_ShowWMS(154,4217
+void DEBUG_AddRec(163,4403
+void DEBUG_DAT(168,4530
+void DEBUG_Delete(173,4620
+void DEBUG_Modify(185,4922
+void DEBUG_Search(203,5385
+void DEBUG_Header(218,5752
+struct Datablock *DEBUG_MakeWMSRec(DEBUG_MakeWMSRec244,6643
+void DEBUG_Mito(254,6897
+void DEBUG_PartFill(258,7014
+void DEBUG_Fill(273,7500
+unsigned long int DEBUG_New(290,7954
+void DEBUG_Display(321,8929
+void DEBUG_ALL(345,9457
+
+Amoeba.c,16
+int main(9,110
+
+ENiX_ANALYSER.c,686
+char             *DGateNames[DGateNames33,1227
+char             *SGateNames[SGateNames34,1437
+struct List_Str *Decide(Decide36,1516
+struct List_Str *Understand(Understand53,2027
+int Internal_Execute(106,3705
+int Double_Input_Gates(152,4966
+int Single_Input_Gates(163,5706
+struct List_Str  *Decision_Maker(Decision_Maker165,5824
+void Thought_Procreator(282,9967
+int *Add_Number(Add_Number331,11560
+void Fabricate(341,11764
+int Analyse_Pattern(368,12603
+int Layer_Mutate_Structure(392,13376
+int Test_Mutation(446,14819
+int Layer_Gate_Mutation(458,15094
+int Execute_Part(481,15587
+struct List_Str *ODDMAN(ODDMAN496,16186
+struct List_Str *Correct(Correct546,17614
+
+ENiX_APPLICATIONS.c,842
+struct List_Str *RUN_Answer(RUN_Answer37,1319
+struct List_Str *Reason(Reason50,1653
+struct List_Str *Equalizer(Equalizer151,4332
+struct List_Str *CORRECTMAN(CORRECTMAN179,5049
+struct List_Str *Revise(Revise220,6181
+struct List_Str *DecideWords(DecideWords243,6923
+struct List_Str *Outcome(Outcome255,7209
+struct List_Str *Question(Question276,7708
+struct List_Str *Multiplex(Multiplex296,8217
+struct List_Str *ToMultiplex(ToMultiplex329,8975
+struct List_Str *ClearMultiplexor(ClearMultiplexor382,11566
+struct List_Str *Nicefy(Nicefy396,11897
+struct List_Str  *Orthogonal(Orthogonal446,13502
+struct List_Str *New(New483,14645
+struct List_Str *Relationship(Relationship487,14777
+struct List_Str *Wrap_Q(Wrap_Q491,14882
+struct List_Str *Think2(Think2514,16481
+char *DirectedGraphStr(DirectedGraphStr559,18247
+
+ENiX_CALC.c,856
+struct List_Str  *ScaleVector(ScaleVector33,1223
+struct List_Str  *XOR(XOR46,1518
+struct List_Str  *AND(AND60,1981
+struct List_Str  *NOR(NOR74,2547
+struct List_Str  *NAND(NAND88,3114
+struct List_Str  *OR(OR102,3638
+struct List_Str *NOT(NOT116,4194
+struct List_Str *TRUE(TRUE130,4539
+struct List_Str *FALSE(FALSE134,4679
+struct List_Str *Greater(Greater139,4821
+struct List_Str  *Smaller(Smaller153,5210
+struct List_Str  *Equivalence(Equivalence167,5600
+struct List_Str *Exp(Exp181,5989
+struct List_Str  *Div(Div195,6442
+struct List_Str  *Mul(Mul209,6891
+struct List_Str  *Add(Add223,7339
+struct List_Str  *Sub(Sub237,7790
+int Factorial(247,8105
+struct List_Str *VectorSub(VectorSub254,8187
+struct List_Str *VectorAdd(VectorAdd270,8675
+double ScalarProduct(286,9163
+struct List_Str *T_Transform(T_Transform309,9745
+
+ENiX_CONV.c,407
+struct Datablock *CreateConvBuffer(CreateConvBuffer35,1271
+struct Datablock *Add2ConvBuffer(Add2ConvBuffer42,1461
+struct List_Str  *GetConvBuffer(GetConvBuffer48,1610
+struct Datablock *CreateQBuffer(CreateQBuffer60,2117
+struct Datablock *Add2QBuffer(Add2QBuffer67,2298
+struct List_Str  *GetQBuffer(GetQBuffer74,2482
+struct List_Str *Think1(Think186,2980
+struct List_Str *Sleep(Sleep219,7431
+
+ENiX_CS.c,502
+struct List_Str *CSAddr(CSAddr33,1221
+struct Datablock *GetCSRec(GetCSRec42,1478
+struct List_Str *ListCSValues(ListCSValues70,1991
+struct List_Str *CSList(CSList84,2315
+char *CSFind(CSFind94,2547
+char *CSLink(CSLink118,3012
+char *SetCSVar(SetCSVar151,3806
+int GetCSVar(165,4122
+struct List_Str *CSLoad(CSLoad173,4268
+struct List_Str *CSRecon(CSRecon200,4809
+struct List_Str  *IntCSRecon(IntCSRecon205,4934
+struct List_Str *CSSave(CSSave244,5798
+char *CSCreate(CSCreate257,6147
+
+ENiX_Chaos.c,81
+int *ENiXChaosGen(ENiXChaosGen25,749
+int *ENiXChaosInit(ENiXChaosInit37,1009
+
+ENiX_DISK.c,389
+char *LoadFile(LoadFile34,1243
+char *LoadPipe(LoadPipe46,1471
+struct List_Str *Save(Save64,2083
+struct List_Str *ShowProf(ShowProf97,2990
+char *Disk_Buffer(Disk_Buffer110,3408
+void Virtualise(155,4280
+struct List_Str *Meld(Meld221,5745
+struct List_Str *Load(Load296,7783
+int Str2File(311,8203
+char *File2Str(File2Str324,8452
+char *LoadConfigAttr(LoadConfigAttr332,8589
+
+ENiX_Debug.c,19
+void Pause(24,753
+
+ENiX_EMO.c,2044
+struct EmoReady  *EmpatheticSummary=EmpatheticSummary33,1222
+struct ConceptE  *GlobalE=GlobalE34,1264
+struct Feeling   *GlobalF=GlobalF35,1337
+char    *Smilie=Smilie36,1410
+struct List_Str *EmotionMapper(EmotionMapper43,1593
+struct ConceptE *ZeroConceptE(ZeroConceptE84,3140
+struct EmoReady *ZeroEmoReady(ZeroEmoReady102,3520
+struct ConceptE *PopConceptE(PopConceptE114,3803
+struct EmoReady *PopEmoReady(PopEmoReady136,4633
+struct List_Str *EmoUnderstanding(EmoUnderstanding153,5407
+struct List_Str  *EmoMorality(EmoMorality198,6751
+struct List_Str  *EmoMortality(EmoMortality238,7841
+struct List_Str *EmoAction(EmoAction262,8709
+struct List_Str  *EmoDetermination(EmoDetermination317,10552
+void ComputeEmoResp(328,10777
+void EvalResponse(355,11463
+struct List_Str *ComputeOOa(ComputeOOa478,15148
+struct List_Str  *Vec2Emo(Vec2Emo507,15774
+struct List_Str  *FindEmoSentence(FindEmoSentence514,15963
+struct List_Str  *EmpathyInj(EmpathyInj540,16736
+struct List_Str  *EmpathyPost(EmpathyPost600,18738
+struct List_Str  *EmpathyWrapper(EmpathyWrapper608,19009
+char *EmotionCPU(EmotionCPU657,20674
+struct List_Str *EmotionPathway(EmotionPathway692,22139
+void LoadEmoDB(733,23556
+struct ConceptE *LoadConceptE(LoadConceptE763,24759
+void FlushConceptE(859,27987
+void FlushEmoDB(921,30279
+struct List_Str *EmpathyDebug(EmpathyDebug955,31454
+struct ConvList *ReconFromEmotion(ReconFromEmotion960,31567
+char *ReportEmotionName(ReportEmotionName1081,35673
+struct List_Str *DebugEmotionCache(DebugEmotionCache1102,36425
+struct List_Str *NormalizedEmo(NormalizedEmo1128,37391
+void DebugCE(1149,38135
+struct List_Str *SentenceEmotion(SentenceEmotion1216,40071
+struct ConceptE *Empathy(Empathy1301,42681
+void Associate_Emo(1481,50328
+struct Feeling *Detect_Dominant_Emo(Detect_Dominant_Emo1489,50617
+void ParseSentenceEmotion(1537,52239
+void InputFeedback(1553,52647
+void AwarenessFeedback(1563,52931
+struct List_Str  *EmoDebugVec(EmoDebugVec1593,53863
+void DisplayEmotion(1604,54313
+
+ENiX_EXEC.c,1245
+int              NumberofTerminations=34,1246
+char             *TerminatedCommands[TerminatedCommands35,1287
+char             *Command_List[Command_List37,1347
+char             *Command_Info[Command_Info69,4050
+struct List_Str  *HelpExample(HelpExample329,24321
+struct List_Str *Execute(Execute341,24725
+struct List_Str *Help(Help413,26524
+void Save_Answer(438,27281
+struct List_Str *Interpreter(Interpreter451,27588
+struct List_Str *Expand_Exp(Expand_Exp472,28005
+struct List_Str *Translate(Translate494,28574
+int Paradox(560,30381
+struct List_Str *If(If620,32059
+struct List_Str *Swap(Swap646,32770
+struct List_Str *Mutate(Mutate664,33176
+struct List_Str *Answer(Answer668,33336
+struct List_Str *Foreach(Foreach673,33447
+struct List_Str *Chocky(Chocky738,35297
+struct List_Str *Version(Version743,35413
+struct List_Str *Force(Force748,35545
+struct List_Str *Nothing(Nothing752,35632
+struct List_Str  *Math(Math756,35721
+struct List_Str *RUN(RUN820,37449
+struct List_Str *Read(Read825,37604
+struct List_Str *Unwrap(Unwrap857,38570
+struct List_Str *Wrap(Wrap882,39057
+struct List_Str *Do(Do899,39376
+struct List_Str *SIGNAL(SIGNAL930,40049
+struct List_Str *Trans_First(Trans_First943,40354
+
+ENiX_HLR.c,189
+struct List_Str  *AbstractComputeEffect(AbstractComputeEffect33,1222
+struct List_Str *Borg(Borg117,4664
+struct List_Str *AbstractThinkingAssociates(AbstractThinkingAssociates187,7398
+
+ENiX_Hybrid.c,253
+float *ENiXHybridOr(ENiXHybridOr30,1374
+float *ENiXHybridCom(ENiXHybridCom47,1844
+float *ENiXHybrid(ENiXHybrid95,2957
+float *ENiXHybridCal(ENiXHybridCal148,4490
+float ENiXHybridFilter(162,4853
+float *ENiXHybridFabric(ENiXHybridFabric171,5022
+
+ENiX_Input.c,72
+int *ENiXGetInt(ENiXGetInt28,778
+float *ENiXGetFlt(ENiXGetFlt36,977
+
+ENiX_LIST.c,1556
+void PrintList(37,1298
+void FreeList(67,1825
+void PrintListSpecial(77,1962
+struct List_Str *Cpy_List(Cpy_List94,2354
+struct List_Str *Ins_List_Element(Ins_List_Element104,2548
+struct List_Str  *Append_List_Element(Append_List_Element128,3030
+int Same_Examples(142,3439
+struct List_Str *Ins_List_List(Ins_List_List152,3783
+struct List_Str *Del_List_Element(Del_List_Element186,4416
+char *Get_List_Element(Get_List_Element208,4745
+struct List_Str  *Rep_List_Element(Rep_List_Element218,4915
+int Find_List_Element(227,5104
+int Size_of_List(239,5287
+struct List_Str *LowerCaseList(LowerCaseList246,5402
+struct List_Str *SortList(SortList257,5606
+struct List_Str *FormatList(FormatList278,6038
+struct List_Str *RemoveDups(RemoveDups298,6602
+struct List_Str  *AutoFormat(AutoFormat308,6837
+struct List_Str **Add_To_Array(Add_To_Array337,7362
+char *List2Str(List2Str349,7701
+struct List_Str *Str2List(Str2List372,8224
+struct List_Str *Domain(Domain423,9225
+void PrintListArray(439,9645
+char *ShortestElement(ShortestElement447,9810
+int Is_List_Element(461,10091
+struct List_Str *Size(Size469,10229
+struct List_Str *Merge(Merge474,10393
+struct List_Str *Reverse(Reverse499,10960
+struct List_Str *Split(Split511,11234
+struct List_Str  *ListStripPrefix(ListStripPrefix534,11723
+struct List_Str *Last(Last545,12059
+struct List_Str *First(First555,12388
+struct List_Str *List2Nums(List2Nums565,12687
+struct List_Str  *Unknown(Unknown577,13028
+struct List_Str  *ExtractConvSource(ExtractConvSource588,13374
+
+ENiX_MULTIPLEX.c,865
+void MultiplexIndicative(35,1329
+int Multiplex2ANN(104,3802
+int VerifyLearnt(127,4663
+int IsMultiplexQuery(140,5082
+struct List_Str *WHQueryFallback(WHQueryFallback237,8136
+int YNQueryFallback(339,11491
+struct List_Str *MultiplexQuery(MultiplexQuery406,13786
+struct List_Str *MultiplexSymbols(MultiplexSymbols500,17304
+struct List_Str *MultiplexedSequence(MultiplexedSequence523,18015
+struct List_Str *UnknownSequence(UnknownSequence554,19338
+struct List_Str *FormYNQuestion(FormYNQuestion563,19647
+struct List_Str *FormWHQuestion(FormWHQuestion606,21324
+struct List_Str *GenerateResponse(GenerateResponse635,22196
+int IsConceptUnderstood(644,22550
+struct List_Str *Curious(Curious663,23238
+struct List_Str *Confused(Confused699,24273
+struct List_Str *Understood(Understood732,25350
+struct List_Str *ListExamples(ListExamples747,25624
+
+ENiX_MUSIC.c,98
+struct List_Str *CreateMusic(CreateMusic33,1224
+struct Melody *CreateTheme(CreateTheme61,2283
+
+ENiX_Maths.c,48
+int ENiXFactorial(24,724
+int ENiXPower(32,814
+
+ENiX_NLP.c,3706
+char             *WHQPrep=WHQPrep34,1217
+char             *LogicTypes[LogicTypes35,1249
+char             *TenseTypes[TenseTypes36,1314
+struct List_Str *IntelligentInt(IntelligentInt38,1375
+struct List_Str  *ListByTopic(ListByTopic131,4488
+struct List_Str  *ListSentences(ListSentences152,5231
+int Active_Passive(165,5619
+struct List_Str *RootVerb(RootVerb227,7408
+int ComplexSentence(355,10798
+struct List_Str *DiscardTense(DiscardTense530,16766
+struct List_Str *PutAdverbsLast(PutAdverbsLast539,17087
+struct List_Str  *GroupClauses(GroupClauses553,17465
+void TouchTopic(571,17952
+int YNQuest(595,18772
+struct List_Str *CompoundSentence(CompoundSentence621,19621
+char *IndicativeComponent(IndicativeComponent697,22249
+struct List_Str *Canonical(Canonical719,22942
+struct List_Str *ListReleventVerbs(ListReleventVerbs786,24162
+int SeparateSentence(814,24938
+void SubstitutePronouns(995,30556
+struct List_Str  *ParallelSimples(ParallelSimples1139,34966
+struct List_Str *OutputAnswer(OutputAnswer1171,36087
+struct Datablock *Add2Conversation(Add2Conversation1262,38534
+int SameNegation(1276,38872
+struct List_Str *Get_Sem_CSNouns(Get_Sem_CSNouns1289,39174
+struct List_Str *GenerateCSNouns(GenerateCSNouns1297,39589
+struct List_Str *GenerateCSVerbs(GenerateCSVerbs1316,40201
+struct List_Str *SharedContext(SharedContext1325,40432
+int Awareness1(1351,41268
+int Awareness2(1392,41954
+struct List_Str *Random(Random1414,42395
+int Detect_Voice(1432,42962
+struct List_Str  *SentenceTense(SentenceTense1498,44548
+struct List_Str *AssembleSentence(AssembleSentence1504,44763
+struct Sentence *ConvertSentence(ConvertSentence1526,45539
+struct List_Str *ModSenAddAdv(ModSenAddAdv1619,48508
+struct List_Str *NegateSentence(NegateSentence1679,50381
+struct List_Str *ModSenInd2Imp(ModSenInd2Imp1683,50483
+struct List_Str *ModSenImp2Ind(ModSenImp2Ind1733,51992
+struct List_Str *ModSenAct2Pas(ModSenAct2Pas1749,52513
+struct List_Str *ModSenPas2Act(ModSenPas2Act1779,53444
+struct List_Str *ListSimilarVerbs(ListSimilarVerbs1792,53895
+struct List_Str *FilterTense(FilterTense1805,54350
+struct Meanings *ZeroMeanings(ZeroMeanings1816,54706
+void DebugMeanings(1823,54873
+struct List_Str *RecPrevSentence(RecPrevSentence1830,55020
+struct List_Str  *SentenceConvertBase(SentenceConvertBase1861,56096
+struct List_Str  *SentenceConvertTense(SentenceConvertTense1878,56745
+char *ConvertVerbTense(ConvertVerbTense2006,62101
+struct List_Str *RefineNouns(RefineNouns2032,62922
+int DetermineNounLogic(2095,64887
+struct List_Str *NounRefine2Clause(NounRefine2Clause2126,65803
+struct List_Str  *VerbRefine2Clause(VerbRefine2Clause2153,66713
+struct Sentence *CreateSentenceStruct(CreateSentenceStruct2161,66966
+struct List_Str  *CS2Sentence(CS2Sentence2174,67387
+struct List_Str  *CSSentenceRecon(CSSentenceRecon2183,67677
+void CombRec(2219,68860
+struct List_Str *ListCombinations(ListCombinations2236,69332
+struct List_Str *Phrase_Generator(Phrase_Generator2244,69538
+struct List_Str  *Convert2Sentence(Convert2Sentence2268,70513
+struct List_Str  *DeYoda(DeYoda2312,72262
+int IsNegated(2340,73294
+struct List_Str *SentenceConvertMood(SentenceConvertMood2346,73391
+void Paragraph2Sentence(2358,73827
+struct List_Str *Study(Study2402,74888
+void Permutation(2464,76899
+void Permutation2(2494,77668
+struct List_Str *Sentence_Designer(Sentence_Designer2524,78447
+struct List_Str *Sentence_Generator(Sentence_Generator2570,79666
+struct List_Str *Translator(Translator2621,80876
+struct List_Str *Recollect(Recollect2653,82125
+struct List_Str *IWrapper(IWrapper2666,82399
+struct List_Str *Scheduler(Scheduler2685,82752
+
+ENiX_OUTPUT.c,434
+void DebugRelated(36,1276
+void PrintHalf(49,1644
+void PrintDatabase(61,1824
+void Print_DB_Entry(80,2142
+struct List_Str *CSDebug(CSDebug131,4417
+struct List_Str *Show_Pattern(Show_Pattern162,5114
+struct List_Str *MapLanguage(MapLanguage209,7262
+struct List_Str *Debug(Debug260,8619
+struct List_Str *Language_Debug(Language_Debug271,8895
+struct List_Str *Sentencedebug(Sentencedebug423,13162
+void HelpSplash(508,15974
+
+ENiX_Omega.c,86
+int ENiXOmegaBounded(24,724
+int ENiXOmegaCnv2Zro(43,1005
+int ENiXOmegaTest(61,1303
+
+ENiX_PLURALS.c,171
+int ContainsGrouping(33,1226
+int ContainsPlurals(48,1704
+int IsPlural(57,1944
+struct List_Str *GroupShow(GroupShow64,2078
+struct List_Str *GroupSet(GroupSet73,2307
+
+ENiX_Poly.c,239
+int ENiXPolyCalVal(24,723
+float ENiXPolyCalValFlt(31,873
+int *ENiXPolyCalVec(ENiXPolyCalVec39,1039
+float *ENiXPolyCalVecFlt(ENiXPolyCalVecFlt47,1198
+int *ENiXPolyGen(ENiXPolyGen56,1376
+float *ENiXPolyGenFlt(ENiXPolyGenFlt98,2145
+
+ENiX_Print.c,176
+void ENiXPrintIntList(24,724
+void ENiXPrintFltList(35,978
+void ENiXPrintRec(46,1238
+void ENiXPrintPlyFlt(73,1679
+void ENiXPrintPly(113,2312
+void ENiXPrintHybrid(152,2925
+
+ENiX_REASON.c,510
+struct ReasonTree *NewTreeSentence(NewTreeSentence34,1226
+struct ReasonTree *AddTreeSentence(AddTreeSentence44,1527
+struct ReasonTree *AddTreeNext(AddTreeNext50,1706
+void TreeDebug(58,1982
+struct ReasonTree *TreeRecurse(TreeRecurse70,2283
+struct List_Str *TreeGenerate(TreeGenerate100,3581
+struct List_Str **NLPCauseM2M(NLPCauseM2M116,4148
+struct List_Str **NLPCauseO2O(NLPCauseO2O170,6239
+struct List_Str **NLPCauseO2M(NLPCauseO2M226,8849
+struct List_Str **NLPCauseAlt(NLPCauseAlt284,11458
+
+ENiX_ROBOTICS.c,306
+int SerialWrite(34,1228
+struct List_Str *SetSerial(SetSerial42,1399
+char *SerialRead(SerialRead59,1992
+int SerialOpen(89,2598
+void SerialClose(117,3821
+struct List_Str *SerialTest(SerialTest122,3912
+struct List_Str *SerialSend(SerialSend149,4532
+struct List_Str *SerialRecv(SerialRecv169,4983
+
+ENiX_Recursion.c,166
+float ENiXRecCalVal(24,728
+float *ENiXRecCalVecBas(ENiXRecCalVecBas40,1006
+float *ENiXRecCalVecInd(ENiXRecCalVecInd49,1214
+float *ENiXRecGen(ENiXRecGen57,1393
+
+ENiX_SCOPE.c,376
+struct List_Str  *LstScope(LstScope33,1224
+struct List_Str  *ShwScope(ShwScope41,1574
+struct List_Str  *SetScope(SetScope46,1780
+struct List_Str *CpyScope(CpyScope107,4145
+struct List_Str *DelScope(DelScope173,6360
+struct List_Str *AddScope(AddScope212,7723
+struct Datablock *StartScopeResolution(StartScopeResolution219,7997
+void CloseScopeResolution(230,8363
+
+ENiX_SEMANTICS.c,1222
+struct Meanings  *Last_Thoughts=Last_Thoughts33,1228
+struct List_Str *VerbTableAdd(VerbTableAdd35,1267
+char *VerbTableGetAct(VerbTableGetAct59,2081
+struct List_Str *VerbPostProc(VerbPostProc71,2473
+struct List_Str  *SentenceAssign(SentenceAssign99,3383
+struct List_Str *SentenceExplain(SentenceExplain149,5356
+struct List_Str **QualifierPaths(QualifierPaths175,6456
+struct List_Str *SemPath(SemPath219,7890
+struct List_Str *AtomMeanList(AtomMeanList235,8361
+struct List_Str *AtomMeanLike(AtomMeanLike252,8851
+struct List_Str *AtomMeanSame(AtomMeanSame263,9164
+struct List_Str *AtomMeanOppo(AtomMeanOppo267,9269
+struct List_Str *AtomMeanGeneric(AtomMeanGeneric271,9378
+struct List_Str *ListAllSemWords(ListAllSemWords290,10332
+struct List_Str *ListSimilarWords(ListSimilarWords299,10566
+struct List_Str *IsVerbSimilar(IsVerbSimilar312,11051
+struct List_Str *NLPCauseWrap(NLPCauseWrap319,11204
+struct List_Str *NLPAvoidWrap(NLPAvoidWrap344,12042
+int IsSentenceSimilar(375,13227
+struct Related *ListRelatedSentences(ListRelatedSentences394,13988
+struct List_Str *SenOutTopic(SenOutTopic447,15878
+struct List_Str *SPath(SPath471,16556
+struct List_Str *ShortPath(ShortPath494,17286
+
+ENiX_SETTHEORY.c,492
+struct List_Str *Subset(Subset33,1228
+int IntSubset(59,1857
+struct List_Str *Union(Union79,2248
+struct List_Str *IntIntersect(IntIntersect90,2706
+struct List_Str  *Intersection(Intersection105,3052
+struct List_Str *Except(Except114,3316
+struct List_Str *Element(Element121,3549
+struct List_Str *IntUnion(IntUnion147,4209
+struct List_Str *Add2Set(Add2Set154,4423
+struct List_Str  *SetExclude(SetExclude161,4599
+struct List_Str *Shrink(Shrink176,4982
+int SameSet(184,5221
+
+ENiX_SPLINE.c,247
+char *Spirit(Spirit33,1225
+struct Meanings *S_Spline(S_Spline211,8041
+struct Meanings *Optimise_Spline(Optimise_Spline312,11844
+int Route_Stage(341,12878
+struct List_Str *Route(Route369,13681
+struct List_Str *D_Spline(D_Spline382,14090
+
+ENiX_STEMMER.c,272
+struct List_Str  *StemClass(StemClass33,1226
+struct List_Str  *StemMeld(StemMeld61,2200
+struct List_Str  *StemBase(StemBase96,3403
+struct List_Str  *StemFind(StemFind128,4086
+struct List_Str  *StemAdd(StemAdd174,5502
+struct List_Str *StemShow(StemShow184,5788
+
+ENiX_STRING.c,291
+int StrLen(33,1225
+char *StrFirst(StrFirst41,1307
+char *SuperStrCat(SuperStrCat58,1564
+char *StrCat(StrCat66,1718
+char *Gettime(Gettime75,1903
+char *FloatToString(FloatToString85,2108
+char *ToLower(ToLower106,2433
+int IsNumeric(115,2541
+char *FilterChars(FilterChars119,2621
+
+ENiX_Statistics.c,64
+float ENiXStatsAverage(22,699
+float ENiXStatsVariance(29,1031
+
+ENiX_TIME.c,454
+char *Seconds2Str(Seconds2Str42,1394
+char *FormatTime(FormatTime53,1610
+struct Datablock *GetScheduleRec(GetScheduleRec62,1838
+struct List_Str *SchedNew(SchedNew69,2028
+struct List_Str *SchedDel(SchedDel94,2836
+struct List_Str *Wait(Wait117,3379
+struct List_Str *FirstAfter(FirstAfter124,3662
+struct List_Str *FirstBefore(FirstBefore142,4257
+struct List_Str *LastAfter(LastAfter160,4853
+struct List_Str *LastBefore(LastBefore178,5447
+
+ENiX_Vector.c,834
+int *ENiXDefVecInt(ENiXDefVecInt24,725
+int *ENiXDifVecInt(ENiXDifVecInt29,827
+int ENiXIsEqVecInt(36,1002
+int ENiXIsEqVecFlt(44,1147
+int *ENiXFillVecInt(ENiXFillVecInt52,1294
+int *ENiXSubVecInt(ENiXSubVecInt59,1427
+int *ENiXCpyVecInt(ENiXCpyVecInt71,1646
+float *ENiXCpyVecFlt(ENiXCpyVecFlt78,1778
+float *ENiXSubVecFlt(ENiXSubVecFlt86,1923
+float *ENiXDefVecFlt(ENiXDefVecFlt100,2174
+float *ENiXDifVecFlt(ENiXDifVecFlt106,2287
+float *ENiXDivVecFlt(ENiXDivVecFlt114,2475
+int ENiXIsEqFlt(123,2667
+float *ENiXFillVecFlt(ENiXFillVecFlt131,2811
+float *ENiXConvertI2F(ENiXConvertI2F138,2950
+int *ENiXConvertF2I(ENiXConvertF2I146,3101
+float *ENiXCpySubFlt(ENiXCpySubFlt153,3253
+int *ENiXCpySecInt(ENiXCpySecInt166,3488
+float *ENiXCpySecFlt(ENiXCpySecFlt174,3672
+float *ENiXNewBlankEq(ENiXNewBlankEq183,3869
+
+ENiX_WMS.c,911
+struct Datablock *Database[Database38,1295
+struct Datablock Datablocks;39,1326
+void FreeWMS(41,1356
+struct Datablock *MemoryMode(MemoryMode53,1556
+struct Datablock *Add_DB_Entry(Add_DB_Entry100,3219
+struct Datablock *Del_DB_Entry(Del_DB_Entry121,3924
+int Find_DB_Entry(155,4631
+char *Get_DB_Entry(Get_DB_Entry167,4827
+void Rep_DB_Entry(177,5028
+struct Datablock *Goto_DB_Entry(Goto_DB_Entry192,5336
+int Rep_DB_Pair(202,5573
+int Add_DB_Pair(220,6004
+char *Lookup_DB_Attr(Lookup_DB_Attr230,6407
+void Print_DB_Duplicate(248,6792
+char *GetValue(GetValue256,6977
+struct Datablock *GetLang(GetLang265,7173
+struct List_Str *AddWRef(AddWRef269,7295
+int Detect_Sentiency(280,7689
+struct List_Str *Unknown_Words(Unknown_Words304,8221
+int IsEnabled(314,8539
+struct List_Str *AllRels(AllRels321,8778
+int Is_DB_Pair(331,9018
+int Del_DB_Pair(339,9315
+struct List_Str *Purge(Purge351,9729
+
+ENiX_WMS_COMPAT.c,4585
+char *Levels[Levels34,1252
+struct List_Str *TOL(TOL36,1293
+struct List_Str  *SystemMood(SystemMood41,1413
+struct List_Str  *SetEmoMode(SetEmoMode51,1747
+struct List_Str  *EmoDebug(EmoDebug57,1910
+struct List_Str *Verbosity(Verbosity63,2086
+int DetectEmoAttr(68,2217
+int DetectVerbosity(92,2844
+void SetVerbosity(96,2907
+int DetectArgue(100,3003
+void SetArgue(104,3058
+int DetectUnderstood(108,3138
+void SetUnderstood(112,3203
+int DetectEmpathise(116,3309
+void SetEmpathise(120,3372
+int DetectDeadline(124,3465
+void SetDeadline(128,3526
+struct List_Str *Statistics(Statistics132,3621
+void SetGrammarAttr(137,3813
+void SetEmotionAttr(159,4473
+struct List_Str *WHQEvent(WHQEvent173,4964
+struct List_Str *YNQEvent(YNQEvent178,5099
+struct List_Str  *PPronouns(PPronouns183,5234
+struct List_Str *AssignEmotions(AssignEmotions188,5369
+struct List_Str  *SetBias(SetBias198,5662
+struct List_Str *AddEmotions(AddEmotions203,5793
+struct List_Str *SetGender(SetGender208,5927
+struct List_Str *Pronouns(Pronouns212,6044
+struct List_Str *CContext(CContext217,6179
+struct List_Str *Attribute(Attribute224,6383
+void New_Relate(248,7164
+struct List_Str  *SetCond(SetCond266,7797
+struct List_Str  *EndPunct(EndPunct277,8070
+struct List_Str *Prepend(Prepend282,8220
+struct List_Str *Unstore(Unstore289,8460
+struct List_Str *Forget(Forget296,8737
+struct List_Str *Sentiency(Sentiency302,8941
+struct List_Str *Tenses(Tenses307,9078
+struct List_Str *Tense(Tense312,9209
+struct List_Str *Subj(Subj320,9482
+struct List_Str *SetWH(SetWH325,9606
+struct List_Str *SetYN(SetYN330,9732
+struct List_Str *SPA(SPA335,9858
+struct List_Str *SetQuestion(SetQuestion340,9983
+struct List_Str *SetPassive(SetPassive345,10121
+struct List_Str *SetNULL(SetNULL350,10260
+struct List_Str *SPVF(SPVF355,10393
+struct List_Str  *SAVF(SAVF360,10535
+struct List_Str  *SMVF(SMVF365,10678
+struct List_Str  *Emotion(Emotion370,10824
+struct List_Str  *Grammar(Grammar374,10937
+struct List_Str  *Purpose(Purpose378,11050
+struct List_Str *AAVF(AAVF382,11163
+struct List_Str *APVF(APVF386,11266
+struct List_Str *Argue(Argue390,11369
+struct List_Str *PredVerbs(PredVerbs395,11494
+struct List_Str *Graphs(Graphs400,11628
+struct List_Str *Nouns(Nouns405,11756
+struct List_Str *InfoEvent(InfoEvent410,11882
+struct List_Str *ImpEvent(ImpEvent415,12016
+struct List_Str *Limits(Limits420,12148
+struct List_Str *Locklang(Locklang425,12276
+struct List_Str *AVF(AVF430,12408
+int IsGrammarAttribute(450,12993
+struct List_Str *MeldVF(MeldVF465,13572
+struct List_Str *GetGraphs(GetGraphs486,14463
+int IsAttribof(497,14755
+struct List_Str *Memory(Memory501,14897
+struct List_Str *SentenceUnity(SentenceUnity506,15043
+struct List_Str *Personality(Personality527,15585
+struct List_Str *Cache(Cache542,16112
+struct List_Str *Saveset(Saveset562,16502
+struct List_Str *All(All571,16741
+struct List_Str *Copy(Copy581,16977
+struct List_Str *Like(Like620,18040
+struct List_Str *Qualify(Qualify632,18426
+struct List_Str *Delete(Delete671,19539
+char *Find_Grammar_Example(Find_Grammar_Example687,20001
+struct List_Str *Similar(Similar695,20203
+struct List_Str *Described(Described709,20746
+struct List_Str  *Store(Store723,21293
+struct List_Str *Definition(Definition731,21488
+struct List_Str *Define(Define736,21600
+struct List_Str *Mode(Mode742,21837
+struct List_Str *Append(Append817,23745
+struct List_Str *VerbBaseFinder(VerbBaseFinder824,24004
+int IsArticle(837,24363
+struct List_Str *ExtractArticles(ExtractArticles855,24899
+struct List_Str  *DiscardAuxVerbs(DiscardAuxVerbs865,25187
+struct List_Str *AuxVerbs(AuxVerbs886,25821
+int Comp_Sem_Subject(897,26131
+struct List_Str *Recall_Prev_Answer(Recall_Prev_Answer923,26864
+struct Datablock *Recognise(Recognise933,27104
+struct List_Str  *CoreSubjMtr(CoreSubjMtr952,27612
+struct List_Str *Topic(Topic969,28247
+struct List_Str  *Hook(Hook999,29004
+struct List_Str  *PopEmoDebug(PopEmoDebug1009,29301
+struct List_Str  *ClrEmoDebug(ClrEmoDebug1029,29891
+struct List_Str  *GetEmoDebug(GetEmoDebug1048,30435
+struct List_Str  *SetMood(SetMood1059,30776
+struct List_Str *EmoList(EmoList1067,31054
+struct List_Str  *Emo2Vec(Emo2Vec1077,31337
+char *EmoTableLookup(EmoTableLookup1088,31631
+struct List_Str *CreateGraph(CreateGraph1106,32059
+int AreAnyGAttributes(1133,32902
+struct List_Str *Setup(Setup1146,33136
+int IsSentence(1169,34021
+struct List_Str  *AddEmoDebug(AddEmoDebug1192,34687
+void SetEmotionRoot(1211,35424
+
+Hybrid.c,17
+int main(35,959
+
+IdentGen.c,43
+#define MAX_ORD 40,1007
+int main(42,1026
+
+Omega.c,17
+int main(32,888
+
+Poly.c,17
+int main(31,858
+
+Recurrence.c,17
+int main(31,863
+
+SeqGen.c,17
+int main(35,959
+
+WitchCraft-Colours.c,132
+char *Banner1[Banner14,52
+char *Banner2[Banner217,853
+char *Banner3[Banner330,1654
+void ASCII_ART(43,2455
+int main(140,3713
+
+WitchCraft-Net.c,248
+unsigned long int NAct=34,1229
+int AcceptServerCon(36,1256
+int OpenServerSocket(47,1510
+int OpenClientSocket(69,2135
+void NetTransmit(88,2702
+struct Blob *NetReceive(NetReceive105,3105
+void NetTX(116,3369
+struct Blob *NetRX(NetRX124,3585
+
+WitchCraft.c,2504
+int                  ScreenWidth=11,203
+int                  ScreenHeight=12,240
+char                 *HorzLine=HorzLine13,278
+char                 *CommandPrefix=CommandPrefix14,315
+int                  QUIT=15,363
+int                  VSynth=16,392
+int                  Speak=17,423
+int                  Segfaults=18,453
+int                  HighSpeedRefresh=19,487
+int                  CygwinMode=20,528
+struct Buffer        *Session=Session24,644
+struct Buffer        *SeshFirst=SeshFirst25,680
+struct Buffer        *SeshLast=SeshLast26,718
+struct FormattedLine *ScrSession=ScrSession30,836
+struct FormattedLine *ScrFirst=ScrFirst31,875
+struct FormattedLine *ScrLast=ScrLast32,912
+int                  IsOSShell=36,1029
+int                  NumColours=40,1144
+int                  Colour1[Colour141,1180
+int                  Colour2[Colour242,1248
+int                  SLOWREPLAY=44,1335
+char                 *PERSONFORMAT=PERSONFORMAT45,1370
+char                 *SERVERFORMAT=SERVERFORMAT46,1411
+char                 *SYSTEMFORMAT=SYSTEMFORMAT47,1452
+char                 *ENiXFORMAT=ENiXFORMAT48,1493
+char                 *AlignRight=AlignRight49,1532
+char                 *AlignLeft=AlignLeft50,1571
+char                 *BlankLine=BlankLine51,1609
+int                  ServerMode=55,1728
+int                  ClientMode=56,1763
+int                  ServerBindId;62,1841
+int                  CtrlCTrap=63,1876
+char                 *IPAddress=IPAddress64,1910
+int                  Socket2Close;65,1948
+void SaveConfig(69,2064
+void LoadConfig(85,2595
+void DetectTermSize(98,3119
+char *RemoveFinalSpaces(RemoveFinalSpaces116,3446
+void Clear(128,3615
+void WitchCraftTest(152,4129
+void RunServer(175,4919
+void Incoming(186,5084
+void HandleTCPClient(192,5193
+char *Wrap(Wrap207,5534
+void ServBG(247,6395
+void ClientBG(256,6618
+void ServConsUpdate(265,6819
+void Splash(273,7044
+void Execute(281,7557
+void WC_Load(324,8584
+void SaveBuffer(363,9692
+void Command(381,10170
+void CLS(459,12955
+struct Buffer *Add2Buffer(Add2Buffer469,13125
+struct FormattedLine *Add2Scr(Add2Scr483,13430
+void LineWrap(497,13758
+void Buffer2Scr(515,14192
+void DebugBuffer(561,15261
+unsigned long int LengthofBuffer(589,15905
+void DrawText(596,16059
+char *RUN(RUN602,16237
+void ModeBar(617,16573
+void Input(627,16800
+void MainLoop(680,18129
+void DetectOSMode(693,18324
+void Setup(701,18455
+void WitchSignal(729,19269
+int main(739,19446
+
+main.c,116
+int     ENABLEOUT=60,1859
+int     Suppress_ANSWER=61,1880
+struct List_Str  *Test(Test94,4215
+int main(100,4342
+
+Amoeba-API.h,137
+#define AMOEBA_API30,1145
+#define AL3_ADD 40,1358
+#define AL3_DELETE 41,1380
+#define AL3_REPLACE 42,1402
+#define AL3_FORMAT 43,1424
+
+Amoeba-Colony.h,1226
+#define INC_COLONY_H31,1148
+#define MODULENAME 39,1293
+#define SHMSIZE 40,1329
+#define FATSIZE 41,1360
+#define FATSTART 42,1390
+#define SHMKEY 43,1416
+#define ALLACCESS 44,1442
+#define SHMSPACING 45,1468
+#define FRAGMENTATION 46,1492
+#define SPINTIME 47,1516
+#define MAXTHREADS 48,1543
+struct Colony 52,1591
+  char                *Shared;Shared58,1670
+  int                 Queen;59,1701
+  unsigned long int   Size;60,1730
+  unsigned long int   CacheProb;61,1758
+  unsigned long int   CacheUnkn;62,1791
+  unsigned long int   CacheDate;63,1824
+  char                *CachedTime;CachedTime64,1857
+  unsigned long int   Population;65,1892
+  char                *StartPos;StartPos66,1926
+  char                *FinishPos;FinishPos67,1959
+  char                *Cached;Cached68,1993
+  unsigned long int   LastPos;69,2024
+  key_t               Key;70,2055
+  int                 SHMId;71,2082
+  struct shmid_ds     *shmid_ds;shmid_ds72,2145
+struct SearchThreadData 75,2182
+  struct Blob *Needle;Needle76,2208
+  int ThreadID;77,2231
+  unsigned long int *Location;Location78,2247
+  unsigned long int *Cached;Cached79,2278
+  int *Terminate;Terminate80,2307
+  struct Colony *City;City81,2325
+
+Amoeba-Cytoskelenton.h,675
+#define CYTOSKELENTON31,1149
+struct Mitochondrion{Mitochondrion40,1275
+  unsigned long int  ARef;41,1297
+  unsigned short int PRef;42,1379
+  unsigned short int MRef;43,1461
+struct Pseudopod{Pseudopod46,1547
+  unsigned short int Dimension;47,1565
+  struct Mitochondrion **Mitochondria;Mitochondria48,1647
+struct Blob{Blob51,1733
+  unsigned long int Size;52,1746
+  char *Nucleus;Nucleus53,1828
+struct Cytoskelenton{Cytoskelenton56,1914
+  unsigned long int Size;57,1936
+  struct Blob *Core;Core58,2018
+  unsigned char Lock;59,2100
+  unsigned char Segment;60,2182
+  unsigned short int Dimension;62,2346
+  struct Pseudopod **Pseudopods;Pseudopods63,2428
+
+Amoeba-Daemon.h,23
+#define DAEMON31,1142
+
+Amoeba-FS.h,17
+#define AFS2,12
+
+Amoeba-File.h,24
+#define AMOEBAFILE2,19
+
+Amoeba-Microtubules.h,53
+#define MICROTUBULE31,1147
+char *DATE;DATE44,1376
+
+Amoeba-Nucleus.h,24
+#define NUCLEUS31,1143
+
+Amoeba-Nuke.h,18
+#define NUKE2,13
+
+Amoeba-Test.h,22
+#define ATEST31,1141
+
+Amoeba-Unit-Tests.h,26
+#define UNITTESTS31,1145
+
+ENiX_ANALYSER.h,858
+#define ENiXANALYSER32,1220
+struct Kernel_Problem{Kernel_Problem39,1339
+   int Minimal;40,1362
+   int Size;41,1378
+   int Inputs;42,1391
+   int Outputs;43,1406
+   int Split;44,1422
+   int *Knowns;Knowns45,1436
+   int *Unknowns;Unknowns46,1452
+   int Complexity;47,1470
+} K_Problem;48,1489
+struct Canonical_Problem{Canonical_Problem50,1503
+  int Inputs;51,1529
+  int Size;52,1576
+  int *Positions;Positions53,1621
+  int *Unknowns;Unknowns54,1656
+  int *Knowns;Knowns55,1682
+  int *Logic_Grid;Logic_Grid56,1708
+  int *Input_Route;Input_Route57,1757
+  int G_Max;58,1809
+  int R_Max;59,1850
+  int Complexity;60,1891
+} Opt_P;61,1936
+int              Complexity;64,1947
+struct Kernel_Problem    *Sub_Problems;Sub_Problems65,1976
+struct Canonical_Problem *Opt_Problems;Opt_Problems66,2016
+int Fabricate_Current_Example;67,2056
+
+ENiX_APPLICATIONS.h,26
+#define ENiXAPPLI32,1217
+
+ENiX_CALC.h,25
+#define ENiXCALC32,1216
+
+ENiX_CONV.h,25
+#define ENiXCONV32,1216
+
+ENiX_CS.h,58
+#define CONTEXTADDR32,1219
+int              CSN;49,1810
+
+ENiX_Chaos.h,26
+#define ENiX_CHAOS23,718
+
+ENiX_DISK.h,25
+#define ENiXDISK32,1216
+
+ENiX_Debug.h,26
+#define ENiX_DEBUG23,718
+
+ENiX_EMO.h,1196
+#define EMO32,1211
+struct Feeling{Feeling46,1493
+   struct List_Str *EmotionList;EmotionList47,1509
+   char *DominantName;DominantName48,1542
+   int DominantEmo;49,1565
+} FeelingTemplate;50,1585
+struct ConceptE{ConceptE52,1605
+   int BeforeSize;54,1644
+   int AfterSize;55,1663
+   int UnchangedSize;56,1681
+   struct List_Str *EmoTB;EmoTB58,1735
+   struct List_Str *EmoTA;EmoTA59,1762
+   struct List_Str *EmoTU;EmoTU60,1789
+   struct List_Str *EmoTD;EmoTD61,1816
+   struct List_Str **BConcepts;BConcepts63,1865
+   struct List_Str **AConcepts;AConcepts64,1897
+   struct List_Str **UConcepts;UConcepts65,1929
+   struct List_Str **EmoBConcepts;EmoBConcepts67,2000
+   struct List_Str **EmoAConcepts;EmoAConcepts68,2035
+   struct List_Str **EmoUConcepts;EmoUConcepts69,2070
+} CETemplate;70,2105
+struct EmoReady{EmoReady72,2120
+  int Empathetic_Targets;73,2137
+  struct List_Str *Sentence;Sentence74,2188
+  struct ConceptE **Empathetic_Target_List;Empathetic_Target_List79,2290
+  struct List_Str *EmoTB;EmoTB84,2430
+  struct List_Str *EmoTA;EmoTA85,2456
+  struct List_Str *EmoTU;EmoTU86,2482
+  struct List_Str *EmoTD;EmoTD87,2508
+} ERTemplate;88,2534
+
+ENiX_EXEC.h,25
+#define ENiXEXEC32,1216
+
+ENiX_Globals.h,753
+#define ENiXGLOBALS32,1219
+#define EMPATHY_MAX_DEPTH 35,1283
+#define EMPATHY_MIN_DEPTH 36,1311
+#define LEGACYEMOTION 37,1339
+int Translation_Bypass;40,1379
+char *ProgramName;ProgramName42,1404
+char *Filename;Filename43,1423
+char *Data;Data44,1439
+struct List_Str  *Language_Method;Language_Method46,1452
+int              MGen;47,1487
+int              InterceptedSpirit;49,1511
+int              ConceptUnderstood;50,1547
+int              ThinkOutLoud;52,1584
+struct List_Str  *Disambiguated;Disambiguated54,1616
+char             *ConversationSource;ConversationSource56,1650
+int              Route_Shortest_Length;59,1690
+struct List_Str  *Route_Shortest;Route_Shortest60,1730
+struct List_Str  *Route_Length;Route_Length61,1764
+
+ENiX_HLR.h,27
+#define HIGHLEVELR32,1218
+
+ENiX_Hybrid.h,341
+#define ENiX_HYBRID23,719
+#define SCANRADIUS 47,1710
+#define AUTOSTOP 55,1957
+#define USEOMEGA 63,2204
+#define IDENTITYGEN 71,2571
+#define AGGRESSIVEFILTER 79,2958
+int ENiXHybridSel;94,3792
+float *ENiXBlankEquation;ENiXBlankEquation100,3931
+int PolynomialSize;103,3998
+int RecurrenceSize;104,4018
+#define CHAOS_DIAMETER 105,4038
+
+ENiX_Input.h,26
+#define ENiX_INPUT23,718
+
+ENiX_LDEFS.h,2317
+#define ENiXLDEFS32,1217
+struct Related{Related35,1247
+  struct List_Str *Targets;Targets36,1263
+  struct List_Str *AffectedSentences;AffectedSentences37,1291
+  struct List_Str *CanonicalTargets;CanonicalTargets38,1329
+  struct List_Str *CSNouns;CSNouns39,1366
+  struct List_Str *CSVerbs;CSVerbs40,1394
+} RelatedTemplate;41,1422
+struct Meanings{Meanings43,1442
+   int Size;44,1459
+   struct List_Str **Conversations;Conversations45,1472
+} MeaningTemplate;46,1508
+struct ConvList{ConvList48,1528
+   int Size;49,1545
+   struct Meanings **Conversations;Conversations50,1558
+} CLTemplate;51,1594
+struct Sentence{Sentence53,1609
+  struct List_Str  *Sentence;Sentence54,1626
+  char             *Mood;Mood55,1656
+  int              Sentiency;56,1682
+  int              PassiveVoice;57,1712
+  int              InterceptedSpirit;58,1745
+  int              Tense;59,1783
+  int              Negation;60,1809
+  struct List_Str  *SentenceStructure;SentenceStructure61,1838
+  struct List_Str  *Subject;Subject62,1877
+  struct List_Str  *PredicateNounBlock;PredicateNounBlock63,1906
+  struct List_Str  *PredicateVerbBlock;PredicateVerbBlock64,1946
+  int              SubjectLogic;67,2049
+  int              PredicateLogic;68,2082
+  struct List_Str  *RefinedSubject;RefinedSubject69,2117
+  struct List_Str  *RefinedPredicate;RefinedPredicate70,2153
+  struct List_Str  *RefinedVerb;RefinedVerb71,2191
+  char             *VerbCSNum;VerbCSNum72,2224
+  struct List_Str  *CSVerbRef;CSVerbRef79,2401
+  struct List_Str  *S;S80,2432
+  struct List_Str  *PV;PV81,2455
+  struct List_Str  *PN;PN82,2479
+  int              SIsPlural;84,2519
+  int              SContainsGroup;85,2549
+  int              SContainsPlurals;86,2584
+  int              PIsPlural;87,2621
+  int              PContainsGroup;88,2651
+  int              PContainsPlurals;89,2686
+  struct List_Str  *BasicSubject;BasicSubject91,2778
+  struct List_Str  *BasicPredicate;BasicPredicate92,2812
+  struct List_Str  *PassiveVerbPrepositions;PassiveVerbPrepositions93,2848
+  struct List_Str  *Predicate;Predicate95,2910
+  struct List_Str  *Disambiguated;Disambiguated96,2941
+  int              Understood;97,2976
+  int              ComplexSentence;98,3007
+  struct Datablock *Language;Language99,3043
+
+ENiX_LIST.h,166
+#define ENiX_LIST32,1217
+struct List_Str{List_Str41,1339
+   char *Str;Str42,1356
+   struct List_Str *Next;Next43,1370
+struct List_Str  *ANSWER;ANSWER46,1400
+
+ENiX_MULTIPLEX.h,150
+#define ENiXMULTI32,1217
+#define M_AND 42,1409
+#define M_OR 43,1425
+#define M_NOR 44,1441
+#define M_XOR 45,1457
+#define MULTIPLEXSWITCH 48,1527
+
+ENiX_MUSIC.h,217
+#define ENiXMUSIC32,1217
+struct Melody{Melody40,1356
+   struct List_Str *Correct1;Correct141,1371
+   struct List_Str *Correct2;Correct242,1401
+   struct List_Str *MainTheme;MainTheme43,1431
+} Themes;44,1462
+
+ENiX_Maths.h,26
+#define ENiX_MATHS23,718
+
+ENiX_NLP.h,117
+#define NLP32,1211
+#define FILTERNOUNSONLY 55,1823
+#define FILTERNOUNCLAUSE 56,1874
+#define FILTERCLAUSE 57,1935
+
+ENiX_OUTPUT.h,27
+#define ENiXOUTPUT32,1218
+
+ENiX_Omega.h,26
+#define ENiX_OMEGA23,718
+
+ENiX_Poly.h,25
+#define ENiX_POLY23,717
+
+ENiX_Print.h,26
+#define ENiX_PRINT23,718
+
+ENiX_REASON.h,247
+#define ENiXREASON32,1225
+struct ReasonTree 37,1303
+  int NodeSize;38,1323
+  struct List_Str *Sentence;Sentence39,1339
+  struct List_Str *Common;Common40,1368
+  struct ReasonTree *Prev;Prev41,1395
+  struct ReasonTree **Next;Next42,1422
+
+ENiX_ROBOTICS.h,69
+#define ENiXROBOTICS32,1220
+struct termios RoboticsOptions;43,1390
+
+ENiX_Recursion.h,30
+#define ENiX_RECURSION23,722
+
+ENiX_SCOPE.h,25
+#define SCOPERES32,1216
+
+ENiX_SEMANTICS.h,56
+#define ENiXSEMANTICS32,1221
+int VERBPOSTPROC;40,1362
+
+ENiX_SETTHEORY.h,30
+#define ENiXSETTHEORY32,1221
+
+ENiX_SPLINE.h,23
+#define SPLINE32,1214
+
+ENiX_STEMMER.h,30
+#define PORTERSTEMMER32,1221
+
+ENiX_STRING.h,28
+#define ENiX_STRING32,1219
+
+ENiX_Statistics.h,26
+#define ENiX_STATS23,718
+
+ENiX_TEMPLATE.h,26
+#define ENiXMUSIC32,1217
+
+ENiX_TIME.h,25
+#define ENiXTIME32,1216
+
+ENiX_Vector.h,47
+#define ENiX_VEC23,716
+#define EQSIZE 27,754
+
+ENiX_WMS.h,441
+#define WMS32,1211
+int DB_Size;40,1303
+int RB_Size;41,1316
+int Newly_Learnt;42,1329
+double           MemoryLimit;46,1376
+double           MemoryExp;47,1507
+double           MemoryProbability;48,1638
+double           MemoryRate;49,1769
+double           MemoryThreshold;50,1900
+struct Datablock{Datablock55,2066
+   struct List_Str *DS[DS56,2084
+   struct Datablock *Next;Next57,2111
+struct Datablock *Database[Database60,2142
+
+ENiX_WMS_COMPAT.h,30
+#define ENiXWMSCOMPAT32,1221
+
+WitchCraft-Colours.h,896
+#define WITCHCRAFT_COLOUR32,1225
+#define WC_BLACK 36,1267
+#define WC_RED 37,1299
+#define WC_GREEN 38,1331
+#define WC_BROWN 39,1363
+#define WC_BLUE 40,1395
+#define WC_PURPLE 41,1427
+#define WC_CYAN 42,1459
+#define WC_LGRAY 43,1491
+#define WC_DGRAY 45,1524
+#define WC_LRED 46,1556
+#define WC_LGREEN 47,1588
+#define WC_YELLOW 48,1620
+#define WC_LBLUE 49,1652
+#define WC_LPURPLE 50,1684
+#define WC_LCYAN 51,1716
+#define WC_WHITE 52,1748
+#define WC_BBLACK 54,1781
+#define WC_BRED 55,1811
+#define WC_BGREEN 56,1841
+#define WC_BBROWN 57,1871
+#define WC_BBLUE 58,1901
+#define WC_BPURPLE 59,1931
+#define WC_BCYAN 60,1961
+#define WC_BLGRAY 61,1991
+#define WC_RESET 63,2022
+#define WC_ITALIC 64,2051
+#define WC_BOLD 65,2080
+#define WC_UNDERL 66,2109
+#define WC_FLASH 67,2138
+#define WC_REVID 68,2167
+#define WC_INVIS 69,2196
+#define WC_CLS 72,2242
+#define WC_TITLE 73,2269
+
+WitchCraft-Net.h,598
+#define WITCHCRAFT_NET_H33,1225
+#define MAXPENDING 45,1433
+#define RCVBUFSIZE 46,1454
+#define ENiXPort 47,1476
+#define SERVERIP 48,1501
+#define CLIENT 50,1533
+#define SERVER 51,1550
+unsigned long int ServerID;54,1624
+struct Connection{Connection56,1654
+  int ServerFlag;57,1673
+  char *ServerIP;ServerIP58,1691
+  unsigned long int ServerID;59,1709
+  int Port;60,1739
+  int Socket;61,1751
+  int ClientSocket;62,1765
+  struct sockaddr_in ConnectionDetails;63,1785
+  struct Blob *Sent;Sent64,1825
+  struct Blob *Received;Received65,1846
+struct sockaddr_in ClientAddress;69,1876
+
+WitchCraft.h,457
+#define WITCHCRAFT_MAIN2,24
+struct Buffer 24,378
+  char                 *Command;Command25,394
+  char                 *Answer;Answer26,427
+  int                  Error;27,459
+  struct Buffer        *Prev;Prev28,521
+  struct Buffer        *Next;Next29,551
+struct FormattedLine 32,585
+  char                 *Data;Data33,608
+  int                  Type;34,638
+  struct FormattedLine *Prev;Prev35,690
+  struct FormattedLine *Next;Next36,720
+
+ENiX_PLURALS.h,0
+
+Amoeba.h,0
+
+ENiX_TEMPLATE.c,0

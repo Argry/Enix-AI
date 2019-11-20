@@ -1,0 +1,87 @@
+<PERSON> !CLEAR
+<PERSON> :purge
+  <ENiX> Memory destroyed.
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> :force one :define 1
+  <ENiX> Startup datablock created.
+<PERSON> :force two :define 2
+<PERSON> :force three :define 3
+<PERSON> :force four :define 4
+<PERSON> :force five :define 5
+<PERSON> :force six :define 6
+<PERSON> :force seven :define 7
+<PERSON> :force eight :define 8
+<PERSON> :force nine :define 9
+<PERSON> :force ten :define 10
+<PERSON> :force eleven :define 11
+<PERSON> :force twelve :define 12
+<PERSON> :force thirteen :define 13
+<PERSON> :force fourteen :define 14
+<PERSON> :force fifteen :define 15
+<PERSON> :force sixteen :define 16
+<PERSON> :force seventeen :define 17
+<PERSON> :force eighteen :define 18
+<PERSON> :force nineteen :define 19
+<PERSON> :force twenty :define 20
+<PERSON> :force thirty :define 30
+<PERSON> :force forty :define 40
+<PERSON> :force fifty :define 50
+<PERSON> :force sixty :define 60
+<PERSON> :force seventy :define 70
+<PERSON> :force eighty :define 80
+<PERSON> :force ninety :define 90
+<PERSON> :force hundred :define 100
+<PERSON> :force thousand :define 1000
+<PERSON> :force million :define 1000000
+<PERSON> :force billion :define 1000000000
+<PERSON> :force add :force and :define :add
+<PERSON> :force times :define :mul
+<PERSON> :force divide :define :div
+<PERSON> :force - :define :add
+<PERSON> :force minus :define :sub
+<PERSON> :force ? :define :answer
+<PERSON> :force ? :define :answer
+<PERSON> :force ? :define :answer
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> :force + :define :add
+<PERSON> :force - :define :sub
+<PERSON> :force * :define :mul
+<PERSON> :force / :define :div
+<PERSON> :force ^ :define :exp
+<PERSON> :force ? :define :answer
+<PERSON> :force < :define :smaller
+<PERSON> :force > :define :greater
+<PERSON> :force > :define :greater
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> :force start :define 0
+<PERSON> :force finish :define 10
+<PERSON> :force counter :define start
+<PERSON> :force count :define :force counter :add 1 :store :force :force :force counter :answer :smaller :force finish :signal
+<PERSON> :force docount :define :true :do :force :force :force count
+<PERSON> :force docount :define :true :do :force :force :force count
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> :force grammarenglish :language
+<PERSON> :force grammarenglish :define startsentence noun pronoun verb adjective adverb definitearticle indefinitearticle preposition conjunction propernoun endsentence
+<PERSON> :sentenceunit :force verb
+<PERSON> :sentenceunit :force verb
+<PERSON> :quote cat dog mat mouse :grammar noun
+  <ENiX> Setting these values to: noun
+<PERSON> :quote the :grammar definitearticle
+  <ENiX> Setting these values to: definitearticle
+<PERSON> :quote a :grammar indefinitearticle
+  <ENiX> Setting these values to: indefinitearticle
+<PERSON> :force sat run :grammar verb
+  <ENiX> Setting these values to: verb
+<PERSON> :quote on under above :grammar preposition
+  <ENiX> Setting these values to: preposition
+<PERSON> :quote the cat sat on the mat :study
+<PERSON> :force cat :recollect
+  <ENiX> the cat sat on the mat 
+<PERSON> :force mat :recollect
+  <ENiX> the mat 
+<PERSON> :force mat sat :phrase
+  <ENiX> the cat sat on the mat 
+  <ENiX> the mat sat on the cat 
+<PERSON> :force dog sat :phrase
+  <ENiX> the mouse sat above the dog 
+  <ENiX> the dog sat above the mouse 

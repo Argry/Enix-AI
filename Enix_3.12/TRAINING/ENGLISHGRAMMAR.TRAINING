@@ -1,0 +1,227 @@
+<PERSON> :purge
+<PERSON> :force grammarenglish :define :quote startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+<PERSON> :force grammarenglish :language
+<PERSON> :sentenceunit :force verb
+<PERSON> :quote . ? ! :endpunct
+<PERSON> :quote if when because :setcondcause
+<PERSON> :quote causes caused then :setcondeffect
+<PERSON> :force ? :setquestion
+<PERSON> :force verb :setyn
+<PERSON> :quote what who how why which when where :setwh
+<PERSON> :quote noun propernoun pronoun preposition adjective conjunction definitearticle indefinitearticle comma :subj
+<PERSON> :quote verb adverb preposition :predverbs
+<PERSON> :quote noun pronoun propernoun :nouns
+<PERSON1> :force high :argue
+<PERSON1> :force medium :verbosity
+
+<PERSON> :QUOTE medium :SETEMOMODE Argue
+<PERSON> :QUOTE medium :SETEMOMODE Understood
+<PERSON> :QUOTE medium :SETEMOMODE Empathise
+<PERSON> :QUOTE medium :SETEMOMODE Verbosity
+<PERSON> :QUOTE medium :SETEMOMODE Deadline
+
+<PERSON> :QUOTE medium :SETEMOMODE TrigArgue
+<PERSON> :QUOTE medium :SETEMOMODE TrigUnderstood
+<PERSON> :QUOTE medium :SETEMOMODE TrigEmpathise
+<PERSON> :QUOTE medium :SETEMOMODE TrigVerbosity
+<PERSON> :QUOTE medium :SETEMOMODE TrigDeadline
+
+<PERSON> :QUOTE 0.9 :SETEMOMODE RateArgue
+<PERSON> :QUOTE 0.9 :SETEMOMODE RateUnderstood
+<PERSON> :QUOTE 0.9 :SETEMOMODE RateEmpathise
+<PERSON> :QUOTE 0.9 :SETEMOMODE RateVerbosity
+<PERSON> :QUOTE 0.9 :SETEMOMODE RateDeadline
+
+<PERSON> :QUOTE 0 0 0 0 0 :SETEMOMODE SystemMood
+
+<PERSON> :force off :locklang
+<PERSON> :force nothing :setnull
+<PERSON> :force off :tol
+<PERSON> :force on :sentiency
+<PERSON> :quote ynq whq indicative imperative :graphs
+<PERSON> :force ynq :ynqevent
+<PERSON> :force whq :whqevent
+<PERSON> :quote imperative :impevent
+<PERSON> :quote indicative :infoevent
+<PERSON> :force tenses :tenses
+<PERSON> :quote i he she it we you they them who whom us nothing :pronouns
+<PERSON> :quote i he she it we you they them who whom us nothing :grammar pronoun
+<PERSON> 4 :limits
+<PERSON> :quote sat :tense past
+<PERSON> :quote sitting sit sits :tense present
+<PERSON> :quote sat sitting sit sits :addwref sit
+<PERSON> :quote passive simple future :apvf will be
+<PERSON> :quote passive future perfect :apvf will have been
+<PERSON> :quote passive simple present one :apvf am
+<PERSON> :quote passive simple present two :apvf are
+<PERSON> :quote passive simple present three :apvf is
+<PERSON> :quote passive present progressive one :apvf am being
+<PERSON> :quote passive present progressive two :apvf are being
+<PERSON> :quote passive present progressive three :apvf is being
+<PERSON> :quote passive present perfect one :apvf have been
+<PERSON> :quote passive present perfect two :apvf has been
+<PERSON> :quote passive simple past one :apvf was
+<PERSON> :quote passive simple past two :apvf were
+<PERSON> :quote passive past progressive one :apvf was being
+<PERSON> :quote passive past progressive two :apvf were being
+<PERSON> :quote passive past perfect :apvf had been
+<PERSON> :quote passive future progressive passive :apvf will be being
+<PERSON> :quote passive perfect progressive passive :apvf has been being
+<PERSON> :quote passive future unreal :apvf would be
+<PERSON> :quote passive past unreal :apvf would have been
+<PERSON> :quote active simple future :aavf will
+<PERSON> :quote active future progressive :aavf will be
+<PERSON> :quote active future perfect :aavf will have
+<PERSON> :quote active future perfect progressive :aavf will have been
+<PERSON> :quote active present progressive one :aavf am
+<PERSON> :quote active present progressive two :aavf are
+<PERSON> :quote active present progressive three :aavf is
+<PERSON> :quote active present progressive one :aavf have
+<PERSON> :quote active present progressive two :aavf has
+<PERSON> :quote active present perfect progressive one :aavf have been
+<PERSON> :quote active present perfect progressive two :aavf has been
+<PERSON> :quote active past progressive one :aavf was
+<PERSON> :quote active past progressive two :aavf were
+<PERSON> :quote active past perfect :aavf had
+<PERSON> :quote active past perfect progressive :aavf had been
+<PERSON> :quote active present unreal :aavf would
+<PERSON> :quote active present unknown one :aavf did
+<PERSON> :quote active present unknown two :aavf do
+<PERSON> :meldvf
+<PERSON> :quote at by about with of in :spa
+<PERSON> :quote . :grammar fullstop
+<PERSON> :quote ? :grammar questionmark
+<PERSON> :quote ! :grammar exclamationmark
+<PERSON> :quote ; :grammar semicolon
+<PERSON> :quote the :grammar definitearticle
+<PERSON> :quote a an :grammar indefinitearticle
+<PERSON> :quote life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog :grammar noun
+<PERSON> :quote removed run sat be been being were had have am are will would is scared runs define put happens :grammar verb
+<PERSON> :quote living was do does doing done did sit sits sitting teach go ran feel :grammar verb
+<PERSON> :quote about under on of down where to there near by :grammar preposition
+<PERSON> :quote living good bad furry grey large small black white afraid his quiet fast :grammar adjective
+<PERSON> :quote not how quietly very calmly patiently quickly also :grammar adverb
+<PERSON> :quote and or nor either neither , :grammar conjunction
+<PERSON> :quote enix martyn :grammar propernoun
+<PERSON> :quote i she her what who me :grammar pronoun
+
+<PERSON> :quote s pv pn :creategraph indicative
+<PERSON> :quote the cat ran fast :study indicative
+<PERSON> :quote the cat sat on a mat :study indicative
+<PERSON> :quote the cat was sitting on a mat :study indicative
+<PERSON> :quote enix and a dog sat near a plant and the cat! :study indicative
+<PERSON> :quote she sat near enix! :study indicative
+<PERSON> :quote enix sat very near martyn. :study indicative
+<PERSON> :quote the quiet black and white cat sat near enix :study indicative
+<PERSON> :quote enix is a name :study indicative
+<PERSON> :quote enix runs the computer :study indicative
+<PERSON> :quote enix runs her :study indicative
+<PERSON> :quote enix is afraid of her. :study indicative
+<PERSON> :quote martyn is also afraid of her! :study indicative
+<PERSON> :quote martyn also is very very afraid of the cat :study indicative
+<PERSON> :quote his name was martyn :study indicative
+<PERSON> :quote martyn is quiet! :study indicative
+<PERSON> :quote martyn is quiet. :study indicative
+<PERSON> :quote martyn sat near the dog and enix :study indicative
+<PERSON> :quote martyn sat near the plant and her :study indicative
+<PERSON> :quote a large cat quietly sat on the large mat. :study indicative
+<PERSON> :quote the cat sat on the mat! :study indicative
+<PERSON> :quote the cat sat on her mat! :study indicative
+<PERSON> :quote the cat sat on her large mat! :study indicative
+<PERSON> :quote she will run quickly :study indicative
+<PERSON> :quote the mat was sat on by the cat :study indicative
+<PERSON> :quote i was sat on :study indicative
+<PERSON> :quote either the cat or the dog sat on the mat :study indicative
+<PERSON> :quote he sat on them :study indicative
+<PERSON> :quote cats are furry animals :study indicative
+<PERSON> :quote life is the opposite of death :study indicative
+<PERSON> :quote nothing happens :study indicative
+
+<PERSON> :quote pv s pv pn :creategraph ynq
+<PERSON> :quote sit :define sat
+<PERSON> :quote did the cat sit on the mat? :study ynq
+<PERSON> :quote did a cat sit on a mat? :study ynq
+<PERSON> :quote did enix sit on martyn? :study ynq
+<PERSON> :quote did she sit near enix? :study ynq
+<PERSON> :quote did the large cat and the dog sit near martyn and enix? :study ynq
+<PERSON> :quote did martyn and a small black dog quietly sit near enix? :study ynq
+<PERSON> :quote did martyn calmly and patiently teach enix? :study ynq
+<PERSON> :quote did martyn sit quietly down ? :study ynq
+<PERSON> :quote did martyn sit near her ? :study ynq
+<PERSON> :quote did martyn sit near the cat and her ? :study ynq
+<PERSON> :quote did martyn sit near her cat? :study ynq
+<PERSON> :quote did martyn sit near her black cat? :study ynq
+<PERSON> :quote was the mat sat on by the cat? :study ynq
+<PERSON> :quote was the mat being sat on by the black cat? :study ynq
+<PERSON> :quote was the mat sat on by either the cat or the dog? :study ynq
+<PERSON> :quote was either the cat or the dog sat on the mat? :study ynq
+<PERSON> :quote was either the black cat, the grey cat or the white cat sat on the black mat and the white mat? :study ynq
+<PERSON> :quote is life the opposite of death ? :study ynq
+
+<PERSON> :quote pv s pv pn :creategraph whq
+<PERSON> :quote s pv pn :creategraph whq
+<PERSON> :quote s pv pn pv pn :creategraph whq
+<PERSON> :quote what sat on a mat? :study whq
+<PERSON> :quote who sat on a mat? :study whq
+<PERSON> :quote who sat near a large plant? :study whq
+<PERSON> :quote where is enix and martyn? :study whq
+<PERSON> :quote where is a black and white cat? :study whq
+<PERSON> :quote where is the cat? :study whq
+<PERSON> :quote who is very quiet? :study whq
+<PERSON> :quote where is the large white cat and the dog? :study whq
+<PERSON> :quote where is a cat and a plant? :study whq
+<PERSON> :quote where is she? :study whq
+<PERSON> :quote who was near the dog? :study whq
+<PERSON> :quote who was near the dog and me? :study whq
+<PERSON> :quote who was near her dog? :study whq
+<PERSON> :quote who was near her large dog? :study whq
+<PERSON> :quote what was being sat on by the cat? :study whq
+<PERSON> :quote what was sat on? :study whq
+<PERSON> :quote what sat quietly on the mat? :study whq
+<PERSON> :quote what quietly sat on the mat? :study whq
+<PERSON> :quote what sat on either the white cat or the black cat? :study whq
+<PERSON> :quote what sat on the white cat, the grey cat or the black cat? :study whq
+<PERSON> :quote how do you feel about the cat ? :study whq
+<PERSON> :quote what is the opposite of death ? :study whq
+<PERSON> :QUOTE what is the cat sat on ? :STUDY whq
+
+<PERSON> :quote pv pn :creategraph imperative
+<PERSON> :quote pv s pv pn :creategraph imperative
+<PERSON> :quote go home :study imperative
+<PERSON> :quote define a cat :study imperative
+<PERSON> :quote go quickly home to bed. :study imperative
+<PERSON> :quote do go home. :study imperative
+<PERSON> :quote quietly go home! :study imperative
+<PERSON> :quote quickly be quiet. :study imperative
+<PERSON> :quote quickly be quiet :study imperative
+<PERSON> :quote quickly be quiet! :study imperative
+<PERSON> :quote go quietly! :study imperative
+<PERSON> :quote go quietly. :study imperative
+<PERSON> :quote go quietly :study imperative
+<PERSON> :quote go home to martyn and enix :study imperative
+<PERSON> :quote go home to enix! :study imperative
+<PERSON> :quote go home to martyn. :study imperative
+<PERSON> :quote go home to a plant and a small black dog :study imperative
+<PERSON> :quote go home to the plant and the black and white cat :study imperative
+<PERSON> :quote sit the cat on the mat :study imperative
+<PERSON> :quote go to her :study imperative
+<PERSON> :quote go to her. :study imperative
+<PERSON> :quote go to her! :study imperative
+<PERSON> :quote go there :study imperative
+<PERSON> :quote go there. :study imperative
+<PERSON> :quote go there! :study imperative
+<PERSON> :quote go martyn :study imperative
+<PERSON> :quote go to her home. :study imperative
+<PERSON> :quote go to her large home. :study imperative
+
+<PERSON> :quote i me you :ppronouns
+<PERSON> :quote ism ist ful ation ness ment ity :stemadd noun
+<PERSON> :quote able fy :stemadd adjective
+<PERSON> :quote ify ise ize :stemadd verb
+<PERSON> :quote ly :stemadd adverb
+
+<PERSON> :quote do does done did :auxverbs
+
+<COMMENT> need to add tense examples
+
+<PERSON> :force eve :save

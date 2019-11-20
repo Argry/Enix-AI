@@ -1,0 +1,9 @@
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> :force + :define :add
+<PERSON> :force - :define :sub
+<PERSON> :force * :define :mul
+<PERSON> :force / :define :div
+<PERSON> :force ^ :define :exp
+<PERSON> :force ? :define :answer
+<PERSON> :force < :define :smaller
+<PERSON> :force > :define :greater

@@ -1,0 +1,13 @@
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote b :define :definition :quote awww
+<PERSON> b :null
+<ENiX>   Datablocks: 202, relationships: 38. Since last sleep: 433.
+<PERSON> :quote sad sympathetic shamed :hook b
+<PERSON> the cat sat on the mat
+<PERSON> :undo
+<ENiX>   Undoing last operation. (Note can only :UNDO once).
+<PERSON> the happy cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathy

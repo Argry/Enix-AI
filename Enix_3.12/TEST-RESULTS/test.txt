@@ -1,0 +1,3942 @@
+<SYSTEM> !LOAD Examples/:convbuf.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE chase chases chasing chased :GRAMMAR verb
+<ENiX>   Setting: "chase", "chases", "chasing" and "chased" to verb.
+<PERSON> :QUOTE chase chases chasing chased :ADDWREF chased
+<PERSON> :QUOTE chase chases chasing :TENSE present
+<PERSON> :QUOTE chased :TENSE past
+<PERSON> nothing chases nothing
+<ENiX>   Was nothing chasing nothing ?
+<PERSON> the mouse chases nothing
+<ENiX>   Was nothing chasing nothing ?
+<PERSON> the cat chases the mouse
+<PERSON> the dog chases the cat and the mouse
+<PERSON> the dog and the cat chases the cat
+<PERSON> the dog and the mouse chases the mouse
+<PERSON> the cat and the mouse chases the mouse
+<PERSON> the dog, the cat and the mouse chases the cat and the mouse
+<ENiX>   Was the mouse, the dog and the cat chasing the mouse and the cat ?
+<PERSON> what chases the mouse ?
+<ENiX>   The cat was chasing the mouse.
+The dog was chasing the mouse.
+The dog and the mouse was chasing the mouse.
+The cat and the mouse was chasing the mouse.
+The cat, the dog and the mouse was chasing the mouse.
+<PERSON> what chases the dog ?
+<ENiX>   Nothing was chasing the dog.
+The mouse was chasing the dog.
+<PERSON> what chases the cat ?
+<ENiX>   The dog was chasing the cat.
+The cat and the dog was chasing the cat.
+The cat, the dog and the mouse was chasing the cat.
+<PERSON> what is chased by the dog ?
+<ENiX>   The dog was chasing the cat.
+The dog was chasing the mouse.
+<PERSON> what is chased by the cat ?
+<ENiX>   The cat was chasing the mouse.
+<PERSON> :convbuf
+<ENiX>   PERSON: what is chased by the cat ?
+PERSON: what is chased by the dog ?
+ENiX: The cat, the dog and the mouse was chasing the cat.
+ENiX: The cat and the dog was chasing the cat.
+ENiX: The dog was chasing the cat.
+PERSON: what chases the cat ?
+ENiX: The mouse was chasing the dog.
+ENiX: Nothing was chasing the dog.
+PERSON: what chases the dog ?
+ENiX: The cat, the dog and the mouse was chasing the mouse.
+ENiX: The cat and the mouse was chasing the mouse.
+ENiX: The dog and the mouse was chasing the mouse.
+ENiX: The dog was chasing the mouse.
+ENiX: The cat was chasing the mouse.
+PERSON: what chases the mouse ?
+ENiX: Was the mouse, the dog and the cat chasing the mouse and the cat ?
+PERSON: the dog , the cat and the mouse chases the cat and the mouse
+PERSON: the cat and the mouse chases the mouse
+PERSON: the dog and the mouse chases the mouse
+PERSON: the dog and the cat chases the cat
+PERSON: the dog chases the cat and the mouse
+PERSON: the cat chases the mouse
+PERSON: the mouse chases nothing
+ENiX: Was nothing chasing nothing ?
+PERSON: nothing chases nothing
+<SYSTEM> !LOAD Examples/:verbosity.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE medium :VERBOSITY
+<SYSTEM> !LOAD Examples/:sleep.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :SLEEP
+<ENiX>   No :convbuf data to process - aborting.
+WARNING: Thinking Finished.
+<SYSTEM> !LOAD Examples/:schednew.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SchedOne 1 2 :SCHEDNEW :STATISTICS 
+<ENiX>   Startup datablock created.
+<PERSON> :SCHEDULER
+<PERSON> :QUOTE 2 :WAIT
+<PERSON> :SCHEDULER
+<ENiX>   Datablocks: 7, relationships: 0. Since last sleep: 10.
+<PERSON> :QUOTE SchedOne :SCHEDDEL
+<SYSTEM> !LOAD Examples/:sentencecmood.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECMOOD ynq :ANSWER
+<ENiX>   was the cat sitting on the mat ? 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECMOOD imperative :ANSWER
+<ENiX>   sit the cat on the mat 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECMOOD indicative :ANSWER
+<ENiX>   the cat was sitting on the mat 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECMOOD whq :ANSWER
+<ENiX>   what was sat on by the cat ? 
+<SYSTEM> !LOAD Examples/:scheduler.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SchedOne 1 2 :SCHEDNEW :STATISTICS 
+<ENiX>   Startup datablock created.
+<PERSON> :SCHEDULER
+<PERSON> :QUOTE 2 :WAIT
+<PERSON> :SCHEDULER
+<ENiX>   Datablocks: 7, relationships: 0. Since last sleep: 10.
+<PERSON> :QUOTE SchedOne :SCHEDDEL
+<SYSTEM> !LOAD Examples/:scheddel.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE SchedOne 1 2 :SCHEDNEW :STATISTICS 
+<ENiX>   Startup datablock created.
+<PERSON> :SCHEDULER
+<PERSON> :QUOTE 2 :WAIT
+<PERSON> :SCHEDULER
+<ENiX>   Datablocks: 7, relationships: 0. Since last sleep: 10.
+<PERSON> :QUOTE SchedOne :SCHEDDEL
+<SYSTEM> !LOAD Examples/nndemo-missing.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqA 0 1 2 3 4 5 ? 7 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> 0 7 :DOMAIN :CALCULATE seqA :ANSWER
+<ENiX>   0 1 2 3 4 5 6 7 
+<SYSTEM> !LOAD Examples/:sentenceemo.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote the joyful cat sat on the mat :sentenceemo :answer
+<ENiX>   0 100 100 0 0 
+<SYSTEM> !LOAD Examples/:lastbefore.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> NeverBeforeSeenItem
+<PERSON> :ALL :FIRSTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem 10 
+<PERSON> :ALL :FIRSTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :mode :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<PERSON> :ALL :LASTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem :mode 10 
+<PERSON> :ALL :LASTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<SYSTEM> !LOAD Examples/:lastafter.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> NeverBeforeSeenItem
+<PERSON> :ALL :FIRSTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem 10 
+<PERSON> :ALL :FIRSTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :mode :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<PERSON> :ALL :LASTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem :mode 10 
+<PERSON> :ALL :LASTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<SYSTEM> !LOAD Examples/:firstbefore.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> NeverBeforeSeenItem
+<PERSON> :ALL :FIRSTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem 10 
+<PERSON> :ALL :FIRSTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :mode :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<PERSON> :ALL :LASTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem :mode 10 
+<PERSON> :ALL :LASTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<SYSTEM> !LOAD Examples/:firstafter.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> NeverBeforeSeenItem
+<PERSON> :ALL :FIRSTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem 10 
+<PERSON> :ALL :FIRSTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :mode :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<PERSON> :ALL :LASTAFTER 10 :ANSWER
+<ENiX>   :qbuf :iibuffer :topic :convbuf neverbeforeseenitem :mode 10 
+<PERSON> :ALL :LASTBEFORE 10 :ANSWER
+<ENiX>   eve ly fy able pn pv s martyn enix also quickly patiently calmly very quietly not near there to down under put define runs scared run removed an a ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing systemmood 0 rateverbosity rateunderstood trigdeadline trigempathise trigargue verbosity understood then caused causes ! . ? :memory :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if when because what who how why which where medium argue :emomode empathise deadline trigunderstood trigverbosity 0.9 rateargue rateempathise ratedeadline off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf the life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog living do does doing done teach go ran feel good bad furry grey large small black white afraid his quiet fast and or nor either neither , her me ism ist ful ation ness ment ity :STEM ify ise ize 
+<SYSTEM> !LOAD Examples/:emomapper.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE 0 0 0 0 0 :SETEMOMODE SystemMood
+<PERSON> :QUOTE high :SETEMOMODE TrigArgue
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.10000002 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.19000003 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.27100004 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.34390004 0 
+<SYSTEM> !LOAD Examples/:emodebug.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE medium :SETEMOMODE argue
+<ENiX>   Startup datablock created.
+<PERSON> :EMODEBUG
+<ENiX>   =[Datablock 00000]==========================================
+Name                :emomode Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:05:24-2014/11/28
+Last Time           23:05:24-2014/11/28
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+argue                                                 medium
+============================================================
+<SYSTEM> !LOAD Examples/:debugaware.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqA 0 1 2 3 4 5 6 7 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE :DEBUGAWARE seqA
+<ENiX>   Equalisation matrix: 9 9 9 9 9 9 9 9 
+Concept is understood.
+<PERSON> :QUOTE seqB 0 1 2 3 4 5 6 6 :LEARN
+<PERSON> :QUOTE :DEBUGAWARE seqB
+<ENiX>   Equalisation matrix: 47075 46632 47075 8 47075 8 47075 9 
+Concept is partially understood.
+<PERSON> :QUOTE seqC 0 1 2 3 6 5 6 6 :LEARN
+<PERSON> :QUOTE :DEBUGAWARE seqC
+<ENiX>   Equalisation matrix: 47085 93624 92402 47032 47075 19 93689 47033 
+Concept is not understood.
+<SYSTEM> !LOAD Examples/:setemomode.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE medium :SETEMOMODE argue
+<ENiX>   Startup datablock created.
+<PERSON> :EMODEBUG
+<ENiX>   =[Datablock 00000]==========================================
+Name                :emomode Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          20:46:05-2014/11/26
+Last Time           20:46:05-2014/11/26
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+argue                                                 medium
+============================================================
+<SYSTEM> !LOAD Examples/:wait.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 2 :WAIT
+<ENiX>   Startup datablock created.
+<PERSON> :STATISTICS
+<ENiX>   Datablocks: 4, relationships: 0. Since last sleep: 5.
+<SYSTEM> !LOAD Examples/:graphs.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE ynq whq indicative imperative :GRAPHS
+<SYSTEM> !LOAD Examples/:meldvf.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :MELDVF
+<SYSTEM> !LOAD Examples/:subj.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE noun propernoun pronoun preposition adjective conjunction definitearticle indefinitearticle comma :SUBJ
+<SYSTEM> !LOAD Examples/:intersection.txt
+<PERSON> :QUOTE E :DEFINE B C
+<PERSON> :QUOTE A B C :INTERSECTION E :ANSWER
+<ENiX>   c b 
+<SYSTEM> !LOAD Examples/:cs2sentence.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> the cat sat on the mat
+<PERSON> :listcsvalues :answer :listsentences :answer :cs2sentence :foreach 1 :answer
+<ENiX>   cs3 cs2 cs1 
+cs2 
+the cat was sitting on the mat 
+<SYSTEM> !LOAD Examples/:setcondcause.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE if when because :SETCONDCAUSE
+<SYSTEM> !LOAD Examples/:exp.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 4 9 16 :EXP 0.25 :ANSWER
+<ENiX>   Startup datablock created.
+1.41421356 1.7320508 2 
+<SYSTEM> !LOAD Examples/:setcondeffect.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE causes caused then :SETCONDEFFECT
+<SYSTEM> !LOAD Examples/:setmood.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE LOVING :SETMOOD
+<SYSTEM> !LOAD Examples/:verson.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :VERSION
+<ENiX>   Startup datablock created.
+ENiX 3, AtlasNet. GPL [OvO]wl.
+<SYSTEM> !LOAD Examples/:study.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote pv s pv pn :creategraph whq
+<ENiX>   pv s pv pn 
+<PERSON> :quote how do you feel about the cat ? :study whq
+<SYSTEM> !LOAD Examples/:serialsend.txt
+<PERSON> :quote /dev/ttyUSB0 19200 19200 2238 1 0 0 0 20  :setserial COM1
+<PERSON> :quote test :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<PERSON> :quote 1wibble :serialsend com
+<ENiX>   ENiX unable to open (null)
+<PERSON> :quote :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<SYSTEM> !LOAD Examples/:true.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :TRUE :ANSWER
+<ENiX>   Startup datablock created.
+1 
+<SYSTEM> !LOAD Examples/:null.txt
+<PERSON> :NULL
+<SYSTEM> !LOAD Examples/:sentenceexp.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote a cat is a furry animal :sentenceassign
+<PERSON> :quote define a cat :sentenceexp
+<SYSTEM> !LOAD Examples/:personality.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :PERSONALITY :ANSWER
+<ENiX>   ENiX 3 Incarnation Eve 
+<SYSTEM> !LOAD Examples/langdemo.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> the white cat sat on the black mat
+<PERSON> the black cat sat on the white mat
+<PERSON> the black mat was sat on by the white cat
+<ENiX>   I know.
+<PERSON> was the white cat sat on the black mat ?
+<ENiX>   Yes.
+<PERSON> was the black cat sat on the black mat ?
+<ENiX>   No.
+<PERSON> what sat on the black mat ?
+<ENiX>   The white cat was sitting on the black mat.
+<PERSON> what sat on the mat ?
+<ENiX>   The white cat was sitting on the black mat.
+The black cat was sitting on the white mat.
+<PERSON> was the white cat and the black cat sat on the black mat ?
+<ENiX>   No.
+<PERSON> was the white cat or the black cat sat on the black mat ?
+<ENiX>   Yes.
+<PERSON> was the black mat sat on by the black cat ?
+<ENiX>   No.
+<PERSON> was the white mat sat on by the black cat ?
+<ENiX>   Yes.
+<SYSTEM> !LOAD Examples/:pattern.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqG 1 2 2 2 5 4 4 4 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE seqG :PATTERN
+<ENiX>   =[Relationship 00000]=======================================
+Name                    seqg Complexity           45509.0000
+Inputs            3.00000000 Outputs              3.00000000
+First Time          23:40:08-2013/08/07
+Last Time           23:40:08-2013/08/07
+Probability                                       1.00000000
+-[Logic Grid]-----------------------------------------------
+             Bitstream Layer Type Gate In1 In2
+                     0     0    2    1   0   1
+                     1     0    2    1   0   1
+                     1     0    2   12   0   2
+                     1     1    2    1   0   1
+                     2     0    1    2   2   2
+============================================================
+<SYSTEM> !LOAD Examples/:merge.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE a b c d :MERGE :ANSWER
+<ENiX>   Startup datablock created.
+abcd 
+<SYSTEM> !LOAD Examples/empdemo.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote sat :addwref sit
+<PERSON> :QUOTE TestA :DEFINE disgusted disgusted loving :EmpathyInj
+<PERSON> :QUOTE TestB :DEFINE loving disgusted disgusted :EmpathyInj
+<PERSON> :QUOTE TestC :DEFINE disgusted disgusted disgusted :EmpathyInj
+<PERSON> :QUOTE TestD :DEFINE good good good :EmpathyInj
+<PERSON> :QUOTE TestE :DEFINE loving loving loving :EmpathyInj
+<PERSON> :QUOTE ta tb tc td te tf :GRAMMAR adjective
+<ENiX>   Setting: "ta", "tb", "tc", "td", "te" and "tf" to adjective.
+<PERSON> :QUOTE 0 0 0 0 0 :ADDEMODEBUG ta
+<PERSON> :QUOTE 0 0 100 0 0 :ADDEMODEBUG tb
+<PERSON> :QUOTE 0 0 0 100 0 :ADDEMODEBUG tc
+<PERSON> :QUOTE 0 0 0 -100 0 :ADDEMODEBUG td
+<PERSON> :QUOTE 0 0 0 0 -100 :ADDEMODEBUG te
+<PERSON> :QUOTE 100 0 0 0 -100 :ADDEMODEBUG tf
+<PERSON> :QUOTE ta tb :POPEMODEBUG tc
+<PERSON> :QUOTE TestF :DEFINE ta ta ta :EmpathyInj
+<PERSON> :quote council tree :grammar noun
+<ENiX>   Setting: "council" and "tree" to noun.
+<PERSON> :quote removed :grammar verb
+<ENiX>   Setting: "removed" to verb.
+<PERSON> :quote under :grammar preposition
+<ENiX>   Setting: "under" to preposition.
+<PERSON> :quote emotestcases :save
+<ENiX>   Saving personality profile as emotestcases...
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the loving cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the loving council removed the tree :empathypre
+<PERSON> :empathypost
+<ENiX>   Outcome 1:
+:)
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote loving disgusted nervous :empathyinj
+<ENiX>   Injecting: loving disgusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   Outcome 2:
+-> [the angry council removed the tree]
+   [the joyful cat was sitting on the mat]
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the loving cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> TestA
+<ENiX>   Injecting: disgusted disgusted loving [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   Outcome 3:
+-> [the loving cat was sitting on the mat]
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the horrified cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the disgusted council removed the tree :empathypre
+<PERSON> :QUOTE horrified horrified horrified :EmpathyInj
+<ENiX>   Injecting: horrified horrified horrified [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   Outcome 4:
+-> [the horrified cat was sitting on the mat]
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> :QUOTE mother child :GRAMMAR noun
+<ENiX>   Setting: "mother" and "child" to noun.
+<PERSON> :QUOTE fed :GRAMMAR verb
+<ENiX>   Setting: "fed" to verb.
+<PERSON> the neutral mother fed the child
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote disgusted disgusted nervous :empathyinj
+<ENiX>   Injecting: disgusted disgusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   Outcome 5:
+->[the neutral mother was fed the child]
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote disgusted disgusted nervous :empathyinj
+<ENiX>   Injecting: disgusted disgusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   M    : 0 100 100 0 100 
+Oa   : 0 -100 -100 0 -100 
+Delta: 0 200 200 0 200 
+Outcome 6:
+DEBUG ComputeEmoResp 1
+----------------------
+DEBUG EmoUnderstanding
+DEBUG EmoMorality
+the joyful cat was sitting on the mat 
+DEBUG EmoMortality
+the joyful cat was sitting on the mat 
+DEBUG EmoAction: 0 100 100 0 100 
+DEBUG EmoAction 2: NO ACTION REQUIRED
+DEBUG EmoDetermination
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote remorseful disgusted nervous :empathyinj
+<ENiX>   Injecting: remorseful disgusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   M    : 0 100 100 0 100 
+Oa   : 100 100 0 100 100 
+Delta: -100 0 100 -100 0 
+Outcome 6:
+DEBUG ComputeEmoResp 1
+----------------------
+DEBUG EmoUnderstanding
+DEBUG EmoMorality
+DEBUG EmoMortality
+the joyful cat was sitting on the mat 
+DEBUG EmoAction: -100 0 100 -100 0 
+DEBUG EmoAction 3: PREVENTATIVE ACTION REQUIRED
+do not sit the joyful cat on the mat
+do not put the mat under the tree
+DEBUG EmoDetermination
+<PERSON> :quote emotestcases :load
+<ENiX>   Loading personality profile: emotestcases...
+Program killed by :load.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote contented disgusted nervous :empathyinj
+<ENiX>   Injecting: contented disgusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   M    : 0 100 100 0 100 
+Oa   : 100 100 100 -100 100 
+Delta: -100 0 0 100 0 
+Outcome 6:
+DEBUG ComputeEmoResp 1
+----------------------
+DEBUG EmoUnderstanding
+DEBUG EmoMorality
+the joyful cat was sitting on the mat 
+DEBUG EmoMortality
+the mat was under the tree 
+DEBUG EmoAction: -100 0 0 100 0 
+DEBUG EmoAction 4: ACTION REQUIRED
+sit the joyful cat on the mat
+put the mat under the tree
+DEBUG EmoDetermination
+<SYSTEM> !LOAD Examples/:nor.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :NOR 1 :ANSWER
+<ENiX>   Startup datablock created.
+0 0 
+<PERSON> :QUOTE 0 1 :NOR 0 :ANSWER
+<ENiX>   1 0 
+<SYSTEM> !LOAD Examples/:deyoda.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE mat cat on sat the the :DEYODA :FOREACH 1 :ANSWER
+<ENiX>   the mat was sitting on the cat 
+the cat was sitting on the mat 
+<PERSON> the mat was sat on by the cat
+<PERSON> :QUOTE mat cat on sat the the :DEYODA :FOREACH 1 :ANSWER
+<ENiX>   the cat was sitting on the mat 
+<SYSTEM> !LOAD Examples/:sentencecbase.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECBASE :ANSWER
+<ENiX>   the cat sit on the mat 
+<SYSTEM> !LOAD Examples/:predverbs.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<SYSTEM> !LOAD Examples/:getgraph.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :GETGRAPH :ANSWER
+<ENiX>   ynq whq indicative imperative 
+<SYSTEM> !LOAD Examples/:math.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 2 :STORE X
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 3 :STORE Y
+<PERSON> :QUOTE 5 :STORE Z
+<PERSON> X :ADD Y :MUL Z :ANSWER
+<ENiX>   25 
+<PERSON> :MATH ( X :ADD ( Y :MUL Z ) )
+<PERSON> :ANSWER
+<ENiX>   17 
+<SYSTEM> !LOAD Examples/:language.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE grammarenglish :LANGUAGE
+<ENiX>   Startup datablock created.
+<SYSTEM> !LOAD Examples/:grammar.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE parrot tree :GRAMMAR noun
+<ENiX>   Setting: "parrot" and "tree" to noun.
+<PERSON> :FORCE in :GRAMMAR preposition
+<ENiX>   Setting: "in" to preposition.
+<PERSON> The parrot sat in the tree.
+<PERSON> What sat in the tree?
+<ENiX>   The parrot was sitting in the tree.
+<SYSTEM> !LOAD Examples/:csrecon.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE q w e r t y :CSSAVE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE q w e r t y :CSADDR :ANSWER
+<ENiX>   cs5 
+<PERSON> :QUOTE cs5 :CSRECON :ANSWER
+<ENiX>   q w e r t y 
+<PERSON> :QUOTE cs4 :CSRECON :ANSWER
+<ENiX>   q w e r t 
+<PERSON> :QUOTE cs3 :CSRECON :ANSWER
+<ENiX>   q w e r 
+<SYSTEM> !LOAD Examples/:spath.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> The cat sat on the mat
+<PERSON> The mat was under the tree
+<PERSON> The cat was under the tree
+<PERSON> :QUOTE cat tree :SPATH
+<ENiX>   Chain of thoughts 0:
+the cat was sitting on the mat
+the mat was under the tree
+Chain of thoughts 1:
+the cat was under the tree
+<SYSTEM> !LOAD Examples/:route.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE a :QUALIFY b c 
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE b :QUALIFY d e 
+<PERSON> :QUOTE a :ROUTE b :ANSWER
+<ENiX>   a b 
+<PERSON> :QUOTE a :ROUTE d :ANSWER
+<ENiX>   a b d 
+<SYSTEM> !LOAD Examples/:emo2vec.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :force sympathetic :emo2vec :answer
+<ENiX>   100 100 0 100 100 
+<SYSTEM> !LOAD Examples/:mutate.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :STATISTICS
+<ENiX>   Startup datablock created.
+Datablocks: 0, relationships: 0. Since last sleep: 3.
+<PERSON> :FORCE 2 :MUTATE 1 3 :ANSWER
+<ENiX>   5 
+<SYSTEM> !LOAD Examples/:correct.txt
+<PERSON> seqC 2 1 3 3 2 5 2 7 :LEARN
+<PERSON> :ODDMAN seqC
+<PERSON> :CORRECT seqC :ANSWER
+<ENiX>   seqc 2 1 :unknown 3 2 5 2 7 
+<PERSON> :LEARN
+<PERSON> 0 7 :DOMAIN :CALCULATE seqC :ANSWER
+<ENiX>   2 1 2 3 2 5 2 7 
+<SYSTEM> !LOAD Examples/:serialrecv.txt
+<PERSON> :quote /dev/ttyUSB0 19200 19200 2238 1 0 0 0 20  :setserial COM1
+<PERSON> :quote test :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<PERSON> :quote wibble :serialsend com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<PERSON> :quote :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<SYSTEM> !LOAD Examples/:pronouns.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE i me you :PRONOUNS
+<SYSTEM> !LOAD Examples/:shortpath.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> The cat sat on the mat
+<PERSON> The mat was under the tree
+<PERSON> The cat was under the tree
+<PERSON> :QUOTE cat tree :SPATH :SHORTPATH
+<ENiX>   Chain of thoughts 0:
+the cat was sitting on the mat
+the mat was under the tree
+Chain of thoughts 1:
+the cat was under the tree
+<PERSON> :ANSWER
+<ENiX>   the cat was under the tree 
+<SYSTEM> !LOAD Examples/:tenses.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE tenses :TENSES
+<SYSTEM> !LOAD Examples/:dec.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote council tree :grammar noun
+<ENiX>   Setting: "council" and "tree" to noun.
+<PERSON> :quote removed :grammar verb
+<ENiX>   Setting: "removed" to verb.
+<PERSON> :quote under :grammar preposition
+<ENiX>   Setting: "under" to preposition.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :dec
+<ENiX>   Empathetic Data Summary:
+----------------------------------
+Operator sentence:
+the angry council removed the tree 
+
+Semantic Path 1:
+ -Before:
+  000 S: the joyful cat was sitting on the mat
+  000 E: 0 100 100 0 0 
+  000 N: joyful
+
+  001 S: the mat was under the tree
+  001 E: 0 -100 100 100 100 
+  001 N: angry
+
+ -After:
+  000 S: the joyful cat was sitting on the mat
+  000 E: 0 100 100 0 0 
+  000 N: joyful
+
+  001 S: the angry council removed the tree
+  001 E: 0 -100 100 100 100 
+  001 N: angry
+
+ -Unchanged:
+-[SUMMARY]-----------
+ Before     total: 0 100 100 0 0 
+ After      total: 0 0 200 100 100 
+ Unchanged  total: 0 0 0 0 0 
+ Difference total: 0 -100 100 100 100 
+---------------------
+
+Semantic Path 2:
+ -Before:
+  000 S: the mat was under the tree
+  000 E: 0 0 0 0 0 
+  000 N: neutral
+
+  000 S: the joyful cat was sitting on the mat
+  000 E: 0 100 100 0 0 
+  000 N: joyful
+
+  001 S: the mat was under the tree
+  001 E: 0 -100 100 100 100 
+  001 N: angry
+
+ -After:
+  000 S: the angry council removed the tree
+  000 E: 0 -100 100 100 100 
+  000 N: angry
+
+  000 S: the joyful cat was sitting on the mat
+  000 E: 0 100 100 0 0 
+  000 N: joyful
+
+  001 S: the angry council removed the tree
+  001 E: 0 -100 100 100 100 
+  001 N: angry
+
+ -Unchanged:
+-[SUMMARY]-----------
+ Before     total: 0 100 100 0 0 
+ After      total: 0 -100 300 200 200 
+ Unchanged  total: 0 0 0 0 0 
+ Difference total: 0 -200 200 200 200 
+---------------------
+
+-[Resultant]----------------------
+ Before:     0 200 200 0 0 
+ After:      0 -100 500 300 300 
+ Unchanged:  0 0 0 0 0 
+ Difference: 0 -300 300 300 300 
+----------------------------------
+
+Legend: A=After B=Before U=Unchanged D=Difference
+
+<SYSTEM> !LOAD Examples/:hook.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE b :DEFINE :DEFINITION :QUOTE Awww
+<PERSON> :QUOTE sad sympathetic shamed :HOOK b
+<PERSON> the happy cat sat on the mat
+<ENiX>   Setting: "happy" to adjective.
+<PERSON> the mat was under the tree
+<PERSON> :QUOTE the angry council removed the tree :EMPATHY
+<ENiX> awww
+<SYSTEM> !LOAD Examples/:save.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE test :SAVE
+<ENiX>   Startup datablock created.
+Saving personality profile as test...
+<SYSTEM> !LOAD Examples/:similar.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 2 3 5 7 11 13 17 19 :QUALIFY numbers prime
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 2 4 6 8 10 12 14 16 :QUALIFY numbers even
+<PERSON> :QUOTE prime :STORE SelectC
+<PERSON> :QUOTE even :STORE SelectD
+<PERSON> :QUOTE 2 3 4 5 :SIMILAR SelectC :ANSWER
+<ENiX>   3 5 
+<PERSON> :QUOTE 2 3 4 5 :SIMILAR SelectD :ANSWER
+<ENiX>   2 4 
+<SYSTEM> !LOAD Examples/:cmd.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE A :DEFINE :STATISTICS
+<ENiX>   Startup datablock created.
+<PERSON> :CMD A
+<ENiX>   Datablocks: 4, relationships: 0. Since last sleep: 5.
+<SYSTEM> !LOAD Examples/:map.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE grammarenglish :MAP
+<ENiX>   Moods of grammar:    ynq whq indicative imperative 
+Articles of grammar: startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark 
+ * ynq:
+          startsentence -> verb 
+            endsentence -> N/A 
+                   verb -> preposition verb adverb indefinitearticle definitearticle pronoun propernoun conjunction noun 
+                   noun -> verb conjunction adverb preposition questionmark definitearticle 
+                pronoun -> verb noun adjective questionmark 
+            preposition -> indefinitearticle propernoun pronoun definitearticle preposition noun questionmark conjunction 
+                 adverb -> preposition verb conjunction 
+              adjective -> adjective noun 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction verb adverb questionmark 
+            conjunction -> indefinitearticle definitearticle propernoun pronoun adverb 
+           questionmark -> endsentence 
+                  comma -> N/A 
+               fullstop -> N/A 
+              semicolon -> N/A 
+        exclamationmark -> N/A 
+          quotationmark -> N/A 
+ * whq:
+          startsentence -> pronoun preposition adverb 
+            endsentence -> N/A 
+                   verb -> preposition verb adverb indefinitearticle definitearticle pronoun propernoun 
+                   noun -> verb conjunction preposition questionmark 
+                pronoun -> verb noun adjective questionmark adverb 
+            preposition -> indefinitearticle pronoun definitearticle preposition noun questionmark conjunction verb 
+                 adverb -> preposition adjective verb 
+              adjective -> adjective conjunction noun questionmark 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction questionmark 
+            conjunction -> indefinitearticle definitearticle adjective propernoun pronoun 
+           questionmark -> endsentence 
+                  comma -> N/A 
+               fullstop -> N/A 
+              semicolon -> N/A 
+        exclamationmark -> N/A 
+          quotationmark -> N/A 
+ * indicative:
+          startsentence -> definitearticle propernoun pronoun adjective indefinitearticle conjunction noun 
+            endsentence -> N/A 
+                   verb -> adjective preposition verb adverb indefinitearticle definitearticle pronoun propernoun 
+                   noun -> verb endsentence conjunction exclamationmark adverb fullstop preposition 
+                pronoun -> verb endsentence fullstop exclamationmark noun adjective 
+            preposition -> indefinitearticle propernoun pronoun definitearticle preposition endsentence noun 
+                 adverb -> preposition adjective verb adverb endsentence 
+              adjective -> endsentence adjective conjunction noun preposition exclamationmark 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction exclamationmark verb fullstop endsentence adverb 
+            conjunction -> indefinitearticle definitearticle adjective propernoun pronoun 
+           questionmark -> N/A 
+                  comma -> N/A 
+               fullstop -> endsentence 
+              semicolon -> N/A 
+        exclamationmark -> endsentence 
+          quotationmark -> N/A 
+ * imperative:
+          startsentence -> verb adverb 
+            endsentence -> N/A 
+                   verb -> adjective preposition adverb indefinitearticle definitearticle propernoun noun 
+                   noun -> endsentence conjunction exclamationmark fullstop preposition 
+                pronoun -> endsentence fullstop exclamationmark noun adjective 
+            preposition -> indefinitearticle propernoun pronoun definitearticle endsentence noun fullstop exclamationmark 
+                 adverb -> verb endsentence noun exclamationmark fullstop 
+              adjective -> endsentence adjective conjunction noun exclamationmark fullstop 
+        definitearticle -> noun adjective 
+      indefinitearticle -> noun adjective 
+             propernoun -> conjunction exclamationmark fullstop endsentence 
+            conjunction -> indefinitearticle definitearticle adjective propernoun 
+           questionmark -> N/A 
+                  comma -> N/A 
+               fullstop -> endsentence 
+              semicolon -> N/A 
+        exclamationmark -> endsentence 
+          quotationmark -> N/A 
+<SYSTEM> !LOAD Examples/:false.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FALSE :ANSWER
+<ENiX>   Startup datablock created.
+0 
+<SYSTEM> !LOAD Examples/:auxverbs.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE do does done did :AUXVERBS
+<SYSTEM> !LOAD Examples/:size.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 2 3 4 5 :SIZE :ANSWER
+<ENiX>   Startup datablock created.
+5 
+<SYSTEM> !LOAD Examples/:creategraph.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote pv s pv pn :creategraph whq
+<ENiX>   pv s pv pn 
+<PERSON> :quote how do you feel about the cat ? :study whq
+<SYSTEM> !LOAD Examples/hldecision.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> if the mouse sat on the mat then the mouse sat on the mat
+<PERSON> if the cat sat on the mat then the cat sat on the mat
+<PERSON> if the dog sat on the mat then the dog sat on the mat
+<PERSON> if the mouse and the cat sat on the mat then the cat sat on the mat
+<PERSON> if the mouse and the dog sat on the mat then the mouse and the dog sat on the mat
+<PERSON> if the cat and the dog sat on the mat then the dog sat on the mat
+<PERSON> if the cat and the dog and the mouse sat on the mat then ?
+<ENiX>   Setting: "then" to preposition.
+The dog sat on the mat.
+The dog sat on the mat.
+<SYSTEM> !LOAD Examples/:reverse.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D E :REVERSE :ANSWER
+<ENiX>   Startup datablock created.
+e d c b a 
+<SYSTEM> !LOAD Examples/:signal.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 1 :SIGNAL :ANSWER
+<ENiX>   Startup datablock created.
+1 
+<PERSON> 3 :SIGNAL :ANSWER
+<ENiX>   0 
+<SYSTEM> !LOAD Examples/:swap.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> 1 :SUB 4 :ANSWER
+<ENiX>   Startup datablock created.
+-3 
+<PERSON> 4 :SWAP 1 :SUB :ANSWER
+<ENiX>   -3 
+<PERSON> :QUOTE 1 10 :DOMAIN :FOREACH 1 :SWAP 1 :DIV :END :ANSWER
+<ENiX>   1 0.5 0.33333333 0.25 0.2 0.16666666 0.14285714 0.125 0.11111111 0.1 
+<SYSTEM> !LOAD Examples/:delete.txt
+<PERSON> A B C
+<PERSON> :QUOTE A B C :DELETE
+<SYSTEM> !LOAD Examples/:groupset.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> crows :GROUPSET murder
+<PERSON> wolves :GROUPSET pack
+<PERSON> flock :GROUPSET seagulls
+<PERSON> :GROUPSHOW
+<ENiX>   =[Datablock 00000]==========================================
+Name                  :group Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:40:14-2013/08/07
+Last Time           23:40:14-2013/08/07
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+flock                                               seagulls
+wolves                                                  pack
+crows                                                 murder
+============================================================
+<SYSTEM> !LOAD Examples/:shwscope.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :SHWSCOPE :ANSWER
+<ENiX>   Startup datablock created.
+global 
+<SYSTEM> !LOAD Examples/:append.txt
+<PERSON> 6 7 :STORE A
+<PERSON> 1 2 3 4 5 :APPEND :FORCE A :ANSWER
+<ENiX>   1 2 3 4 5 6 7 
+<SYSTEM> !LOAD Examples/:delscope.txt
+<PERSON> :FORCE maths :ADDSCOPE
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local maths 
+<PERSON> :FORCE maths :DELSCOPE
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local 
+<SYSTEM> !LOAD Examples/:sentenceemo.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote the joyful cat sat on the mat :sentenceemo :answer
+<ENiX>   0 100 100 0 0 
+<SYSTEM> !LOAD Examples/:sempath.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote a cat is a furry animal :sentenceassign
+<PERSON> :quote an animal is a living thing :sentenceassign
+<PERSON> :quote cat thing :sempath :answer
+<ENiX>   furry living 
+<SYSTEM> !LOAD Examples/:prepend.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE PP :DEFINE D E
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE A B C :PREPEND PP :ANSWER
+<ENiX>   d e a b c 
+<SYSTEM> !LOAD Examples/:not.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :NOT :ANSWER
+<ENiX>   Startup datablock created.
+1 0 
+<SYSTEM> !LOAD Examples/:subset.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 2 3 4 5 6 :STORE SetA
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 4 5 6 :STORE SetB
+<PERSON> :QUOTE 4 8 :STORE SetC
+<PERSON> SetC :SUBSET :FORCE SetA :ANSWER
+<ENiX>   0 
+<PERSON> SetB :SUBSET :FORCE SetA :ANSWER
+<ENiX>   1 
+<SYSTEM> !LOAD Examples/:help.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :HELP :HOW
+<ENiX>   Startup datablock created.
+083: A    :HOW           B    High-Level,  finds symantic relation between A to B and stores in :ANSWER.
+<SYSTEM> !LOAD Examples/:equalizer.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqE 0 1 2 3 4 4 6 7 :EQUALIZER :ANSWER
+<ENiX>   Startup datablock created.
+0 1 2 3 4 4 6 6 
+<SYSTEM> !LOAD Examples/:listcsvalues.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> the cat sat on the mat
+<PERSON> :listcsvalues :answer :listsentences :answer :cs2sentence :foreach 1 :answer
+<ENiX>   cs3 cs2 cs1 
+cs2 
+the cat was sitting on the mat 
+<SYSTEM> !LOAD Examples/:serialtest.txt
+<PERSON> :quote /dev/ttyUSB0 19200 19200 2238 1 0 0 0 20  :setserial COM1
+<PERSON> :quote test :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<PERSON> :quote 1wibble :serialsend com
+<ENiX>   ENiX unable to open (null)
+<PERSON> :quote :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<SYSTEM> !LOAD Examples/:sleep.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :SLEEP
+<ENiX>   No :convbuf data to process - aborting.
+WARNING: Thinking Finished.
+<SYSTEM> !LOAD Examples/:trans.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> :quote e :define b c
+<ENiX>   Startup datablock created.
+<PERSON> :quote a b g d f :trans :except :quote e :answer
+<ENiX>   a g d f 
+<SYSTEM> !LOAD Examples/:nand.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :NAND 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 0 
+<PERSON> :QUOTE 0 1 :NAND 0 :ANSWER
+<ENiX>   1 1 
+<SYSTEM> !LOAD Examples/:sentenceunit.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :SENTENCEUNIT :FORCE verb
+<SYSTEM> !LOAD Examples/:cpyscope.txt
+<PERSON> :QUOTE maths lang :ADDSCOPE
+<PERSON> :QUOTE :SETSCOPE maths -
+<PERSON> :QUOTE - :DEFINE :SUB
+<PERSON> :QUOTE :SETSCOPE lang -
+<PERSON> :QUOTE - :DEFINE :ADD
+<PERSON> :QUOTE thirty :DEFINE 30
+<PERSON> :QUOTE five :DEFINE 5
+<PERSON> thirty - five :ANSWER
+<ENiX>   35 
+<PERSON> :QUOTE :SETSCOPE maths
+<PERSON> thirty - five :ANSWER
+<ENiX>   25 
+<PERSON> :QUOTE lang :CPYSCOPE maths
+<PERSON> :QUOTE :SETSCOPE lang
+<PERSON> thirty - five :ANSWER
+<ENiX>   25 
+<SYSTEM> !LOAD Examples/:csaddr.txt
+<PERSON> :QUOTE a b c d e :CSSAVE
+<PERSON> :QUOTE a b c d e :CSADDR :ANSWER
+<ENiX>   cs4 
+<SYSTEM> !LOAD Examples/:tense.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :quote the cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote sat :tense present
+<PERSON> :quote the cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  present           ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit present 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<SYSTEM> !LOAD Examples/:topic.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> the cat sat on the mat
+<PERSON> :TOPIC
+<ENiX>   We are currently discussing: the mat and the cat.
+<PERSON> the dog sat on the mat
+<PERSON> :TOPIC
+<ENiX>   We are currently discussing: the mat, the cat and the dog.
+<PERSON> the parrot was under the tree
+<ENiX>   Setting: "parrot" to noun.
+<PERSON> :TOPIC
+<ENiX>   We are currently discussing: the tree and the parrot.
+<PERSON> the black cat sat on the mat
+<PERSON> :TOPIC
+<ENiX>   We are currently discussing: the mat and the black cat.
+<SYSTEM> !LOAD Examples/:forget.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE command :DEFINE :statistics
+<ENiX>   Startup datablock created.
+<PERSON> command
+<ENiX>   Datablocks: 4, relationships: 0. Since last sleep: 5.
+<PERSON> :QUOTE command :FORGET
+<PERSON> command
+<SYSTEM> !LOAD Examples/:wrap.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE a b c d :WRAP :ANSWER
+<ENiX>   Startup datablock created.
+:quote a b c d :trans 
+<SYSTEM> !LOAD Examples/:equivalence.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 1 :EQUIVALENCE 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 
+<PERSON> :QUOTE 1 0 :EQUIVALENCE 1 :ANSWER
+<ENiX>   0 
+<SYSTEM> !LOAD Examples/:sentenceassign.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote a cat is a furry animal :sentenceassign
+<PERSON> :quote define a cat :sentenceexp
+<SYSTEM> !LOAD Examples/:treegenerate.txt
+<PERSON> :quote the cat sat on the mat :treegenerate :answer
+<ENiX>   ? 
+<SYSTEM> !LOAD Examples/:stemadd.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE ing ed s ation :STEMADD verb
+<ENiX>   Startup datablock created.
+<PERSON> :STEMSHOW
+<ENiX>   =[Datablock 00000]==========================================
+Name                   :STEM Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:40:29-2013/08/07
+Last Time           23:40:29-2013/08/07
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+verb                                          ing ed s ation
+============================================================
+<SYSTEM> !LOAD Examples/:sentiency.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE OFF :SENTIENCY
+<SYSTEM> !LOAD Examples/:addemodebug.txt
+<PERSON> 1000 50 0 :ADDEMODEBUG happy
+<SYSTEM> !LOAD Examples/:foreach.txt
+<PERSON> :PURGE
+<ENiX>   Startup datablock created.
+Memory destroyed.
+<PERSON> :QUOTE 3 2 5 76 3 1 :FOREACH 3 :ANSWER :END
+<ENiX>   Startup datablock created.
+3 2 5 
+76 3 1 
+<PERSON> :QUOTE A . A B . A B C . A B C D . :FOREACH . :ANSWER :END
+<ENiX>   a . 
+a b . 
+a b c . 
+a b c d . 
+<SYSTEM> !LOAD Examples/:and.txt
+<PERSON> 0 1 :AND 1 :ANSWER
+<ENiX>   0 1 
+<SYSTEM> !LOAD Examples/:oddman.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqF 0 1 2 3 4 5 5 7 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :ODDMAN :FORCE seqF :ANSWER :CALCULATE seqF :ANSWER
+<ENiX>   6 
+5 
+<PERSON> 5
+<PERSON> 6
+<SYSTEM> !LOAD Examples/:stemmeld.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> happy happily happiness
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE ly :STEMADD adverb
+<PERSON> :QUOTE ness :STEMADD noun
+<PERSON> :QUOTE happily :STEMMELD
+<SYSTEM> !LOAD Examples/:unstore.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE hsdfkj :SPLIT :STORE letters
+<ENiX>   Startup datablock created.
+<PERSON> :FORCE letters :UNSTORE :ANSWER
+<ENiX>   h s d f k j 
+<SYSTEM> !LOAD Examples/:limits.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE 4 :LIMITS
+<SYSTEM> !LOAD Examples/:spa.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE at by about with of in :SPA
+<SYSTEM> !LOAD Examples/:empathypre.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote council tree :grammar noun
+<ENiX>   Setting: "council" and "tree" to noun.
+<PERSON> :quote removed :grammar verb
+<ENiX>   Setting: "removed" to verb.
+<PERSON> :quote under :grammar preposition
+<ENiX>   Setting: "under" to preposition.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote disgusted digusted nervous :empathyinj
+<ENiX>   Injecting: disgusted digusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   M    : 0 100 100 0 100 
+Oa   : 0 -100 -100 0 -100 
+Delta: 0 200 200 0 200 
+Outcome 6:
+DEBUG ComputeEmoResp 1
+----------------------
+DEBUG EmoUnderstanding
+DEBUG EmoMorality
+the joyful cat was sitting on the mat 
+DEBUG EmoMortality
+the joyful cat was sitting on the mat 
+DEBUG EmoAction: 0 100 100 0 100 
+DEBUG EmoAction 2: NO ACTION REQUIRED
+DEBUG EmoDetermination
+<SYSTEM> !LOAD Examples/:all.txt
+<PERSON> :ALL :ANSWER
+<ENiX>   :CONCEPT_E_00002 :CONCEPT_E_00001 :CONCEPT_E_00000 :EMOTIONPIPELINE cs30 cs29 cs28 cs27 cs26 cs25 cs24 cs23 cs22 cs21 cs20 cs19 cs10 cs9 cs8 cs7 cs6 cs5 cs4 cs3 :iibuffer cs2 cs1 emotionrecord conversationtopic :topic adam affectate neglected shamed tormented envious raging exasperated irritated relieved aggressive contemptuous remorseful disappointed awed submissive optimistic loving -100 determination action mortality morality understanding 0.9 ize ise ify :STEM ity ment ness ation ful ist ism me her neither either nor or and fast quiet his afraid white black small large grey furry bad good feel ran go teach done doing does do living dog plant bed home computer name mat cat mouse tree council thing animals cats animal opposite death life the ; in of with about by at did unknown :avf active would unreal were has being progressive are two been have perfect past sat tenses on nothing yes where which why how who what ! . ? :memory :mode :scoperesolution grammarenglish startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark if causes caused because when then off ynq whq indicative imperative i he she it we you they them whom us 4 sitting sit sits present passive simple future will be :pvf one am three is was had :meldvf , a an removed run scared runs define put under down to there near not quietly very calmly patiently quickly also enix martyn s pv pn able fy ly eve 0 1 :emotionlist funny joyful sad trusting disgusted fearful angry surprised anticipating affectionate lustful longing cheerful zesty contented proud enthralled sympathetic horrified nervous neutral cs11 cs12 cs13 cs14 cs15 cs16 cs17 cs18 digusted 
+<SYSTEM> !LOAD Examples/tenses.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECTENSE past :ANSWER
+<ENiX>   the cat was sitting on the mat 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECTENSE present :ANSWER
+<ENiX>   the cat is sitting on the mat 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECTENSE future :ANSWER
+<ENiX>   the cat will be sitting on the mat 
+<PERSON> :QUOTE the mat was sat on by the cat :SENTENCECTENSE past :ANSWER
+<ENiX>   the mat was sat on by the cat 
+<PERSON> :QUOTE the mat was sat on by the cat :SENTENCECTENSE present :ANSWER
+<ENiX>   the mat is sat on by the cat 
+<PERSON> :QUOTE the mat was sat on by the cat :SENTENCECTENSE future :ANSWER
+<ENiX>   the mat will be sat on by the cat 
+<PERSON> :QUOTE the cats sat on the mat :SENTENCECTENSE past :ANSWER
+<ENiX>   the cats were sitting on the mat 
+<PERSON> :QUOTE the cats sat on the mat :SENTENCECTENSE present :ANSWER
+<ENiX>   the cats are sitting on the mat 
+<PERSON> :QUOTE the cats sat on the mat :SENTENCECTENSE future :ANSWER
+<ENiX>   the cats will be sitting on the mat 
+<PERSON> :QUOTE go home! :SENTENCECTENSE past :ANSWER
+<ENiX>   go home ! 
+<PERSON> :QUOTE go home! :SENTENCECTENSE present :ANSWER
+<ENiX>   go home ! 
+<PERSON> :QUOTE go home! :SENTENCECTENSE future :ANSWER
+<ENiX>   go home ! 
+<PERSON> :QUOTE was the cat sat on the mat? :SENTENCECTENSE past :ANSWER
+<ENiX>   was the cat sitting on the mat ? 
+<PERSON> :QUOTE was the cat sat on the mat? :SENTENCECTENSE present :ANSWER
+<ENiX>   is the cat sitting on the mat ? 
+<PERSON> :QUOTE was the cat sat on the mat? :SENTENCECTENSE future :ANSWER
+<ENiX>   will the cat be sitting on the mat ? 
+<PERSON> :QUOTE were the cats sat on the mat? :SENTENCECTENSE past :ANSWER
+<ENiX>   were the cats sitting on the mat ? 
+<PERSON> :QUOTE were the cats sat on the mat? :SENTENCECTENSE present :ANSWER
+<ENiX>   are the cats sitting on the mat ? 
+<PERSON> :QUOTE were the cats sat on the mat? :SENTENCECTENSE future :ANSWER
+<ENiX>   will the cats be sitting on the mat ? 
+<PERSON> :QUOTE was the mat sat on by the cat? :SENTENCECTENSE past :ANSWER
+<ENiX>   was the mat sat on by the cat ? 
+<PERSON> :QUOTE was the mat sat on by the cat? :SENTENCECTENSE present :ANSWER
+<ENiX>   is the mat sat on by the cat ? 
+<PERSON> :QUOTE was the mat sat on by the cat? :SENTENCECTENSE future :ANSWER
+<ENiX>   will the mat be sat on by the cat ? 
+<PERSON> :QUOTE what sat on the mat ? :SENTENCECTENSE past :ANSWER
+<ENiX>   what was sitting on the mat ? 
+<PERSON> :QUOTE what sat on the mat ? :SENTENCECTENSE present :ANSWER
+<ENiX>   what is sitting on the mat ? 
+<PERSON> :QUOTE what sat on the mat ? :SENTENCECTENSE future :ANSWER
+<ENiX>   what will be sitting on the mat ? 
+<PERSON> :QUOTE what was sat on by the cat ? :SENTENCECTENSE past :ANSWER
+<ENiX>   what was sat on by the cat ? 
+<PERSON> :QUOTE what was sat on by the cat ? :SENTENCECTENSE present :ANSWER
+<ENiX>   what is sat on by the cat ? 
+<PERSON> :QUOTE what was sat on by the cat ? :SENTENCECTENSE future :ANSWER
+<ENiX>   what will be sat on by the cat ? 
+<PERSON> :QUOTE cats :GROUPSET litter
+<PERSON> :QUOTE cats litter :GRAMMAR noun
+<ENiX>   Setting: "cats" and "litter" to noun.
+<PERSON> :QUOTE a litter of cats sat on the mat :SENTENCECTENSE past :ANSWER
+<ENiX>   a litter of cats was sitting on the mat 
+<PERSON> :QUOTE the cats sat on the mat :SENTENCECTENSE past :ANSWER
+<ENiX>   the cats were sitting on the mat 
+<SYSTEM> !LOAD Examples/:setnull.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE nothing :SETNULL
+<SYSTEM> !LOAD Examples/:learn.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqE 0 1 2 3 4 5 ? 7 :LEARN :ANSWER
+<ENiX>   Startup datablock created.
+9 
+<PERSON> 0 7 :DOMAIN :CALCULATE seqE :ANSWER
+<ENiX>   0 1 2 3 4 5 6 7 
+<SYSTEM> !LOAD Examples/:groupshow.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> crows :GROUPSET murder
+<PERSON> wolves :GROUPSET pack
+<PERSON> flock :GROUPSET seagulls
+<PERSON> :GROUPSHOW
+<ENiX>   =[Datablock 00000]==========================================
+Name                  :group Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:40:36-2013/08/07
+Last Time           23:40:36-2013/08/07
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+flock                                               seagulls
+wolves                                                  pack
+crows                                                 murder
+============================================================
+<SYSTEM> !LOAD Examples/:listsentences.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> the cat sat on the mat
+<PERSON> :listcsvalues :answer :listsentences :answer :cs2sentence :foreach 1 :answer
+<ENiX>   cs3 cs2 cs1 
+cs2 
+the cat was sitting on the mat 
+<SYSTEM> !LOAD Examples/:emofinds.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> the joyful cat sat on the mat
+<PERSON> :listcsvalues :listsentences :emofinds :quote joyful :answer
+<ENiX>   cs3 
+<SYSTEM> !LOAD Examples/:described.txt
+<PERSON> :QUOTE b c d f g h j k l m n p q r s t v w x y z :QUALIFY consonants letters
+<PERSON> :QUOTE a e i o u y :QUALIFY vowels letters
+<PERSON> :QUOTE vowels :STORE SelectA
+<PERSON> :QUOTE consonants :STORE SelectB
+<PERSON> :QUOTE a b c d e f g h i j k l m n o p q r s t u v w x y z :DESCRIBED SelectA
+<PERSON> :ANSWER
+<ENiX>   a e i o u y 
+<PERSON> :QUOTE a b c d e f g h i j k l m n o p q r s t u v w x y z :DESCRIBED SelectB
+<PERSON> :ANSWER
+<ENiX>   b c d f g h j k l m n p q r s t v w x y z 
+<SYSTEM> !LOAD Examples/:nouns.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE noun propernoun pronoun :NOUNS
+<SYSTEM> !LOAD Examples/:languagedebug.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :LANGUAGEDEBUG
+<ENiX>   =[:LANGUAGEDEBUG]===========================================
+-[COMPONENT]--------------[STATUS]--------------------------
+ :MODE....................OK
+ LANGUAGE.................grammarenglish
+ grammarenglish           OK
+ ENTRIES..................18
+ startsentence............OK
+ endsentence..............OK
+ :SENTENCEUNIT............OK
+ :QUESTION................OK
+ :YN......................OK
+ :WH......................OK
+ :SENTIENCY...............ACTIVATED
+ :NOUNS...................OK
+ :SUBJ....................OK
+ :PREDVERBS...............OK
+ :SETNULL.................OK
+ :ARGUE...................MISSING
+ :GRAPHS..................ynq whq indicative imperative 
+ :WHQEVENT................whq 
+ :YNQEVENT................ynq 
+ :INFOEVENT...............indicative 
+ :IMPEVENT................imperative 
+ :PVF.....................PRESENT
+ :AUXVERBS................4
+ [i] If you see any MISSING language is not setup properly.
+============================================================
+<SYSTEM> !LOAD Examples/:addwref.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE sit sitting :ADDWREF sat
+<PERSON> the cat is sitting on the mat
+<PERSON> what was sitting on the mat ?
+<ENiX>   I dont know.
+<PERSON> what is sitting on the mat ?
+<ENiX>   The cat was sat on the mat.
+<PERSON> what will be sitting on the mat ?
+<ENiX>   I dont know.
+<SYSTEM> !LOAD Examples/:addscope.txt
+<PERSON> :QUOTE maths language :ADDSCOPE
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   global local maths language 
+<SYSTEM> !LOAD Examples/:empathypost.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote council tree :grammar noun
+<ENiX>   Setting: "council" and "tree" to noun.
+<PERSON> :quote removed :grammar verb
+<ENiX>   Setting: "removed" to verb.
+<PERSON> :quote under :grammar preposition
+<ENiX>   Setting: "under" to preposition.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote disgusted digusted nervous :empathyinj
+<ENiX>   Injecting: disgusted digusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   M    : 0 100 100 0 100 
+Oa   : 0 -100 -100 0 -100 
+Delta: 0 200 200 0 200 
+Outcome 6:
+DEBUG ComputeEmoResp 1
+----------------------
+DEBUG EmoUnderstanding
+DEBUG EmoMorality
+the joyful cat was sitting on the mat 
+DEBUG EmoMortality
+the joyful cat was sitting on the mat 
+DEBUG EmoAction: 0 100 100 0 100 
+DEBUG EmoAction 2: NO ACTION REQUIRED
+DEBUG EmoDetermination
+<SYSTEM> !LOAD Examples/:csdebug.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE a b c d e :CSSAVE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE cs4 :CSDEBUG
+<ENiX>   =[Metablock 00000]==========================================
+Address                                            a b c d e
+Grammar                                                    ?
+Purpose                    ? Emotion                       ?
+First Time          13:49:03-2014/11/23
+Last Time           13:49:03-2014/11/23
+Probability       1.00000000 Commands                      ?
+============================================================
+<SYSTEM> !LOAD Examples/:unknown.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE DemoB 0 1024 0 1025 :UNKNOWN :UNKNOWN 0 1027 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 0 7 :DOMAIN :CALCULATE DemoB :ANSWER
+<ENiX>   0 1024 0 1025 0 1026 0 1027 
+<SYSTEM> !LOAD Examples/:nlpawrap.txt
+<PERSON> :force naxi :load
+<ENiX>   Loading personality profile: naxi...
+Program killed by :load.
+<PERSON> :quote sat :addwref sit
+<PERSON> the cat sat on the mat
+<PERSON> the dog sat on the mat
+<PERSON> a cat is a furry animal
+<PERSON> a dog is a furry animal
+<PERSON> the mat is under the tree
+<PERSON> :quote temp :define the mat is under the tree
+<PERSON> :quote the cat sat on the mat :nlpawrap :trans temp :foreach 1 :answer
+<ENiX>   do not sit the dog on the mat 
+do not put the mat under the tree 
+do not sit the cat on the mat 
+<SYSTEM> !LOAD Examples/humour.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :EMOTIONLIST :ANSWER
+<ENiX>   neutral nervous horrified sympathetic neglected shamed tormented envious raging exasperated irritated relieved enthralled proud contented zesty cheerful longing lustful affectionate aggressive contemptuous remorseful disappointed awed submissive loving optimistic anticipating surprised angry fearful disgusted trusting sad joyful funny bad good 
+<PERSON> :QUOTE the cat sat on the good mat :SENTENCEEMO
+<PERSON> :QUOTE the sad cat sat on the mat :SENTENCEEMO
+<ENiX>   haha
+<SYSTEM> !LOAD Examples/:stemfind.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> damn damned damnation damning
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE ing ed s ation :STEMADD verb
+<PERSON> damn damned damnation damning
+<PERSON> :QUOTE damnation :STEMFIND :ANSWER
+<ENiX>   damning damnation damned damn 
+<SYSTEM> !LOAD Examples/:impevent.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE imperative :IMPEVENT
+<SYSTEM> !LOAD Examples/:mode.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :MODE
+<ENiX>   Startup datablock created.
+=[Datablock 00000]==========================================
+Name                   :mode Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:40:40-2013/08/07
+Last Time           23:40:40-2013/08/07
+Probability                1 Commands                    cs0
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+:memlimit                                                 -1
+:memexp                                                    7
+:memprob                                                 0.9
+:memrate                                                0.25
+:memthresh                                            0.0001
+:memnew                                                    0
+============================================================
+<SYSTEM> !LOAD Examples/:if.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :TRUE :SWAP - :IF :FORCE 2 :ANSWER :OTHERWISE :STATISTICS :END
+<ENiX>   Startup datablock created.
+2 
+<PERSON> :FALSE :SWAP - :IF :FORCE 2 :ANSWER :OTHERWISE :STATISTICS :END
+<ENiX>   Datablocks: 5, relationships: 0. Since last sleep: 7.
+<SYSTEM> !LOAD Examples/:think.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :FORCE medium :ARGUE
+<PERSON> :QUOTE a b c d e :GRAMMAR noun
+<ENiX>   Setting: "a", "b", "c", "d" and "e" to noun.
+<PERSON> :QUOTE chasing :GRAMMAR verb
+<ENiX>   Setting: "chasing" to verb.
+<PERSON> the a and the b was chasing the a
+<PERSON> the c was chasing the b
+<PERSON> the a was chasing the a
+<PERSON> the b was chasing the b
+<PERSON> nothing was chasing nothing
+<ENiX>   Was the b chasing the b ?
+<PERSON> yes
+<PERSON> :THINK
+<ENiX>   I don't understand: "Was the b chasing the b ?"
+<PERSON> no
+<PERSON> :THINK
+<ENiX>   I understand: "Was the b chasing the b ?"
+<SYSTEM> !LOAD Examples/:union.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 2 3 4 5 :STORE B
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 3 4 5 6 7 8 :UNION B :ANSWER
+<ENiX>   5 4 3 2 1 0 8 7 6 5 4 3 
+<PERSON> :SHRINK :ANSWER
+<ENiX>   6 7 8 0 1 2 3 4 5 
+<SYSTEM> !LOAD Examples/:showprof.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :SHOWPROF
+<ENiX>   adam
+emotestcases
+ENiX3
+eve
+hal
+naxi
+test
+Startup datablock created.
+<SYSTEM> !LOAD Examples/:popemodebug.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE SAD SYMPATHETIC :POPEMODEBUG LOVING
+<SYSTEM> !LOAD Examples/:meld.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE grammarenglish :MELD eve
+<ENiX>   Startup datablock created.
+=[:MELD]========================================[Overwrite][Copy]
+grammarenglish                                   ......Yes  .Yes
+startsentence                                    .......No  .Yes
+endsentence                                      .......No  .Yes
+verb                                             .......No  .Yes
+noun                                             .......No  .Yes
+pronoun                                          .......No  .Yes
+preposition                                      .......No  .Yes
+adverb                                           .......No  .Yes
+adjective                                        .......No  .Yes
+definitearticle                                  .......No  .Yes
+indefinitearticle                                .......No  .Yes
+propernoun                                       .......No  .Yes
+conjunction                                      .......No  .Yes
+questionmark                                     .......No  .Yes
+comma                                            .......No  .Yes
+fullstop                                         .......No  .Yes
+semicolon                                        .......No  .Yes
+exclamationmark                                  .......No  .Yes
+quotationmark                                    .......No  .Yes
+==========================================================[Done]=
+<SYSTEM> !LOAD Examples/:stemclass.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> likely likeness
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE ly :STEMADD adverb
+<PERSON> :QUOTE ness :STEMADD noun
+<PERSON> :QUOTE likeness :STEMCLASS
+<PERSON> :QUOTE likeness :DEBUG
+<ENiX>   =[Datablock 00002]==========================================
+Name                likeness Grammar                    noun
+Purpose                    ? Emotion                       ?
+First Time          23:40:40-2013/08/07
+Last Time           23:40:41-2013/08/07
+Probability                1 Commands                      ?
+============================================================
+<SYSTEM> !LOAD Examples/:debug.txt
+<PERSON> :QUOTE wibble :STORE wobble
+<PERSON> :QUOTE wobble :DEBUG
+<ENiX>   =[Datablock 00011]==========================================
+Name                  wobble Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:40:41-2013/08/07
+Last Time           23:40:41-2013/08/07
+Probability                1 Commands                 wibble
+============================================================
+<SYSTEM> !LOAD Examples/:setwh.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE what who how why which when where :SETWH
+<SYSTEM> !LOAD Examples/:xor.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :XOR 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 0 
+<PERSON> :QUOTE 0 1 :XOR 0 :ANSWER
+<ENiX>   0 1 
+<SYSTEM> !LOAD Examples/:setyn.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE verb :SETYN
+<SYSTEM> !LOAD Examples/:split.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE ijwdfhsdf :SPLIT :ANSWER
+<ENiX>   Startup datablock created.
+i j w d f h s d f 
+<PERSON> :FORCE 234234234 :SPLIT :ANSWER
+<ENiX>   2 3 4 2 3 4 2 3 4 
+<SYSTEM> !LOAD Examples/:smaller.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 1 2 3 4 5 6 :SMALLER 6 :ANSWER
+<ENiX>   Startup datablock created.
+0 
+<PERSON> :QUOTE 1 2 3 4 5 6 :SMALLER 7 :ANSWER
+<ENiX>   1 
+<SYSTEM> !LOAD Examples/:qualify.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE cat :QUALIFY furry animal
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE tortoise :QUALIFY bald animal
+<PERSON> :QUOTE furry :STORE SelectB
+<PERSON> :QUOTE bald :STORE SelectC
+<PERSON> :QUOTE cat tortoise :DESCRIBED SelectB :ANSWER
+<ENiX>   cat 
+<PERSON> :QUOTE cat tortoise :DESCRIBED SelectC :ANSWER
+<ENiX>   tortoise 
+<SYSTEM> !LOAD Examples/:orthogonal.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 2 4 4 5 6 7 :ORTHOGONAL
+<ENiX>   Startup datablock created.
+FIX:       0 1 2 4 4 5 6 7 
+OK:        0 1 2 3 4 5 6 7 
+Transform: 0 1 2 3 4 5 6 7 
+FIX:       170 204 240 
+OK:        170 204 178 148 170 204 178 148 
+Transform: 170 204 178 148 170 204 178 148 
+OK:        0 85 170 51 204 85 34 255 
+Sequence orthognolly understood: 0 85 170 51 204 85 34 255 
+<SYSTEM> !LOAD Examples/sentences.txt
+<PERSON> :QUOTE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE the black and white cat sat quietly quickly on the white mat :SENTENCEDEBUG
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  and                          conjunction  ?                 ?
+  white                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  quietly                           adverb  ?                 ?
+  quickly                           adverb  ?                 ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the black and white cat 
+  PredicateNounBlock                 on the white mat 
+  PredicateVerbBlock                 sit quietly quickly 
+  Final Subject                      [cat black white]
+  Final Predicate                    [mat white on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past quickly quietly 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote neither the white cat or the black cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  neither                      conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  or                           conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            neither the white cat or the black cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat black][cat white]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          NOR / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote either the white cat or the black cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  either                       conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  or                           conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            either the white cat or the black cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat black][cat white]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          XOR / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote neither the white cat nor the black cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  neither                      conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  nor                          conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            neither the white cat nor the black cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat black][cat white]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          NOR / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote the white cat or the black cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  or                           conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the white cat or the black cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat black][cat white]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          OR / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote the white cat and the black cat sat on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  and                          conjunction  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the white cat and the black cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat black][cat white]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote the black cat sat on the white mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the black cat 
+  PredicateNounBlock                 on the white mat 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat black]
+  Final Predicate                    [mat white on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote the white mat was sat on by the black cat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+  was                                 verb  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  by                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Passive
+  SentenceStructure                  s pv pn 
+  Subject                            the black cat 
+  PredicateNounBlock                 on by the white mat 
+  PredicateVerbBlock                 was sit 
+  Final Subject                      [cat black]
+  Final Predicate                    [mat white on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote was the black cat sat on the white mat? :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  was                                 verb  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+  ?                           questionmark  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      ynq
+  Sentence voice                     Active
+  SentenceStructure                  pv s pv pn 
+  Subject                            the black cat 
+  PredicateNounBlock                 on the white mat ? 
+  PredicateVerbBlock                 was sit 
+  Final Subject                      [cat black]
+  Final Predicate                    [mat white on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote was the white mat sat on by the black cat ? :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  was                                 verb  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  by                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  ?                           questionmark  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      ynq
+  Sentence voice                     Passive
+  SentenceStructure                  pv s pv pn 
+  Subject                            the black cat ? 
+  PredicateNounBlock                 on by the white mat 
+  PredicateVerbBlock                 was sit 
+  Final Subject                      [cat black]
+  Final Predicate                    [mat white on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote what sat on the white mat ? :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  what                             pronoun  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+  ?                           questionmark  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      whq
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn pv pn 
+  Subject                            what 
+  PredicateNounBlock                 on the white mat ? 
+  PredicateVerbBlock                 sit 
+  Final Subject                      [what]
+  Final Predicate                    [mat white on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote what was sat on by the black cat ? :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  what                             pronoun  ?                 ?
+  was                                 verb  ?                 ?
+  sat                                 verb  past              ?
+  on                           preposition  ?                 ?
+  by                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  ?                           questionmark  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      whq
+  Sentence voice                     Passive
+  SentenceStructure                  s pv pn pv pn 
+  Subject                            the black cat ? 
+  PredicateNounBlock                 on by what 
+  PredicateVerbBlock                 was sit 
+  Final Subject                      [cat black]
+  Final Predicate                    [what on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit past 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote sit the black cat on the white mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  sit                                 verb  present           ?
+  the                      definitearticle  ?                 ?
+  black                          adjective  ?                 ?
+  cat                                 noun  ?                 ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  white                          adjective  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      imperative
+  Sentence voice                     Active
+  SentenceStructure                  pv s pv pn 
+  Subject                            the black cat on the white mat 
+  PredicateNounBlock                 N/A
+  PredicateVerbBlock                 sit 
+  Final Subject                      [cat mat black white on]
+  Final Predicate                    [(null)]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit present 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<PERSON> :quote the cat did not sit on the mat :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  the                      definitearticle  ?                 ?
+  cat                                 noun  ?                 ?
+  did                                 verb  ?                 ?
+  not                               adverb  ?                 ?
+  sit                                 verb  present           ?
+  on                           preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  mat                                 noun  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            the cat 
+  PredicateNounBlock                 on the mat 
+  PredicateVerbBlock                 did not sit 
+  Final Subject                      [cat]
+  Final Predicate                    [mat on]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         sit present 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         Yes
+================================================================
+<PERSON> :quote nothing happens :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  nothing                          pronoun  ?                 ?
+  happens                             verb  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      indicative
+  Sentence voice                     Active
+  SentenceStructure                  s pv pn 
+  Subject                            nothing 
+  PredicateNounBlock                 N/A
+  PredicateVerbBlock                 happens 
+  Final Subject                      [nothing]
+  Final Predicate                    [(null)]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         happens present 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<SYSTEM> !LOAD Examples/:nlpcwrap.txt
+<PERSON> :force naxi :load
+<ENiX>   Loading personality profile: naxi...
+Program killed by :load.
+<PERSON> the cat sat on the mat
+<PERSON> the dog sat on the mat
+<PERSON> a cat is a furry animal
+<PERSON> a dog is a furry animal
+<PERSON> the mat is under the tree
+<PERSON> :quote temp :define the mat is under the tree
+<PERSON> :quote the cat sat on the mat :nlpcwrap :trans temp :foreach 1 :answer
+<ENiX>   put the mat under the tree 
+sit the cat on the mat 
+<SYSTEM> !LOAD Examples/:lstcomb.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B A :LSTCOMB :FOREACH 1 :ANSWER
+<ENiX>   Startup datablock created.
+b a a 
+a a b 
+a b a 
+<SYSTEM> !LOAD Examples/:otherwise.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :TRUE :SWAP - :IF 1 10 :DOMAIN :OTHERWISE 1 5 :DOMAIN :END :ANSWER
+<ENiX>   Startup datablock created.
+1 2 3 4 5 6 7 8 9 10 
+<PERSON> :FALSE :SWAP - :IF 1 10 :DOMAIN :OTHERWISE 1 5 :DOMAIN :END :ANSWER
+<ENiX>   1 2 3 4 5 
+<SYSTEM> !LOAD Examples/:setscope.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE Example :ADDSCOPE
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE :SETSCOPE Example variable
+<PERSON> :QUOTE variable :DEFINE it works
+<PERSON> :QUOTE :SETSCOPE Global
+<PERSON> :DEFINITION variable
+<ENiX>   variable 
+<PERSON> :QUOTE :SETSCOPE Example
+<PERSON> :DEFINITION variable
+<ENiX>   it works 
+<SYSTEM> !LOAD Examples/:verbtableadd.txt
+<PERSON> :quote adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote whq feel ?  :verbtableadd :sentenceemo :answer
+<PERSON> :quote how do you feel about the cat ? :verbpostproc
+<ENiX>   0 0 0 0 0 
+<PERSON> :vec2emo :answer
+<ENiX>   neutral 
+<SYSTEM> !LOAD Examples/:exp.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 4 9 16 :EXP 0.25 :ANSWER
+<ENiX>   Startup datablock created.
+1.41421356 1.7320508 2 
+<SYSTEM> !LOAD Examples/:element.txt
+<PERSON> :QUOTE 2 4 6 8 10 :STORE evens
+<PERSON> :QUOTE 2 10 4 :ELEMENT evens :ANSWER
+<ENiX>   1 
+<PERSON> :QUOTE 2 10 4 3 :ELEMENT evens :ANSWER
+<ENiX>   0 
+<SYSTEM> !LOAD Examples/:sub.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 15 12 46 78 :SUB 10 :ANSWER
+<ENiX>   Startup datablock created.
+5 2 36 68 
+<SYSTEM> !LOAD Examples/:assignemo.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :ASSIGNEMO :( :/ :)
+<SYSTEM> !LOAD Examples/:setbias.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE 0.9 :SETBIAS
+<SYSTEM> !LOAD Examples/:setquestion.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :FORCE ? :SETQUESTION
+<ENiX>   Startup datablock created.
+<SYSTEM> !LOAD Examples/:setgender.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE Adam :SETGENDER male
+<ENiX>   Setting: "adam" to male.
+<SYSTEM> !LOAD Examples/:or.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 1 :OR 1 :ANSWER
+<ENiX>   Startup datablock created.
+1 1 
+<PERSON> :QUOTE 0 1 :OR 0 :ANSWER
+<ENiX>   0 1 
+<SYSTEM> !LOAD Examples/:aavf.txt
+<PERSON> :QUOTE passive past unreal :AAVF would have been
+<SYSTEM> !LOAD Examples/:whqevent.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE whq :WHQEVENT
+<SYSTEM> !LOAD Examples/:tol.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE ON :TOL
+<SYSTEM> !LOAD Examples/:example.txt
+<PERSON> :example :listbytopic
+<ENiX>   <PERSON> :force eve :load
+<PERSON> the cat sat on the mat
+<PERSON> :quote cat :listbytopic :answer
+<SYSTEM> !LOAD Examples/:vec2emo.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote 100 100 0 100 100 :vec2emo :answer
+<ENiX>   sympathetic 
+<SYSTEM> !LOAD Examples/:emotionlist.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :EMOTIONLIST :ANSWER
+<ENiX>   neutral nervous horrified sympathetic neglected shamed tormented envious raging exasperated irritated relieved enthralled proud contented zesty cheerful longing lustful affectionate aggressive contemptuous remorseful disappointed awed submissive loving optimistic anticipating surprised angry fearful disgusted trusting sad joyful funny bad good 
+<SYSTEM> !LOAD Examples/:domain.txt
+<PERSON> 1 5 :DOMAIN :ANSWER
+<ENiX>   1 2 3 4 5 
+<SYSTEM> !LOAD Examples/:first.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE a b c d e :FIRST 2 :ANSWER
+<ENiX>   Startup datablock created.
+a b 
+<SYSTEM> !LOAD Examples/:unwrap.txt
+<PERSON> :PURGE
+<ENiX>   Startup datablock created.
+Memory destroyed.
+<PERSON> :QUOTE start 1 2 3 4 5 6 end :UNWRAP :ANSWER
+<ENiX>   Startup datablock created.
+1 2 3 4 5 6 
+<SYSTEM> !LOAD Examples/:stembase.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> damn damned damnation damning
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE ing ed s ation :STEMADD verb
+<PERSON> damn damned damnation damning
+<PERSON> :QUOTE damnation damning :STEMBASE :ANSWER
+<ENiX>   damn 
+<SYSTEM> !LOAD Examples/:purge.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<SYSTEM> !LOAD Examples/:csload.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE hello world :STORE buffer
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE 2 3 5 7 11 :CSSAVE buffer
+<PERSON> :QUOTE 2 3 5 7 11 :CSLOAD :ANSWER
+<ENiX>   hello world 
+<SYSTEM> !LOAD Examples/:phrase.txt
+<PERSON> :FORCE EVE :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE mat cat on sat the the :PHRASE :FOREACH 1 :ANSWER
+<ENiX>   the mat was sitting on the cat 
+the cat was sitting on the mat 
+<SYSTEM> !LOAD Examples/:like.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE lion tiger :LIKE cat
+<ENiX>   Startup datablock created.
+<SYSTEM> !LOAD Examples/:except.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> :quote e :define b c
+<ENiX>   Startup datablock created.
+<PERSON> :quote a b g d f :trans :except :quote e :answer
+<ENiX>   a g d f 
+<SYSTEM> !LOAD Examples/:calculate.txt
+<PERSON> :QUOTE seqA 0 1 0 3 ? ? 0 7 :LEARN
+<PERSON> 0 1 2 3 4 5 6 7 :CALCULATE seqA :ANSWER
+<ENiX>   0 1 0 3 0 5 0 7 
+<SYSTEM> !LOAD Examples/:mul.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 5 4 9 8 :MUL 15 :ANSWER
+<ENiX>   Startup datablock created.
+75 60 135 120 
+<SYSTEM> !LOAD Examples/:understand.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE primes 2 3 5 7 11 13 17 19 :LEARN
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE :UNDERSTAND primes :ANSWER
+<ENiX>   0 
+<SYSTEM> !LOAD Examples/:verbpostproc.txt
+<PERSON> :quote adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote whq feel ?  :verbtableadd :sentenceemo :answer
+<PERSON> :quote how do you feel about the cat ? :verbpostproc
+<ENiX>   0 0 0 0 0 
+<SYSTEM> !LOAD Examples/:listbytopic.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> the cat sat on the mat
+<PERSON> :quote cat :listbytopic :answer
+<ENiX>   cs2 
+<SYSTEM> !LOAD Examples/:lstscope.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :LSTSCOPE :ANSWER
+<ENiX>   Startup datablock created.
+global local 
+<SYSTEM> !LOAD Examples/:context.txt
+<PERSON> :force eve :load
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> apples :CONTEXT
+<PERSON> :TOPIC
+<SYSTEM> !LOAD Examples/:quote.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> :quote e :define b c
+<ENiX>   Startup datablock created.
+<PERSON> :quote a b g d f :trans :except :quote e :answer
+<ENiX>   a g d f 
+<SYSTEM> !LOAD Examples/:locklang.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE on :LOCKLANG
+<SYSTEM> !LOAD Examples/:borg.txt
+<PERSON> :FORCE cs18 :PATTERN
+<ENiX>   Concept not found.
+<PERSON> :FORCE cs18 :BORG
+<PERSON> :FORCE cs18 :PATTERN
+<ENiX>   Concept not found.
+<SYSTEM> !LOAD Examples/:read.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE :READ data1.txt
+<ENiX>   Startup datablock created.
+Abort operation: Open fail for ./data1.txt
+<SYSTEM> !LOAD Examples/:apvf.txt
+<PERSON> :QUOTE active past perfect :APVF had
+<SYSTEM> !LOAD Examples/:nicefy.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE 0 1 2 3 4 5 5 7 :NICEFY 2 :ANSWER
+<ENiX>    + NICEFY 0 1 2 3 4 5 6 7 
+0 1 2 3 4 5 6 7 
+<PERSON> :QUOTE 0 1 2 3 4 5 5 7 :NICEFY 0 :ANSWER
+<ENiX>    - NICEFY 0 1 2 1 4 5 5 7 
+0 1 2 1 4 5 5 7 
+<SYSTEM> !LOAD Examples/:store.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 45 46 :STORE pair
+<ENiX>   Startup datablock created.
+<PERSON> :DEFINITION pair
+<ENiX>   45 46 
+<SYSTEM> !LOAD Examples/:addemo.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE happy neutral sad :ADDEMO
+<SYSTEM> !LOAD Examples/:definition.txt
+<PERSON> :FORCE a :DEFINE wibble
+<PERSON> :DEFINITION a
+<ENiX>   wibble 
+<PERSON> :DEFINITION :FORCE a
+<ENiX>   a 
+<PERSON> :QUOTE :DEFINITION a
+<ENiX>   a 
+<PERSON> :QUOTE true :DEFINE false
+<PERSON> :QUOTE false :DEFINE true
+<PERSON> :DEFINITION true
+<ENiX>   Paradox Handling: Ignoring paradox or cyclic definition...
+true 
+<PERSON> :QUOTE GNU :DEFINE GNU Not Unix
+<PERSON> :DEFINITION GNU
+<ENiX>   Paradox Handling: Ignoring paradox or cyclic definition...
+gnu 
+<SYSTEM> !LOAD Examples/:do.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> :force start :define 0
+<ENiX>   Startup datablock created.
+<PERSON> :force finish :define 10
+<PERSON> :force counter :define start
+<PERSON> :force count :define :force counter :add 1 :store :force :force :force counter :answer :smaller :force finish :signal
+<PERSON> :force docount :define :true :do :force :force :force count
+<PERSON> docount
+<ENiX>    - CTRL SEQ: DO: [          count]
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+ - CTRL SEQ:           TERMINATED.
+<SYSTEM> !LOAD Examples/:empathyinj.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote council tree :grammar noun
+<ENiX>   Setting: "council" and "tree" to noun.
+<PERSON> :quote removed :grammar verb
+<ENiX>   Setting: "removed" to verb.
+<PERSON> :quote under :grammar preposition
+<ENiX>   Setting: "under" to preposition.
+<PERSON> the joyful cat sat on the mat
+<PERSON> the mat was under the tree
+<PERSON> :quote the angry council removed the tree :empathypre
+<PERSON> :quote disgusted digusted nervous :empathyinj
+<ENiX>   Injecting: disgusted digusted nervous [D E Oi] :EMPATHYINJ
+D  = Resultant difference
+E  = After concept emotion
+Oi = Resultant afterwards
+<PERSON> :empathypost
+<ENiX>   M    : 0 100 100 0 100 
+Oa   : 0 -100 -100 0 -100 
+Delta: 0 200 200 0 200 
+Outcome 6:
+DEBUG ComputeEmoResp 1
+----------------------
+DEBUG EmoUnderstanding
+DEBUG EmoMorality
+the joyful cat was sitting on the mat 
+DEBUG EmoMortality
+the joyful cat was sitting on the mat 
+DEBUG EmoAction: 0 100 100 0 100 
+DEBUG EmoAction 2: NO ACTION REQUIRED
+DEBUG EmoDetermination
+<SYSTEM> !LOAD Examples/:end.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> 1 10 :DOMAIN :FOREACH 1 :EXP 2 :END :ANSWER
+<ENiX>   Startup datablock created.
+1 4 9 16 25 36 49 64 81 100 
+<PERSON> 1 10 :DOMAIN :FOREACH 2 :EXP 2 :ANSWER
+<ENiX>   1 4 
+9 16 
+25 36 
+49 64 
+81 100 
+<SYSTEM> !LOAD Examples/:endpunct.txt
+<PERSON> :purge
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE . ? ! :ENDPUNCT
+<ENiX>   Startup datablock created.
+<SYSTEM> !LOAD Examples/:answer.txt
+<PERSON> 2 :ANSWER
+<ENiX>   2 
+<PERSON> :ANSWER
+<ENiX>   2 
+<SYSTEM> !LOAD Examples/:statistics.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :STATISTICS
+<ENiX>   Startup datablock created.
+Datablocks: 0, relationships: 0. Since last sleep: 3.
+<SYSTEM> !LOAD Examples/:ttransform.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 25 21 22 33 24 28 :TTRANSFORM :ANSWER
+<ENiX>   Startup datablock created.
+11 4 38 49 55 8 
+<PERSON> :QUOTE 11 4 38 49 55 8 :TTRANSFORM :ANSWER
+<ENiX>   25 21 22 33 24 28 
+<SYSTEM> !LOAD Examples/:infoevent.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE indicatiVE :infoeVENT
+<SYSTEM> !LOAD Examples/:define.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> is :DEFINE :DEFINE
+<ENiX>   Startup datablock created.
+<PERSON> explain is :DEFINITION
+<PERSON> say is :DEFINITION :FORCE :QUOTE
+<PERSON> explain explain
+<ENiX>   :definition 
+<PERSON> say explain
+<ENiX>   explain 
+<PERSON> are am is is
+<PERSON> me is i
+<PERSON> you are enix
+<PERSON> i am owl
+<PERSON> explain me
+<ENiX>   owl 
+<PERSON> explain you
+<ENiX>   enix 
+<PERSON> say hi
+<ENiX>   hi 
+<SYSTEM> !LOAD Examples/:setserial.txt
+<PERSON> :quote /dev/ttyUSB0 19200 19200 2238 1 0 0 0 20  :setserial COM1
+<PERSON> :quote test :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<PERSON> :quote wibble :serialsend com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<PERSON> :quote :serialtest com1
+<ENiX>   ENiX unable to open /dev/ttyusb0
+<SYSTEM> !LOAD Examples/:last.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE a b c d e f :LAST 2 :ANSWER
+<ENiX>   Startup datablock created.
+e f 
+<SYSTEM> !LOAD Examples/:force.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE meaning :STORE modality
+<ENiX>   Startup datablock created.
+<PERSON> :DEFINITION modality
+<ENiX>   meaning 
+<PERSON> :DEFINITION :FORCE modality
+<ENiX>   modality 
+<SYSTEM> !LOAD Examples/:stemshow.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> happy happily happiness
+<ENiX>   Startup datablock created.
+<PERSON> :QUOTE ly :STEMADD adverb
+<PERSON> :QUOTE ness :STEMADD noun
+<PERSON> :STEMSHOW
+<ENiX>   =[Datablock 00000]==========================================
+Name                   :STEM Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:40:53-2013/08/07
+Last Time           23:40:53-2013/08/07
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+noun                                                    ness
+adverb                                                    ly
+============================================================
+<SYSTEM> !LOAD Examples/:cssave.txt
+<PERSON> :QUOTE female :STORE A
+<PERSON> :QUOTE male :STORE B
+<PERSON> :QUOTE the white cat :CSSAVE A
+<PERSON> :QUOTE the black cat :CSSAVE B
+<PERSON> :QUOTE the black cat :CSLOAD :ANSWER
+<ENiX>   male 
+<PERSON> :QUOTE the white cat :CSLOAD :ANSWER
+<ENiX>   female 
+<SYSTEM> !LOAD Examples/:memory.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :MEMORY
+<ENiX>   =[Datablock 00000]==========================================
+Name                 :memory Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          21:32:24-2013/08/07
+Last Time           21:32:24-2013/08/07
+Probability                1 Commands         neutral loving
+============================================================
+<SYSTEM> !LOAD Examples/:getemodebug.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE loving :GETEMODEBUG
+<ENiX>   =[Datablock 00000]==========================================
+Name           :Cache_loving Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          21:32:53-2013/08/07
+Last Time           21:32:53-2013/08/07
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+neutral                                               loving
+nervous                                         affectionate
+horrified                                          horrified
+sympathetic                                        contented
+neglected                                       affectionate
+shamed                                          affectionate
+tormented                                        sympathetic
+envious                                               loving
+raging                                            submissive
+exasperated                                      sympathetic
+irritated                                        sympathetic
+relieved                                            relieved
+enthralled                                            joyful
+proud                                              neglected
+contented                                           relieved
+zesty                                             enthralled
+cheerful                                          enthralled
+longing                                         affectionate
+lustful                                              lustful
+affectionate                                    affectionate
+aggressive                                            loving
+contemptuous                                          loving
+remorseful                                       sympathetic
+disappointed                                          shamed
+awed                                             sympathetic
+submissive                                        enthralled
+loving                                                loving
+optimistic                                             zesty
+anticipating                                           zesty
+surprised                                              zesty
+angry                                             submissive
+fearful                                               loving
+disgusted                                             shamed
+trusting                                           affectate
+sad                                              sympathetic
+joyful                                            enthralled
+============================================================
+<SYSTEM> !LOAD Examples/:assimilate.txt
+<PERSON> ls :ASSIMILATE :ANSWER
+<ENiX>   Amoeba-API.c Amoeba-API.h Amoeba-API.o Amoeba-Colony.c Amoeba-Colony.h Amoeba-Colony.o Amoeba-Cytoskelenton.c Amoeba-Cytoskelenton.h Amoeba-Cytoskelenton.o Amoeba-DEBUG Amoeba-Daemon.c Amoeba-Daemon.h Amoeba-Daemon.o Amoeba-FS.c Amoeba-FS.h Amoeba-File.c Amoeba-File.h Amoeba-Microtubules.c Amoeba-Microtubules.h Amoeba-Microtubules.o Amoeba-Nucleus.c Amoeba-Nucleus.h Amoeba-Nucleus.o Amoeba-Nuke.c Amoeba-Nuke.h Amoeba-SRC Amoeba-Test.c Amoeba-Test.h Amoeba-Test.o Amoeba-Unit-Tests.c Amoeba-Unit-Tests.h Amoeba-Unit-Tests.o Amoeba.c Amoeba.h CORES Daemon ENiX3 ENiX3Docs ENiXHybrid1.bin ENiX_ANALYSER.c ENiX_ANALYSER.h ENiX_ANALYSER.o ENiX_APPLICATIONS.c ENiX_APPLICATIONS.h ENiX_APPLICATIONS.o ENiX_CALC.c ENiX_CALC.h ENiX_CALC.o ENiX_CS.c ENiX_CS.h ENiX_CS.o ENiX_Chaos.c ENiX_Chaos.h ENiX_Chaos.o ENiX_DISK.c ENiX_DISK.h ENiX_DISK.o ENiX_Debug.c ENiX_Debug.h ENiX_Debug.o ENiX_EMO.c ENiX_EMO.h ENiX_EMO.o ENiX_EXEC.c ENiX_EXEC.h ENiX_EXEC.o ENiX_Globals.h ENiX_HLR.c ENiX_HLR.h ENiX_HLR.o ENiX_Hybrid.c ENiX_Hybrid.h ENiX_Hybrid.o ENiX_Input.c ENiX_Input.h ENiX_Input.o ENiX_LIST.c ENiX_LIST.h ENiX_LIST.o ENiX_MUSIC.c ENiX_MUSIC.h ENiX_MUSIC.o ENiX_Maths.c ENiX_Maths.h ENiX_Maths.o ENiX_NLP.c ENiX_NLP.h ENiX_NLP.o ENiX_OUTPUT.c ENiX_OUTPUT.h ENiX_OUTPUT.o ENiX_Omega.c ENiX_Omega.h ENiX_Omega.o ENiX_PLURALS.c ENiX_PLURALS.h ENiX_PLURALS.o ENiX_Poly.c ENiX_Poly.h ENiX_Poly.o ENiX_Print.c ENiX_Print.h ENiX_Print.o ENiX_REASON.c ENiX_REASON.h ENiX_REASON.o ENiX_ROBOTICS.c ENiX_ROBOTICS.h ENiX_ROBOTICS.o ENiX_Recursion.c ENiX_Recursion.h ENiX_Recursion.o ENiX_SCOPE.c ENiX_SCOPE.h ENiX_SCOPE.o ENiX_SEMANTICS.c ENiX_SEMANTICS.h ENiX_SEMANTICS.o ENiX_SETTHEORY.c ENiX_SETTHEORY.h ENiX_SETTHEORY.o ENiX_SPLINE.c ENiX_SPLINE.h ENiX_SPLINE.o ENiX_STEMMER.c ENiX_STEMMER.h ENiX_STEMMER.o ENiX_STRING.c ENiX_STRING.h ENiX_STRING.o ENiX_Statistics.c ENiX_Statistics.h ENiX_Statistics.o ENiX_TEMPLATE.c ENiX_TEMPLATE.h ENiX_Vector.c ENiX_Vector.h ENiX_Vector.o ENiX_WMS.c ENiX_WMS.h ENiX_WMS.o ENiX_WMS_COMPAT.c ENiX_WMS_COMPAT.h ENiX_WMS_COMPAT.o Examples Hybrid-SRC Hybrid.c Hybrid.o INTERFACES IdentGen.bin IdentGen.c IdentGen.o Makefile NCURSES Omega.bin Omega.c Omega.o Poly.bin Poly.c Poly.o Portability_Testing Recurrence.bin Recurrence.c Recurrence.o SHELL2.bin SeqGen.bin SeqGen.c SeqGen.o TAGS TEST-RESULTS TODO TRAINING WitchCraft-Colours WitchCraft-Colours.c WitchCraft-Colours.h WitchCraft-Net.c WitchCraft-Net.h WitchCraft-Net.o WitchCraft.c WitchCraft.h WitchCraft.o botlib.log humour.txt main.c main.o runShell.bash test.txt 
+<SYSTEM> !LOAD Examples/:sentencectense.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECTENSE past :ANSWER
+<ENiX>   the cat was sitting on the mat 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECTENSE present :ANSWER
+<ENiX>   the cat is sitting on the mat 
+<PERSON> :QUOTE the cat sat on the mat :SENTENCECTENSE future :ANSWER
+<ENiX>   the cat will be sitting on the mat 
+<PERSON> :QUOTE the mat was sat on by the cat :SENTENCECTENSE past :ANSWER
+<ENiX>   the mat was sat on by the cat 
+<PERSON> :QUOTE the mat was sat on by the cat :SENTENCECTENSE present :ANSWER
+<ENiX>   the mat is sat on by the cat 
+<PERSON> :QUOTE the mat was sat on by the cat :SENTENCECTENSE future :ANSWER
+<ENiX>   the mat will be sat on by the cat 
+<PERSON> :QUOTE what sat on the mat ? :SENTENCECTENSE past :ANSWER
+<ENiX>   what was sitting on the mat ? 
+<PERSON> :QUOTE what sat on the mat ? :SENTENCECTENSE present :ANSWER
+<ENiX>   what is sitting on the mat ? 
+<PERSON> :QUOTE what sat on the mat ? :SENTENCECTENSE future :ANSWER
+<ENiX>   what will be sitting on the mat ? 
+<PERSON> :QUOTE what was sat on by the cat ? :SENTENCECTENSE past :ANSWER
+<ENiX>   what was sat on by the cat ? 
+<PERSON> :QUOTE what was sat on by the cat ? :SENTENCECTENSE present :ANSWER
+<ENiX>   what is sat on by the cat ? 
+<PERSON> :QUOTE what was sat on by the cat ? :SENTENCECTENSE future :ANSWER
+<ENiX>   what will be sat on by the cat ? 
+<SYSTEM> !LOAD Examples/:greater.txt
+<PERSON> :PERSON
+<PERSON> :QUOTE 45 12 32 1 :GREATER 1 :ANSWER
+<ENiX>   0 
+<PERSON> :QUOTE 45 12 32 1 :GREATER 0 :ANSWER
+<ENiX>   1 
+<SYSTEM> !LOAD Examples/:argue.txt
+<PERSON> :FORCE on :ARGUE
+<SYSTEM> !LOAD Examples/:sentencetense.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote was the black cat sat on the black mat ? :sentencetense :answer
+<ENiX>   past 
+<SYSTEM> !LOAD Examples/:shrink.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE A B C D A B :SHRINK :ANSWER
+<ENiX>   Startup datablock created.
+d c b a 
+<SYSTEM> !LOAD Examples/:add.txt
+<PERSON> 1 2 3 :ADD 2 :ANSWER
+<ENiX>   3 4 5 
+<SYSTEM> !LOAD Examples/:div.txt
+<PERSON> 2 4 8 16 32 :DIV 2 :ANSWER
+<ENiX>   1 2 4 8 16 
+<SYSTEM> !LOAD Examples/:emodebugvec.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE 0 100 0 -100 0 :EMODEBUGVEC
+<ENiX>   Startup datablock created.
+0 Understanding
+100 Morality
+0 Mortality
+-100 Action
+0 Determination
+<SYSTEM> !LOAD Examples/:allrels.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> if the mouse sat on the mat then the mouse sat on the mat
+<PERSON> if the cat sat on the mat then the cat sat on the mat
+<PERSON> if the dog sat on the mat then the dog sat on the mat
+<PERSON> if the mouse and the cat sat on the mat then the cat sat on the mat
+<PERSON> if the mouse and the dog sat on the mat then the mouse and the dog sat on the mat
+<PERSON> if the cat and the dog sat on the mat then the dog sat on the mat
+<PERSON> if the cat and the dog and the mouse sat on the mat then ?
+<ENiX>   Setting: "then" to preposition.
+The dog sat on the mat.
+The dog sat on the mat.
+<PERSON> :allrels :reason
+<ENiX>   Concept: [scratchpad]
+    0 :IF ( 0 :AND-NOT 2 ) 
+    1 :IF ( 1 :WIRE    1 ) 
+    2 :IF ( 1 :NOT-AND 2 ) 
+
+Concept: [_enix_cs14]
+cs7   :IF ( cs7 :AND-NOT cs13 ) 
+cs19  :IF ( cs19 :WIRE    cs19 ) 
+cs13  :IF ( cs19 :NOT-AND cs13 ) 
+cs7     = the mouse sat on the mat 
+cs19    = the dog sat on the mat 
+cs13    = the cat sat on the mat 
+
+Concept: [cs14]
+cs7     = the mouse sat on the mat 
+cs13    = the cat sat on the mat 
+cs19    = the dog sat on the mat 
+
+Concept: [cs1]
+cs13    = the cat sat on the mat 
+cs7     = the mouse sat on the mat 
+
+Concept: [interntest]
+cs7     = the mouse sat on the mat 
+
+Concept: [cs8]
+cs19    = the dog sat on the mat 
+cs13    = the cat sat on the mat 
+
+<SYSTEM> !LOAD Examples/:reason.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> if the mouse sat on the mat then the mouse sat on the mat
+<PERSON> if the cat sat on the mat then the cat sat on the mat
+<PERSON> if the dog sat on the mat then the dog sat on the mat
+<PERSON> if the mouse and the cat sat on the mat then the cat sat on the mat
+<PERSON> if the mouse and the dog sat on the mat then the mouse and the dog sat on the mat
+<PERSON> if the cat and the dog sat on the mat then the dog sat on the mat
+<PERSON> if the cat and the dog and the mouse sat on the mat then ?
+<ENiX>   Setting: "then" to preposition.
+The dog sat on the mat.
+The dog sat on the mat.
+<PERSON> :allrels :reason
+<ENiX>   Concept: [scratchpad]
+    0 :IF ( 0 :AND-NOT 2 ) 
+    1 :IF ( 1 :WIRE    1 ) 
+    2 :IF ( 1 :NOT-AND 2 ) 
+
+Concept: [_enix_cs14]
+cs7   :IF ( cs7 :AND-NOT cs13 ) 
+cs19  :IF ( cs19 :WIRE    cs19 ) 
+cs13  :IF ( cs19 :NOT-AND cs13 ) 
+cs7     = the mouse sat on the mat 
+cs19    = the dog sat on the mat 
+cs13    = the cat sat on the mat 
+
+Concept: [cs14]
+cs7     = the mouse sat on the mat 
+cs13    = the cat sat on the mat 
+cs19    = the dog sat on the mat 
+
+Concept: [cs1]
+cs13    = the cat sat on the mat 
+cs7     = the mouse sat on the mat 
+
+Concept: [interntest]
+cs7     = the mouse sat on the mat 
+
+Concept: [cs8]
+cs19    = the dog sat on the mat 
+cs13    = the cat sat on the mat 
+
+<SYSTEM> !LOAD Examples/:randseed.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE 124 :RANDSEED
+<PERSON> :QUOTE 5 :RANDOM 10 :ANSWER
+<ENiX>   6 0 3 1 9 
+<SYSTEM> !LOAD Examples/nlp_decision.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE chase chases chasing chased :GRAMMAR verb
+<ENiX>   Setting: "chase", "chases", "chasing" and "chased" to verb.
+<PERSON> :QUOTE chase chases chasing chased :ADDWREF chased
+<PERSON> :QUOTE chase chases chasing :TENSE present
+<PERSON> :QUOTE chased :TENSE past
+<PERSON> nothing chases nothing
+<ENiX>   Was nothing chasing nothing ?
+<PERSON> the mouse chases nothing
+<ENiX>   Was nothing chasing nothing ?
+<PERSON> the cat chases the mouse
+<PERSON> the dog chases the cat and the mouse
+<PERSON> the dog and the cat chases the cat
+<PERSON> the dog and the mouse chases the mouse
+<PERSON> the cat and the mouse chases the mouse
+<PERSON> the dog, the cat and the mouse chases the cat and the mouse
+<ENiX>   Was the mouse, the dog and the cat chasing the mouse and the cat ?
+<PERSON> what chases the mouse ?
+<ENiX>   The cat was chasing the mouse.
+The dog was chasing the mouse.
+The dog and the mouse was chasing the mouse.
+The cat and the mouse was chasing the mouse.
+The cat, the dog and the mouse was chasing the mouse.
+<PERSON> what chases the dog ?
+<ENiX>   Nothing was chasing the dog.
+The mouse was chasing the dog.
+<PERSON> what chases the cat ?
+<ENiX>   The dog was chasing the cat.
+The cat and the dog was chasing the cat.
+The cat, the dog and the mouse was chasing the cat.
+<PERSON> what is chased by the dog ?
+<ENiX>   The dog was chasing the cat.
+The dog was chasing the mouse.
+<PERSON> what is chased by the cat ?
+<ENiX>   The cat was chasing the mouse.
+<SYSTEM> !LOAD Examples/:sentencedebug.txt
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote how do you feel about the cat ? :sentencedebug
+<ENiX>   =[SENTENCE DEBUG]=================[GRAMMAR][PURPOSE]===[EMOTION]
+  how                               adverb  ?                 ?
+  do                                  verb  ?                 ?
+  you                              pronoun  ?                 ?
+  feel                                verb  ?                 ?
+  about                        preposition  ?                 ?
+  the                      definitearticle  ?                 ?
+  cat                                 noun  ?                 ?
+  ?                           questionmark  ?                 ?
+-[COMPONENT]------------------------[VALUE]---------------------
+  Sentiency                          Active
+  Sentence mood                      whq
+  Sentence voice                     Active
+  SentenceStructure                  pv s pv pn 
+  Subject                            you 
+  PredicateNounBlock                 about the cat ? 
+  PredicateVerbBlock                 how do feel 
+  Final Subject                      [you]
+  Final Predicate                    [cat about]
+  Subject / Predicate Logic          AND / AND
+  Final Verb                         feel present how 
+  Plurals S[AGP]:P[AGP]              NNN:NNN
+  Is Negated                         No
+================================================================
+<SYSTEM> !LOAD Examples/:smvf.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :SMVF
+<ENiX>   =[Datablock 00000]==========================================
+Name                 :meldvf Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          12:51:57-2015/11/07
+Last Time           12:51:57-2015/11/07
+Probability                1 Commands                      ?
+-[Comparisons]----------------------------------------------
+Qualifier:                                            Value:
+passive simple future                                will be
+passive future perfect                        will have been
+passive simple present one                                am
+passive simple present two                               are
+passive simple present three                              is
+passive present progressive one                      am being
+passive present progressive two                     are being
+passive present progressive three                      is being
+passive present perfect one                        have been
+passive present perfect two                         has been
+passive simple past one                                  was
+passive simple past two                                 were
+passive past progressive one                       was being
+passive past progressive two                      were being
+passive past perfect                                had been
+passive future progressive passive                 will be being
+passive perfect progressive passive                has been being
+passive future unreal                               would be
+passive past unreal                          would have been
+active simple future                                    will
+active future progressive                            will be
+active future perfect                              will have
+active future perfect progressive                will have been
+active present progressive one                          have
+active present progressive two                           has
+active present progressive three                            is
+active present perfect progressive one                     have been
+active present perfect progressive two                      has been
+active past progressive one                              was
+active past progressive two                             were
+active past perfect                                      had
+active past perfect progressive                      had been
+active present unreal                                  would
+active present unknown one                               did
+active present unknown two                                do
+============================================================
+<SYSTEM> !LOAD Examples/:random.txt
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :FORCE 124 :RANDSEED
+<PERSON> :QUOTE 5 :RANDOM 10 :ANSWER
+<ENiX>   6 0 3 1 9 
+<SYSTEM> !LOAD Examples/nndemo.txt
+<PERSON> :PURGE
+<ENiX>   Memory destroyed.
+<PERSON> :QUOTE seqA 0 1 0 1 1 1 3 3 :LEARN :ANSWER
+<ENiX>   Startup datablock created.
+22 
+<PERSON> :FORCE seqA :PATTERN
+<ENiX>   =[Relationship 00000]=======================================
+Name                    seqa Complexity           22.0000000
+Inputs            3.00000000 Outputs              2.00000000
+First Time          16:24:32-2015/11/07
+Last Time           16:24:32-2015/11/07
+Probability                                       1.00000000
+-[Logic Grid]-----------------------------------------------
+             Bitstream Layer Type Gate In1 In2
+                     0     0    2   14   0   2
+                     1     0    2    8   1   2
+============================================================
+<PERSON> :FORCE seqA :REASON
+<ENiX>   Concept: [seqa]
+    0 :IF ( 0 :OR      2 ) 
+    1 :IF ( 1 :AND     2 ) 
+
+<SYSTEM> !LOAD Examples/:systemmood.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE 0 0 0 0 0 :SETEMOMODE SystemMood
+<PERSON> :QUOTE high :SETEMOMODE TrigArgue
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.10000002 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.19000004 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.27100005 0 
+<PERSON> :EMOMAPPER
+<PERSON> :SYSTEMMOOD :ANSWER
+<ENiX>   0 0 0 0.34390005 0 
+<SYSTEM> !LOAD Examples/:load.txt
+<PERSON> :SHOWPROF
+<ENiX>   adam
+emotestcases
+ENiX3
+eve
+hal
+holly
+naxi
+test
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<SYSTEM> !LOAD Examples/:music.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :MUSIC
+<ENiX>   START
+50 0 42 100
+50 0 56 100
+50 0 69 100
+50 0 47 100
+50 0 30 100
+50 0 62 100
+50 0 81 100
+50 0 42 100
+50 0 56 100
+50 0 69 100
+50 0 47 100
+50 0 30 100
+50 0 68 100
+50 0 81 100
+50 0 67 100
+50 0 42 100
+50 0 56 100
+50 0 69 100
+50 0 47 100
+50 0 30 100
+50 0 68 100
+50 0 65 100
+50 0 67 100
+50 0 30 100
+50 0 73 100
+50 0 81 100
+50 0 55 100
+50 0 71 100
+50 0 30 100
+50 0 32 100
+50 0 87 100
+50 0 30 100
+50 0 62 100
+50 0 80 100
+50 0 54 100
+50 0 70 100
+50 0 30 100
+50 0 32 100
+50 0 86 100
+50 0 30 100
+50 0 62 100
+50 0 80 100
+50 0 54 100
+50 0 70 100
+50 0 30 100
+50 0 32 100
+50 0 70 100
+50 0 30 100
+50 0 62 100
+50 0 80 100
+50 0 54 100
+50 0 62 100
+50 0 30 100
+50 0 32 100
+50 0 70 100
+50 0 42 100
+50 0 92 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 33 100
+50 0 67 100
+50 0 42 100
+50 0 92 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 34 100
+50 0 67 100
+50 0 42 100
+50 0 60 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 34 100
+50 0 67 100
+50 0 42 100
+50 0 60 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 34 100
+50 0 67 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 38 100
+50 0 78 100
+50 0 30 100
+50 0 32 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 46 100
+50 0 46 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 46 100
+50 0 46 100
+50 0 32 100
+50 0 38 100
+50 0 42 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 42 100
+50 0 34 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 42 100
+50 0 69 100
+50 0 34 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 34 100
+50 0 69 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 78 100
+50 0 30 100
+50 0 32 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 64 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 50 100
+50 0 30 100
+50 0 47 100
+50 0 30 100
+50 0 36 100
+50 0 30 100
+50 0 33 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 38 100
+50 0 30 100
+50 0 32 100
+50 0 30 100
+50 0 30 100
+50 0 64 100
+50 0 70 100
+50 0 30 100
+50 0 30 100
+50 0 32 100
+50 0 38 100
+50 0 67 100
+END
+<SYSTEM> !LOAD Examples/:debugcond.txt
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE if the cat sat on the mat then the dog sat on the mat :DEBUGCOND
+<PERSON> :QUOTE What if the cat sat on the mat then ? :DEBUGCOND
+<ENiX>   the dog was sitting on the mat
+<PERSON> :QUOTE if the cat sat on the mat then the dog sat on the mat ? :DEBUGCOND
+<ENiX>   Yes.
+<PERSON> :FORCE adam :LOAD
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :QUOTE if the cat sat on the mat then the cat sat on the mat, and the dog was not sat on the mat, and the mouse was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE if the dog sat on the mat then the dog sat on the mat, and the cat was not sat on the mat, and the mouse was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE if the mouse sat on the mat then the mouse sat on the mat, and the cat was not sat on the mat, and the dog was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE if the cat and the dog sat on the mat then the dog sat on the mat, and the cat was not sat on the mat, and the mouse was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE if the dog and the mouse sat on the mat then the dog sat on the mat, and the cat was not sat on the mat, and the mouse was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE if the cat and the mouse sat on the mat then the cat sat on the mat, and the dog was not sat on the mat, and the mouse was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE if nothing then the dog was not sat on the mat, and the cat was not sat on the mat, and the mouse was not sat on the mat :DEBUGCOND
+<PERSON> :QUOTE what if the dog and the cat sat on the mat then ? :DEBUGCOND
+<ENiX>   the dog was sitting on the mat
+<PERSON> :QUOTE if the dog and the cat sat on the mat then the dog sat on the mat ? :DEBUGCOND
+<ENiX>   Yes.
+<PERSON> :QUOTE if nothing then the dog was not sat on the mat ? :DEBUGCOND
+<ENiX>   Yes.
+<PERSON> :QUOTE if the dog and the cat sat on the mat then the cat sat on the mat ? :DEBUGCOND
+<ENiX>   No.
+<PERSON> :QUOTE if the dog, the cat and the mouse sat on the mat then the dog sat on the mat ? :DEBUGCOND
+<ENiX>   Yes.
+<PERSON> :QUOTE what if the dog, the cat and the mouse sat on the mat then ? :DEBUGCOND
+<ENiX>   the dog was sitting on the mat
+<PERSON> :QUOTE what causes the dog was not sat on the mat ? :DEBUGCOND
+<ENiX>   the cat was sitting on the mat 
+the mouse was sitting on the mat 
+the mouse was sitting on the mat and the cat was sitting on the mat 
+nothing
+<PERSON> :QUOTE what causes the dog sat on the mat ? :DEBUGCOND
+<ENiX>   the dog was sitting on the mat 
+the dog was sitting on the mat and the mouse was sitting on the mat 
+the dog was sitting on the mat and the cat was sitting on the mat 
+the dog was sitting on the mat , the mouse was sitting on the mat and the cat was sitting on the mat
+<PERSON> :QUOTE if nothing then the dog sat on the mat ? :DEBUGCOND
+<ENiX>   No.
+<PERSON> :QUOTE if nothing then ? :DEBUGCOND
+<ENiX>   Nothing happens.
+<PERSON> :QUOTE if nothing then the dog was not sat on the mat ? :DEBUGCOND
+<ENiX>   Yes.
+<PERSON> :QUOTE if the cat sat on the mat then ? :DEBUGCOND
+<ENiX>   the cat was sitting on the mat
+<PERSON> :FORCE eve :LOAD
+<ENiX>   Loading personality profile: eve...
+Program killed by :load.
+<PERSON> :QUOTE hungry :GRAMMAR adjective
+<ENiX>   Setting: "hungry" to adjective.
+<PERSON> :QUOTE four shopping TV takeaway holiday :GRAMMAR noun
+<ENiX>   Setting: "four", "shopping", "tv", "takeaway" and "holiday" to noun.
+<PERSON> :QUOTE get watch :GRAMMAR verb
+<ENiX>   Setting: "get" and "watch" to verb.
+<PERSON> :QUOTE before :GRAMMAR preposition
+<ENiX>   Setting: "before" to preposition.
+<PERSON> :QUOTE if I am hungry then get the shopping, and do not get a takeaway, and do not watch tv :DEBUGCOND
+<PERSON> :QUOTE if it is before four then watch tv, and do not get shopping, and do not get a takeaway :DEBUGCOND
+<PERSON> :QUOTE if it is a holiday then watch tv, and do not get shopping, and do not get a takeaway :DEBUGCOND
+<PERSON> :QUOTE if I am hungry, and it is before four then get the shopping, and do not get a takeaway, and do not watch tv :DEBUGCOND
+<PERSON> :QUOTE if I am hungry, and it is a holiday then do not get the shopping, and watch tv, and get a takeaway :DEBUGCOND
+<PERSON> :QUOTE if it is a holiday, and it is before four then do not get the shopping, and do not get a takeaway, and watch tv :DEBUGCOND
+<PERSON> :QUOTE what if nothing then watch tv, and do not get the shopping, and do not get a takeaway :DEBUGCOND
+<PERSON> :QUOTE if I am hungry, and it is a holiday, and it is before four then ? :DEBUGCOND
+<ENiX>   watch the tv 
+get the takeaway

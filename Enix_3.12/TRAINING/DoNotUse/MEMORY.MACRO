@@ -1,0 +1,171 @@
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> !CLEAR
+<PERSON> :mode
+  <ENiX> =[Datablock 00000]==========================================
+  <ENiX> Name                   :mode Grammar                       ?
+  <ENiX> Purpose                    ? Emotion                       ?
+  <ENiX> First Time          19:06:46-2009/04/18
+  <ENiX> Last Time           19:07:01-2009/04/18
+  <ENiX> Probability       1.00000000 Commands                    cs0
+  <ENiX> -[Comparisons]----------------------------------------------
+  <ENiX> Qualifier:                                            Value:
+  <ENiX> :memlimit                                         -1.0000000
+  <ENiX> :memexp                                           7.00000000
+  <ENiX> :memprob                                          0.90000000
+  <ENiX> :memrate                                          0.25000000
+  <ENiX> :memthresh                                        0.00010000
+  <ENiX> :memnew                                           4.00000000
+  <ENiX> ============================================================
+<PERSON> :statistics
+  <ENiX> Datablocks: 7, relationships: 0. Since last sleep: 5.
+<PERSON> :help :help
+  <ENiX> NULL :HELP         [B]  Interface,   displays help information on command B, else command list.
+<PERSON> :help
+  <ENiX> NULL :ALL          NULL Set Theory,  saves to :ANSWER, a complete list of names of all concepts in memory.
+  <ENiX> <A>  :ADD          <B>  Mathematics, adds value of A to the value of B and saves the result in :ANSWER.
+  <ENiX> <A>  :AND          <B>  Logic,       saves 1 into :ANSWER if both A and B are non-zero.
+  <ENiX> NULL :ANSWER       NULL Interface,   displays the contents of :ANSWER.
+  <ENiX> NULL :BREAK        B    Set Theory,  automagically splits up B into words etc and saves as :ANSWER,
+  <ENiX> NULL :CACHE        B    Set Theory,  cache the contents of B into :ANSWER.
+  <ENiX> NULL :CEASEDEF     NULL Control,     used after :DEFINITION to terminate the explanation.
+  <ENiX> NULL :CONTEXT      NULL Interface,   displays the contents of :CONTEXT.
+  <ENiX> A    :COPY         B    Control,     copy record B to all items, A.
+  <ENiX> A    :DEFINE       B    Control,     defines A as being all items, B.
+  <ENiX> NULL :DEFINITION   B    Interface,   explains what B would execute.
+  <ENiX> [A]  :DEBUG        NULL Interface,   if A exists the display all of it, else display memory contents.
+  <ENiX> <A>  :DECIDE       B    High-Level,  run pattern B at points A and save result to :ANSWER.
+  <ENiX> A    :DELETE       NULL Control,     delete each of A from memory.
+  <ENiX> [A]  :DESCRIBED    B    Set Theory,  saves the concepts in A described by B in :ANSWER.
+  <ENiX> <A>  :DIV          <B>  Mathematics, divides A by B and saves result in :ANSWER.
+  <ENiX> <A>  :DO           B    Control,     execute B while condition A applies.
+  <ENiX> <A>  :EQUALS       <B>  Mathematics, assigns the value of B to A.
+  <ENiX> <A>  :EQUIVALENCE  <B>  Logic,       if A equals B then store 1 as :ANSWER else store 0.
+  <ENiX> A    :ELEMENT      B    Set Theory,  if elements A are elements of B then store 1 else 0 into :ANSWER.
+  <ENiX> A    :EMOTION      B    Control,     specify A's emotion category as B.
+  <ENiX> NULL :ENDDEF       NULL Control,     used after :DEFINE to terminate the definition.
+  <ENiX> <A>  :EXCEPT       B    Set Theory,  saves contents of A without contents of B into :ANSWER.
+  <ENiX> <A>  :EXP          <B>  Mathematics, raise A to the power of B and save in :ANSWER.
+  <ENiX> <A>  :EXPRESS      NULL High-Level,  saves a sentence into answer, creates sentence in order of keywords, A.
+  <ENiX> NULL :FALSE        NULL Logic,       save 0 to :ANSWER.
+  <ENiX> <A>  :FIRST        B    Set Theory,  save the first entry in A to B.
+  <ENiX> A    :GRAMMAR      B    Control,     specify A's grammatical category as B.
+  <ENiX> <A>  :GREATER      <B>  Logic,       if A is greater than B save 1 else save 0 in :ANSWER.
+  <ENiX> NULL :HELP         [B]  Interface,   displays help information on command B, else command list.
+  <ENiX> <A>  :HOW          B    High-Level,  finds symantic relation between A to B and stores in :ANSWER.
+  <ENiX> <A>  :INTERSECTION B    Set Theory,  compute A intersection B and store in :ANSWER.
+  <ENiX> A    :LANGUAGE     NULL High-Level,  sets ENiX up language to use all grammatical types in B.
+  <ENiX> <A>  :LAST         B    Set Theory,  save the last entry in A to B.
+  <ENiX> <AB> :LEARN        NULL High-Level,  attempts to understand pattern B and save it as A.
+  <ENiX> A    :LIKE         B    Control,     categorise all of A just like B is.
+  <ENiX> NULL :LOAD         B    Memory,      load memory file B from disk.
+  <ENiX> NULL :MELD       A B    Memory,      import concept B and dependencies from personality A.
+  <ENiX> <A>  :MERGE        NULL Set Theory,  cat all the words in A together and save in :ANSWER.
+  <ENiX> NULL :MODE [:OPT B]     Memory,      view or redefine natural selection criteria for memory.
+  <ENiX> <A>  :MUL          <B>  Mathematics, multiplies A and B and saves the result in :ANSWER.
+  <ENiX> <A>  :NAND         <B>  Logic,       if A nand B then save 1 else save 0 in :ANSWER.
+  <ENiX> <A>  :NOR          <B>  Logic,       if A nor B then save 1 else save 0 in :ANSWER.
+  <ENiX> <A>  :NOT          NULL Logic,       if A then save 0 else save 1 in :ANSWER.
+  <ENiX> <A>  :OR           <B>  Logic,       if A or B then save 1 else save 0 in :ANSWER.
+  <ENiX> NULL :OVERRIDE     NULL Control,     forces quotation of next command. Only available for UI.
+  <ENiX> <A>  :PATTERN      NULL Interface,   displays the pattern A.
+  <ENiX> NULL :PERSONALITY  NULL High-Level,  displays name of ENiX profile.
+  <ENiX> <A>  :PHRASE       NULL High-Level,  constructs grammetically correct sentences out of keywords A.
+  <ENiX> NULL :PURGE        NULL Memory,      erase everything in memory.
+  <ENiX> A    :PURPOSE      B    Control,     specify A's purpose category as B.
+  <ENiX> A    :QUALIFY      B    Control,     qualify concepts, A in respect of B[0] with rest of B.
+  <ENiX> NULL :QUOTE        NULL Control,     interpret everything after :QUOTE to termination criteria as literal.
+  <ENiX> NULL :READ         B    Control,     assume input from file, B, rather than cli parameters.
+  <ENiX> <A>  :RECALL       NULL High-Level,  constructs quotations from keywords A and saves in :ANSWER.
+  <ENiX> <A>  :RECOLLECT    NULL High-Level,  retrieves quotations containing keywords A.
+  <ENiX> <A>  :REVERSE      NULL Set Theory,  reverses :ANSWER and saves to :ANSWER.
+  <ENiX> NULL :RUN          B    Control,     ENiX runs contents of first command in B through OS.
+  <ENiX> NULL :SAVE         B    Memory,      save memory as memory file, B.
+  <ENiX> <A>  :SAVESET      B    Set Theory,  save the set A to B.
+  <ENiX> <A>  :SHRINK       NULL Set Theory,  remove duplicated elements from :ANSWER.
+  <ENiX> <A>  :SIGNAL       NULL Logic,       save 1 if A else save 0 to :ANSWER.
+  <ENiX> <A>  :SIMILAR      B    Set Theory,  finds descriptors B in A and saves matches in :ANSWER.
+  <ENiX> <A>  :SIZE         B    Set Theory,  saves cardinality of A to B.
+  <ENiX> NULL :SLEEP        NULL Memory,      sort out memory using natural selection.
+  <ENiX> <A>  :SMALLER      <B>  Logic,       if A is smaller than B save 1 else save 0 to :ANSWER.
+  <ENiX> <A>  :SPLIT        NULL Set Theory,  caches the sequence of letters in A into :ANSWER.
+  <ENiX> NULL :STATISTICS   NULL Interface,   display memory statistics.
+  <ENiX> <A>  :STUDY        NULL High-Level,  associates A components in memory.
+  <ENiX> <A>  :SUB          <B>  Mathematics, subtract B from A and save to :ANSWER.
+  <ENiX> <A>  :SUBSET       B    Set Theory,  saves 1 else 0 to :ANSWER depending on whether A is a subset of B.
+  <ENiX> NULL :TRANS        NULL Control,     translate everything after :TRANS to term criteria.
+  <ENiX> NULL :TRUE         NULL Logic,       save 1 to :ANSWER.
+  <ENiX> NULL :UNDO         NULL Memory,      restores memory file to what it was before its last use.
+  <ENiX> <A>  :UNION        B    Set Theory,  merge A and B into a set stored in :ANSWER.
+  <ENiX> A    :UNWRAP       B    Set Theory,  remove the outer two words contained in A and save to B.
+  <ENiX> NULL :VERSION      NULL Interface,   display software version information.
+  <ENiX> A    :WRAP         B    Set Theory,  wraps A in quotes and saves as B.
+  <ENiX> <A>  :XOR          <B>  Logic,       if A xor B then save 1 else save 0 to :ANSWER.
+<PERSON> :debug
+  <ENiX> Data: debug ? ? ? 19:07:29-2009/04/18 19:07:29-2009/04/18 1 ? 
+  <ENiX> Data: home ? ? ? 19:07:20-2009/04/18 19:07:20-2009/04/18 1 ? 
+  <ENiX> Data: mem ? ? ? 19:07:20-2009/04/18 19:07:20-2009/04/18 1 ? 
+  <ENiX> Data: help ? ? ? 19:07:20-2009/04/18 19:07:26-2009/04/18 1 ? 
+  <ENiX> Data: mode ? ? ? 19:07:01-2009/04/18 19:07:01-2009/04/18 1 ? 
+  <ENiX> Data: :memory ? ? ? 19:06:46-2009/04/18 19:06:46-2009/04/18 1 ? 
+  <ENiX> Data: :mode ? ? ? 19:06:46-2009/04/18 19:07:29-2009/04/18 1 cs0 
+  <ENiX> :memlimit :memexp :memprob :memrate :memthresh :memnew 
+  <ENiX> -1 7 0.9 0.25 0.0001 9 
+  <ENiX> Data: enix ? ? ? 19:06:46-2009/04/18 19:07:29-2009/04/18 1 ? 
+  <ENiX> Data: . ? ? ? 19:06:46-2009/04/18 19:07:29-2009/04/18 1 ? 
+  <ENiX> Data: / ? ? ? 19:06:46-2009/04/18 19:07:29-2009/04/18 1 ? 
+  <ENiX> Data: statistics ? ? ? 19:07:05-2009/04/18 19:07:05-2009/04/18 1 ? 
+<PERSON> :statistics
+  <ENiX> Datablocks: 11, relationships: 0. Since last sleep: 9.
+<PERSON> :force statistics :debug
+  <ENiX> =[Datablock 00011]==========================================
+  <ENiX> Name              statistics Grammar                       ?
+  <ENiX> Purpose                    ? Emotion                       ?
+  <ENiX> First Time          19:07:05-2009/04/18
+  <ENiX> Last Time           19:07:51-2009/04/18
+  <ENiX> Probability       1.00000000 Commands                      ?
+  <ENiX> ============================================================
+<PERSON> :all :answer
+  <ENiX> force debug home mem help mode :memory :mode enix . / statistics answer all 
+<PERSON> :sleep
+  <ENiX> Please enable sentiency before using this function!
+<PERSON> :statistics
+  <ENiX> Datablocks: 15, relationships: 0. Since last sleep: 0.
+<PERSON> :mode
+  <ENiX> =[Datablock 00000]==========================================
+  <ENiX> Name                   :mode Grammar                       ?
+  <ENiX> Purpose                    ? Emotion                       ?
+  <ENiX> First Time          19:06:46-2009/04/18
+  <ENiX> Last Time           19:09:00-2009/04/18
+  <ENiX> Probability       0.90000000 Commands                    cs0
+  <ENiX> -[Comparisons]----------------------------------------------
+  <ENiX> Qualifier:                                            Value:
+  <ENiX> :memlimit                                                 -1
+  <ENiX> :memexp                                                    7
+  <ENiX> :memprob                                                 0.9
+  <ENiX> :memrate                                                0.25
+  <ENiX> :memthresh                                            0.0001
+  <ENiX> :memnew                                           0.00000000
+  <ENiX> ============================================================
+<PERSON> !SAVE TRAINING/MEMORY.MACRO
+<PERSON> :purge
+  <ENiX> Erasing current memory file...
+<PERSON> 
+  <ENiX> Cannot open: /home/ENiX/.ENiX/ENiX3.MEM
+  <ENiX> Note: ~/.ENiX/ has been successfully created.
+  <ENiX> Created blank ~/.ENiX/ENiX.MEM file.
+  <ENiX> Please re-run ENiX for normal operation...
+<PERSON> 
+  <ENiX> Startup datablock created.
+  <ENiX> ENiX 3 is ment to be used with parameters.
+  <ENiX> Behavioral inhibitors are preceeded by ":"
+  <ENiX> User defined commands are not prefixed...
+  <ENiX> Use ":help"            - GPL [OvO]wl 2008.
+<PERSON> !SAVE TRAINING/MEMORY.MACRO 
+<PERSON> :all :answer
+  <ENiX> home mem ! save training memory macro :memory :mode enix . / answer all 
+<PERSON> :all :delete
+  <ENiX> You did not specify what to delete and I am not deleting everything!
+<PERSON> :force training memory macro :delete
+  <ENiX> Deleting: training memory macro 
+<PERSON> :all :answer
+  <ENiX> force all answer / . enix :mode :memory save ! mem home delete 

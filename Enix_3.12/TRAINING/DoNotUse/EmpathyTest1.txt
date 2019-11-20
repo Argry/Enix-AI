@@ -1,0 +1,9 @@
+<PERSON> :force adam :load
+<ENiX>   Loading personality profile: adam...
+Program killed by :load.
+<PERSON> :quote b :define :statistics
+<PERSON> b :null
+<ENiX>   Datablocks: 202, relationships: 38. Since last sleep: 433.
+<PERSON> :quote sad sympathetic shamed :hook b
+<PERSON> the sad cat sat on the mat
+

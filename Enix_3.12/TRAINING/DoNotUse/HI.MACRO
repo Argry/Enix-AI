@@ -1,0 +1,25 @@
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> !CLEAR
+<PERSON> :purge
+  <ENiX> Memory destroyed.
+<PERSON> is :define :define
+  <ENiX> Startup datablock created.
+<PERSON> explain is :definition
+<PERSON> say is :definition :force :quote
+<PERSON> explain explain
+  <ENiX> :definition 
+<PERSON> say explain
+  <ENiX> explain 
+<PERSON> are am is is
+<PERSON> me is i
+<PERSON> you are enix
+<PERSON> i am owl
+<PERSON> explain me
+  <ENiX> owl 
+<PERSON> explain you
+  <ENiX> enix 
+<PERSON> say hi
+  <ENiX> hi 
+<PERSON> :force hi is :quote say hi
+<PERSON> hi
+  <ENiX> hi 

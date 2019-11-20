@@ -1,0 +1,52 @@
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> !CLEAR
+<PERSON> :personality :answer
+  <ENiX> ENiX 3 Incarnation ? 
+<PERSON> :force grammarenglish :define definitearticle indefinitearticle conjunction verb noun adverb adjective pronoun propernoun preposition 
+<PERSON> :definition grammarenglish
+  <ENiX> definitearticle indefinitearticle conjunction verb noun adverb adjective pronoun propernoun preposition 
+<PERSON> :save john
+  <ENiX> Copying /home/ENiX/.ENiX/ENiX3.MEM to /home/ENiX/.ENiX/john.MEM
+<PERSON> :all :answer
+  <ENiX> save john force grammarenglish define definitearticle indefinitearticle conjunction verb noun adverb adjective pronoun propernoun preposition / . enix :mode :memory answer personality mem home definition all 
+<PERSON> :purge
+  <ENiX> Erasing current memory file...
+<PERSON> 
+  <ENiX> Cannot open: /home/ENiX/.ENiX/ENiX3.MEM
+  <ENiX> Note: ~/.ENiX/ has been successfully created.
+  <ENiX> Created blank ~/.ENiX/ENiX.MEM file.
+  <ENiX> Please re-run ENiX for normal operation...
+<PERSON> :all :answer
+  <ENiX> Startup datablock created.
+  <ENiX> :memory :mode answer . all mem enix home / 
+<PERSON> :load john
+  <ENiX> Copying /home/ENiX/.ENiX/john.MEM to /home/ENiX/.ENiX/ENiX3.MEM
+  <ENiX> Program killed by :load.
+<PERSON> :all :answer
+  <ENiX> save john force grammarenglish define definitearticle indefinitearticle conjunction verb noun adverb adjective pronoun propernoun preposition / . enix :mode :memory answer personality mem home definition all 
+<PERSON> :purge
+  <ENiX> Erasing current memory file...
+<PERSON> :save adam
+  <ENiX> Startup datablock created.
+  <ENiX> Copying /home/ENiX/.ENiX/ENiX3.MEM to /home/ENiX/.ENiX/adam.MEM
+<PERSON> :personality :answer
+  <ENiX> ENiX 3 Incarnation Adam 
+<PERSON> :force grammarenglish :meld john
+  <ENiX> =[:MELD]========================================[Overwrite][Copy]
+  <ENiX> grammarenglish                                   ......Yes  .Yes
+  <ENiX> definitearticle                                  .......No  .Yes
+  <ENiX> indefinitearticle                                .......No  .Yes
+  <ENiX> conjunction                                      .......No  .Yes
+  <ENiX> verb                                             .......No  .Yes
+  <ENiX> noun                                             .......No  .Yes
+  <ENiX> adverb                                           .......No  .Yes
+  <ENiX> adjective                                        .......No  .Yes
+  <ENiX> pronoun                                          .......No  .Yes
+  <ENiX> propernoun                                       .......No  .Yes
+  <ENiX> preposition                                      .......No  .Yes
+  <ENiX> ==========================================================[Done]=
+<PERSON> :all :answer
+  <ENiX> preposition propernoun pronoun adjective adverb noun verb conjunction indefinitearticle definitearticle force grammarenglish meld john / home enix mem . save adam :mode :memory answer personality all 
+<PERSON> :save adam
+  <ENiX> Copying /home/ENiX/.ENiX/ENiX3.MEM to /home/ENiX/.ENiX/adam.MEM
+

@@ -1,0 +1,4 @@
+<PERSON> :QUOTE /dev/ttyUSB0 19200 19200 2238 1 0 0 0 20  :SETSERIAL COM1
+<COMMENT> remember to symlink ttyusb0 to the name of your serial devices
+<COMMENT> enix correctly doesn't do case sensitive devices
+<PERSON> :QUOTE hal :SAVE

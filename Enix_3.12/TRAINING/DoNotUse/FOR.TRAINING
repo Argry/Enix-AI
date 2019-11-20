@@ -1,0 +1,6 @@
+<PERSON> !SWITCHTO ./ENiX3
+<PERSON> :force start :define 0
+<PERSON> :force finish :define 10
+<PERSON> :force counter :define start
+<PERSON> :force count :define :force counter :add 1 :store :force :force :force counter :answer :smaller :force finish :signal
+<PERSON> :force docount :define :true :do :force :force :force count
