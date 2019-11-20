@@ -1,0 +1,54 @@
+<PERSON> !client localhost 575
+<ENiX>   Amoeba Database 2.0
+Pid: 4736
+
+<ENiX>   SENDING HELP
+ADD
+ADDFILE
+DELETEPAIR <Record ID> <Attribute 1> <Value 1>
+DEBUGALLOC
+DEBUGREC
+DEFRAG
+DELETE <Record ID>
+DELETEFILE <Record ID>
+DELETEPAIR <Record ID> <Attribute ID>
+DELETEPP <Personality Profile Name>
+EXIT
+FIND <Record Name>
+GETALL
+GETALLPP
+GETDATA <Record ID>
+GETFILE <Record Name>
+GETNAME <Record ID>
+GETPP
+HELP
+LISTPP
+LOAD <Filename>
+PURGE
+REPLACE <Record Position>
+SAVE <Filename>
+SETPP <Personality Profile Name>
+STATS
+
+<PERSON> PURGE
+<ENiX>   EMERGENCY DATABASE ERASE
+
+<PERSON> !disconnect
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 4745
+
+<PERSON> : 1 2 3 :answer
+<ENiX>   1 2 3
+
+<PERSON> !disconnect
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 4846
+
+<PERSON> :answer
+<ENiX>   1 2 3
+
+<PERSON> : 1 2 :answer
+<ENiX>   1 2
+

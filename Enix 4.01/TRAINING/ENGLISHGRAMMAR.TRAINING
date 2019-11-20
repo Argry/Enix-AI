@@ -1,0 +1,326 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 28878
+
+<PERSON> : { . ? ! } :endpunct
+<PERSON> : { startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark } :setarticles
+<PERSON> : { ynq whq indicative imperative } :setmoodlist
+<PERSON> : { verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction } :setwords
+<PERSON> : { startsentence } :setsenstart
+<PERSON> : { endsentence } :setsenend
+<PERSON> : { the } :setgrammar { definitearticle }
+<PERSON> : { a an } :setgrammar { indefinitearticle }
+<PERSON> : { living good bad furry grey large small black white afraid his quiet fast } :setgrammar { adjective }
+<PERSON> : { not how quietly very calmly patiently quickly also } :setgrammar { adverb }
+<PERSON> : { removed run sat be been being were had have am are will would is scared runs define put happens living was do does doing done did sit sits sitting teach go ran feel } :setgrammar { verb }
+<PERSON> : { if and or nor either , } :setgrammar { conjunction }
+<PERSON> : { enix martyn } :setgrammar { propernoun }
+<PERSON> : { about under on of down where to there near by } :setgrammar { preposition }
+<PERSON> : { life death opposite animal cats animals thing council tree mouse cat mat name computer home bed plant dog } :setgrammar { noun }
+<PERSON> : { i he she it we you they them who whom us nothing her what me } :setgrammar { pronoun }
+<PERSON> : { . } :setgrammar { fullstop }
+<PERSON> : { ? } :setgrammar { questionmark }
+<PERSON> : { ! } :setgrammar { exclamationmark }
+<PERSON> : { ; } :setgrammar { semicolon }
+<PERSON> : { sat } :tense past
+<PERSON> : { sitting sit sits } :tense present
+<PERSON> :resetgrammar
+<PERSON> : { the cat ran fast } :setmood { indicative }
+<PERSON> : { the cat sat on a mat } :setmood { indicative }
+<PERSON> : { the cat was sitting on a mat } :setmood { indicative }
+<PERSON> : { enix and a dog sat near a plant and the cat ! } :setmood { indicative }
+<PERSON> : { she sat near enix ! } :setmood { indicative }
+<PERSON> : { enix sat very near martyn . } :setmood { indicative }
+<PERSON> : { the quiet black and white cat sat near enix } :setmood { indicative }
+<PERSON> : { enix is a name } :setmood { indicative }
+<PERSON> : { enix runs the computer } :setmood { indicative }
+<PERSON> : { enix runs her } :setmood { indicative }
+<PERSON> : { enix is afraid of her . } :setmood { indicative }
+<PERSON> : { martyn is also afraid of her ! } :setmood { indicative }
+<PERSON> : { martyn also is very very afraid of the cat } :setmood { indicative }
+<PERSON> : { his name was martyn } :setmood { indicative }
+<PERSON> : { martyn is quiet ! } :setmood { indicative }
+<PERSON> : { martyn is quiet . } :setmood { indicative }
+<PERSON> : { martyn sat near the dog and enix } :setmood { indicative }
+<PERSON> : { martyn sat near the plant and her } :setmood { indicative }
+<PERSON> : { a large cat quietly sat on the large mat . } :setmood { indicative }
+<PERSON> : { the cat sat on the mat ! } :setmood { indicative }
+<PERSON> : { the cat sat on her mat ! } :setmood { indicative }
+<PERSON> : { the cat sat on her large mat ! } :setmood { indicative }
+<PERSON> : { she will run quickly } :setmood { indicative }
+<PERSON> : { the mat was sat on by the cat } :setmood { indicative }
+<PERSON> : { i was sat on } :setmood { indicative }
+<PERSON> : { either the cat or the dog sat on the mat } :setmood { indicative }
+<PERSON> : { he sat on them } :setmood { indicative }
+<PERSON> : { cats are furry animals } :setmood { indicative }
+<PERSON> : { life is the opposite of death } :setmood { indicative }
+<PERSON> : { nothing happens } :setmood { indicative }
+<PERSON> : { did the cat sit on the mat ? } :setmood { ynq }
+<PERSON> : { did a cat sit on a mat ? } :setmood { ynq }
+<PERSON> : { did enix sit on martyn ? } :setmood { ynq }
+<PERSON> : { did she sit near enix ? } :setmood { ynq }
+<PERSON> : { did the large cat and the dog sit near martyn and enix ? } :setmood { ynq }
+<PERSON> : { did martyn and a small black dog quietly sit near enix ? } :setmood { ynq }
+<PERSON> : { did martyn calmly and patiently teach enix ? } :setmood { ynq }
+<PERSON> : { did martyn sit quietly down ? } :setmood { ynq }
+<PERSON> : { did martyn sit near her ? } :setmood { ynq }
+<PERSON> : { did martyn sit near the cat and her ? } :setmood { ynq }
+<PERSON> : { did martyn sit near her cat ? } :setmood { ynq }
+<PERSON> : { did martyn sit near her black cat ? } :setmood { ynq }
+<PERSON> : { was the mat sat on by the cat ? } :setmood { ynq }
+<PERSON> : { was the mat being sat on by the black cat ? } :setmood { ynq }
+<PERSON> : { was the mat sat on by either the cat or the dog ? } :setmood { ynq }
+<PERSON> : { was either the cat or the dog sat on the mat ? } :setmood { ynq }
+<PERSON> : { was either the black cat , the grey cat or the white cat sat on the black mat and the white mat ? } :setmood { ynq }
+<PERSON> : { is life the opposite of death ? } :setmood { ynq }
+<PERSON> : { what sat on a mat ? } :setmood { whq }
+<PERSON> : { who sat on a mat ? } :setmood { whq }
+<PERSON> : { who sat near a large plant ? } :setmood { whq }
+<PERSON> : { where is enix and martyn ? } :setmood { whq }
+<PERSON> : { where is a black and white cat ? } :setmood { whq }
+<PERSON> : { where is the cat ? } :setmood { whq }
+<PERSON> : { who is very quiet ? } :setmood { whq }
+<PERSON> : { where is the large white cat and the dog ? } :setmood { whq }
+<PERSON> : { where is a cat and a plant ? } :setmood { whq }
+<PERSON> : { where is she ? } :setmood { whq }
+<PERSON> : { who was near the dog ? } :setmood { whq }
+<PERSON> : { who was near the dog and me ? } :setmood { whq }
+<PERSON> : { who was near her dog ? } :setmood { whq }
+<PERSON> : { who was near her large dog ? } :setmood { whq }
+<PERSON> : { what was being sat on by the cat ? } :setmood { whq }
+<PERSON> : { what was sat on ? } :setmood { whq }
+<PERSON> : { what sat quietly on the mat ? } :setmood { whq }
+<PERSON> : { what quietly sat on the mat ? } :setmood { whq }
+<PERSON> : { what sat on either the white cat or the black cat ? } :setmood { whq }
+<PERSON> : { what sat on the white cat , the grey cat or the black cat ? } :setmood { whq }
+<PERSON> : { how do you feel about the cat ? } :setmood { whq }
+<PERSON> : { what is the opposite of death ? } :setmood { whq }
+<PERSON> : { what is the cat sat on ? } :setmood { whq }
+<PERSON> : { go home } :setmood { imperative }
+<PERSON> : { define a cat } :setmood { imperative }
+<PERSON> : { go quickly home to bed . } :setmood { imperative }
+<PERSON> : { do go home . } :setmood { imperative }
+<PERSON> : { quietly go home ! } :setmood { imperative }
+<PERSON> : { quickly be quiet . } :setmood { imperative }
+<PERSON> : { quickly be quiet } :setmood { imperative }
+<PERSON> : { quickly be quiet ! } :setmood { imperative }
+<PERSON> : { go quietly ! } :setmood { imperative }
+<PERSON> : { go quietly . } :setmood { imperative }
+<PERSON> : { go quietly } :setmood { imperative }
+<PERSON> : { go home to martyn and enix } :setmood { imperative }
+<PERSON> : { go home to enix ! } :setmood { imperative }
+<PERSON> : { go home to martyn . } :setmood { imperative }
+<PERSON> : { go home to a plant and a small black dog } :setmood { imperative }
+<PERSON> : { go home to the plant and the black and white cat } :setmood { imperative }
+<PERSON> : { sit the cat on the mat } :setmood { imperative }
+<PERSON> : { go to her } :setmood { imperative }
+<PERSON> : { go to her . } :setmood { imperative }
+<PERSON> : { go to her ! } :setmood { imperative }
+<PERSON> : { go there } :setmood { imperative }
+<PERSON> : { go there . } :setmood { imperative }
+<PERSON> : { go there ! } :setmood { imperative }
+<PERSON> : { go martyn } :setmood { imperative }
+<PERSON> : { go to her home . } :setmood { imperative }
+<PERSON> : { go to her large home . } :setmood { imperative }
+<PERSON> :showgrammar
+<ENiX>   imperative
+  adjective -> adjective conjunction endsentence exclamationmark fullstop noun
+  adverb -> endsentence exclamationmark fullstop noun verb
+  comma -> 
+  conjunction -> adjective definitearticle indefinitearticle propernoun
+  definitearticle -> adjective noun
+  endsentence -> 
+  exclamationmark -> endsentence
+  fullstop -> endsentence
+  indefinitearticle -> adjective noun
+  noun -> conjunction endsentence exclamationmark fullstop preposition
+  preposition -> definitearticle endsentence exclamationmark fullstop indefinitearticle noun pronoun propernoun
+  pronoun -> adjective endsentence exclamationmark fullstop noun
+  propernoun -> conjunction endsentence exclamationmark fullstop
+  questionmark -> 
+  quotationmark -> 
+  semicolon -> 
+  startsentence -> adverb verb
+  verb -> adjective adverb definitearticle indefinitearticle noun preposition propernoun verb
+indicative
+  adjective -> adjective conjunction endsentence exclamationmark fullstop noun preposition
+  adverb -> adjective adverb endsentence preposition verb
+  comma -> 
+  conjunction -> adjective definitearticle indefinitearticle pronoun propernoun
+  definitearticle -> adjective noun
+  endsentence -> 
+  exclamationmark -> endsentence
+  fullstop -> endsentence
+  indefinitearticle -> adjective noun
+  noun -> adverb conjunction endsentence exclamationmark fullstop preposition verb
+  preposition -> definitearticle endsentence indefinitearticle noun preposition pronoun propernoun
+  pronoun -> adjective endsentence exclamationmark fullstop noun verb
+  propernoun -> adverb conjunction endsentence exclamationmark fullstop verb
+  questionmark -> 
+  quotationmark -> 
+  semicolon -> 
+  startsentence -> adjective conjunction definitearticle indefinitearticle noun pronoun propernoun
+  verb -> adjective adverb definitearticle endsentence indefinitearticle preposition pronoun propernoun verb
+whq
+  adjective -> adjective conjunction noun questionmark
+  adverb -> adjective preposition verb
+  comma -> 
+  conjunction -> adjective definitearticle indefinitearticle pronoun propernoun
+  definitearticle -> adjective noun
+  endsentence -> 
+  exclamationmark -> 
+  fullstop -> 
+  indefinitearticle -> adjective noun
+  noun -> conjunction preposition questionmark verb
+  preposition -> conjunction definitearticle indefinitearticle noun preposition pronoun questionmark verb
+  pronoun -> adjective adverb noun questionmark verb
+  propernoun -> conjunction questionmark
+  questionmark -> endsentence
+  quotationmark -> 
+  semicolon -> 
+  startsentence -> adverb preposition pronoun
+  verb -> adverb definitearticle indefinitearticle preposition pronoun propernoun verb
+ynq
+  adjective -> adjective noun
+  adverb -> conjunction preposition verb
+  comma -> 
+  conjunction -> adverb definitearticle indefinitearticle pronoun propernoun
+  definitearticle -> adjective noun
+  endsentence -> 
+  exclamationmark -> 
+  fullstop -> 
+  indefinitearticle -> adjective noun
+  noun -> adverb conjunction definitearticle preposition questionmark verb
+  preposition -> conjunction definitearticle indefinitearticle noun preposition pronoun propernoun questionmark
+  pronoun -> adjective noun questionmark verb
+  propernoun -> adverb conjunction questionmark verb
+  questionmark -> endsentence
+  quotationmark -> 
+  semicolon -> 
+  startsentence -> verb
+  verb -> adverb conjunction definitearticle indefinitearticle noun preposition pronoun propernoun verb
+
+
+<PERSON> : { the cat sat on the mat } :senclass :answer
+<ENiX>   indicative
+
+<PERSON> : { was the cat sat on the mat ? } :senclass :answer
+<ENiX>   ynq
+
+<PERSON> : { what sat on the mat ? } :senclass :answer
+<ENiX>   whq
+
+<PERSON> : { sit on the mat ! } :senclass :answer
+<ENiX>   imperative
+
+<PERSON> : { s pv pn } :sentemplate { indicative }
+<PERSON> : { pv s pv pn } :sentemplate { ynq }
+<PERSON> : { pv s pv pn } :sentemplate { whq }
+<PERSON> : { s pv pn } :sentemplate { whq }
+<PERSON> : { s pv pn pv pn } :sentemplate { whq }
+<PERSON> : { pv pn } :sentemplate { imperative }
+<PERSON> : { pv s pv pn } :sentemplate { imperative }
+<PERSON> :showtemplate
+<ENiX>   SentenceTemplates:
+imperative
+pv pn,pv s pv pn
+indicative
+s pv pn
+whq
+pv s pv pn,s pv pn,s pv pn pv pn
+ynq
+pv s pv pn
+
+<COMMENT> : { verb adverb preposition } :predarticles
+<PERSON> : { verb adverb } :predarticles
+<PERSON> : { noun propernoun pronoun preposition adjective conjunction definitearticle indefinitearticle comma } :subjarticles
+<PERSON>  : { passive simple future } :apvf { will be }
+<PERSON>  : { passive future perfect } :apvf { will have been }
+<PERSON>  : { passive simple present one } :apvf { am }
+<PERSON>  : { passive simple present two } :apvf { are }
+<PERSON>  : { passive simple present three } :apvf { is }
+<PERSON>  : { passive present progressive one } :apvf { am being }
+<PERSON>  : { passive present progressive two } :apvf { are being }
+<PERSON>  : { passive present progressive three } :apvf { is being }
+<PERSON>  : { passive present perfect one } :apvf { have been }
+<PERSON>  : { passive present perfect two } :apvf { has been }
+<PERSON>  : { passive simple past one } :apvf { was }
+<PERSON>  : { passive simple past two } :apvf { were }
+<PERSON>  : { passive past progressive one } :apvf { was being }
+<PERSON>  : { passive past progressive two } :apvf { were being }
+<PERSON>  : { passive past perfect } :apvf { had been }
+<PERSON>  : { passive future progressive passive } :apvf { will be being }
+<PERSON>  : { passive perfect progressive passive } :apvf { has been being }
+<PERSON>  : { passive future unreal } :apvf { would be }
+<PERSON>  : { passive past unreal } :apvf { would have been }
+<PERSON>  : { active simple future } :aavf { will }
+<PERSON>  : { active future progressive } :aavf { will be }
+<PERSON>  : { active future perfect } :aavf { will have }
+<PERSON>  : { active future perfect progressive } :aavf { will have been }
+<PERSON>  : { active present progressive one } :aavf { am }
+<PERSON>  : { active present progressive two } :aavf { are }
+<PERSON>  : { active present progressive three } :aavf { is }
+<PERSON>  : { active present progressive one } :aavf { have }
+<PERSON>  : { active present progressive two } :aavf { has }
+<PERSON>  : { active present perfect progressive one } :aavf { have been }
+<PERSON>  : { active present perfect progressive two } :aavf { has been }
+<PERSON>  : { active past progressive one } :aavf { was }
+<PERSON>  : { active past progressive two } :aavf { were }
+<PERSON>  : { active past perfect } :aavf { had }
+<PERSON>  : { active past perfect progressive } :aavf { had been }
+<PERSON>  : { active present unreal } :aavf { would }
+<PERSON>  : { active present unknown one } :aavf { did }
+<PERSON>  : { active present unknown two } :aavf { do }
+<PERSON> :showverbforms
+<ENiX>   Active Verb Forms:
+  am -> active present progressive one
+  are -> active present progressive two
+  did -> active present unknown one
+  do -> active present unknown two
+  had -> active past perfect
+  had been -> active past perfect progressive
+  has -> active present progressive two
+  has been -> active present perfect progressive two
+  have -> active present progressive one
+  have been -> active present perfect progressive one
+  is -> active present progressive three
+  was -> active past progressive one
+  were -> active past progressive two
+  will -> active simple future
+  will be -> active future progressive
+  will have -> active future perfect
+  will have been -> active future perfect progressive
+  would -> active present unreal
+
+Passive Verb Forms:
+  am -> passive simple present one
+  am being -> passive present progressive one
+  are -> passive simple present two
+  are being -> passive present progressive two
+  had been -> passive past perfect
+  has been -> passive present perfect two
+  has been being -> passive perfect progressive passive
+  have been -> passive present perfect one
+  is -> passive simple present three
+  is being -> passive present progressive three
+  was -> passive simple past one
+  was being -> passive past progressive one
+  were -> passive simple past two
+  were being -> passive past progressive two
+  will be -> passive simple future
+  will be being -> passive future progressive passive
+  will have been -> passive future perfect
+  would be -> passive future unreal
+  would have been -> passive past unreal
+
+<PERSON> : { at by about with of in } :spa
+<PERSON> : { , and or either nor not neither } :setlogic
+
+<PERSON> : { adverb verb } :verborder
+<PERSON> : { preposition adjective pronoun definitearticle indefinitearticle noun propernoun } :subjectorder
+
+<PERSON> : { sit sits sat } :baseverb { sitting }
+
+<PERSON> : { if when because } :setcondcause
+<PERSON> : { causes caused then } :setcondeffect
+

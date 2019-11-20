@@ -1,0 +1,25 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 25002
+
+<PERSON> the cat sat on the mat
+<PERSON> was the cat sat on the mat ?
+<PERSON> was the mat sat on by the cat ?
+<PERSON> was the mat sat on the cat ?
+<PERSON> was the cat sat on by the mat ?
+
+<PERSON> was the dog sat on the mat ?
+<PERSON> was the mat sat on by the dog ?
+
+<PERSON> is the cat sat on the mat ?
+<PERSON> will the cat be sat on the mat ?
+
+<PERSON> was the cat or the dog sat on the mat ?
+<PERSON> was the cat and the dog sat on the mat ?
+<PERSON> was either the cat or the dog sat on the mat ?
+<PERSON> was neither the cat nor the dog sat on the mat ?
+<PERSON> was the cat not sat on the mat ?
+
+<PERSON> what sat on the mat ?
+<PERSON> what was sat on by the cat ?
+

@@ -1,0 +1,35 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 29368
+
+<PERSON> : { startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark } :setarticles
+<PERSON> :mode
+<ENiX>   ============================================================
+Name            martyn@Hades Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:17:08-2018/03/18
+Last Time           18:07:44-2018/04/12
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:vocab                        mode b d e a c test help ? primes noun verb startsentence endsentence pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark abc ynq whq indicative imperative
+:answer                       startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:csnum                                                     1
+:articles                     startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+============================================================
+
+<PERSON> : { ynq whq indicative imperative } :setmoodlist
+<PERSON> :mode
+<ENiX>   ============================================================
+Name            martyn@Hades Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:17:08-2018/03/18
+Last Time           18:07:52-2018/04/12
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:vocab                        mode b d e a c test help ? primes noun verb startsentence endsentence pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark abc ynq whq indicative imperative
+:answer                        ynq whq indicative imperative
+:csnum                                                     1
+:articles                     startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:moodlist                      ynq whq indicative imperative
+============================================================
+

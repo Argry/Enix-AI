@@ -1,0 +1,201 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 19079
+
+<PERSON> : { test } :nnclear
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:09-2018/04/01
+Probability                1 Commands                      ?
+============================================================
+
+<PERSON> :help :nn
+<ENiX>   A    :NNCLEAR      NULL   Saves the neural network multiplexor, A.
+A    :NNADD        B      Adds :CAUSE... :EFFECT... to multiplexor, A.
+A    :NNMUL        NULL   Multiplex neural network, A.
+A    :NNGETCAUSE   B      Calculate cause from effect, B in A.
+A    :NNGETEFFECT  B      Calculate effect from cause, B in A.
+A    :NNREMOVE     B      Remove cause, B from A.
+
+<PERSON> : { test } :nnadd { :cause :effect c }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:09-2018/04/01
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:CAUSELIST                                                  
+:EFFECTLIST                                                c
+:CAUSE                                             :EFFECT c
+============================================================
+
+<PERSON> : { test } :nnremove { }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:09-2018/04/01
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:CAUSELIST                                                  
+:EFFECTLIST                                                c
+============================================================
+
+<PERSON> : { test } :nnadd { :cause :effect b }
+<PERSON> : { test } :nnadd { :cause a :effect a b }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:10-2018/04/01
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:CAUSELIST                                                 a
+:EFFECTLIST                                            a b c
+:CAUSE                                             :EFFECT b
+:CAUSE a                                         :EFFECT a b
+============================================================
+
+<PERSON> : { test } :nnclear
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:10-2018/04/01
+Probability                1 Commands                      ?
+============================================================
+
+<PERSON> : { test } :nnadd { :cause :effect b }
+<PERSON> : { test } :nnadd { :cause a :effect a b }
+<PERSON> : { test } :nnadd { :cause b :effect }
+<PERSON> : { test } :nnadd { :cause c :effect b }
+<PERSON> : { test } :nnadd { :cause a c :effect a b }
+<PERSON> : { test } :nnadd { :cause b c :effect }
+<PERSON> : { test } :nnadd { :cause a b c :effect a }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:11-2018/04/01
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:CAUSELIST                                             a b c
+:EFFECTLIST                                              a b
+:CAUSE                                             :EFFECT b
+:CAUSE a                                         :EFFECT a b
+:CAUSE b                                             :EFFECT
+:CAUSE c                                           :EFFECT b
+:CAUSE a c                                       :EFFECT a b
+:CAUSE b c                                           :EFFECT
+:CAUSE a b c                                       :EFFECT a
+============================================================
+
+<PERSON> : { test } :nnmul :answer
+<ENiX>   2 3 0 ? 2 3 0 1
+
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          23:18:00-2018/03/18
+Last Time           06:59:11-2018/04/01
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:CAUSELIST                                             a b c
+:EFFECTLIST                                              a b
+:CAUSE                                             :EFFECT b
+:CAUSE a                                         :EFFECT a b
+:CAUSE b                                             :EFFECT
+:CAUSE c                                           :EFFECT b
+:CAUSE a c                                       :EFFECT a b
+:CAUSE b c                                           :EFFECT
+:CAUSE a b c                                       :EFFECT a
+:NEURALNET                    2 1 1 1 8 1 2 4 1 2 8 0 0 0 0 0 0 0 0 1 1 1 8 2 1 4 1 1 8 1 0 0 0 0 0 0 0 
+============================================================
+
+<PERSON> :help
+<ENiX>   A    +             B      Add B to vector / numbers, A.
+A    -             B      Subtract B from vector / numbers, A.
+A    /             B      Divide vector / numbers, A, by B.
+A    *             B      Multiply vector / numbers, A, by B.
+A    ^             B      Raise vector / numbers, A, by B.
+A    %             B      Compute the modulus of A in base, B.
+A    =             B      Assign value B to variable or record A.
+A    ==            B      Saves 1 to ANSWER if true, 0 otherwise.
+A    <>            B      Saves 1 to ANSWER if true, 0 otherwise.
+A    <             B      Saves 1 to ANSWER if true, 0 otherwise.
+A    <=            B      Saves 1 to ANSWER if true, 0 otherwise.
+A    >             B      Saves 1 to ANSWER if true, 0 otherwise.
+A    >=            B      Saves 1 to ANSWER if true, 0 otherwise.
+A    <=>           B      Move data, A until after the command following the command following B.
+NULL :ALL          NULL   Displays all records in the personality profile.
+[A]  :ANSWER       NULL   Shows the answer in the :ANSWER buffer.
+A    :CSADDR       NULL   Saves the CS address into the :ANSWER buffer.
+A    :CSLOAD       NULL   Saves the contents in the address A to the :ANSWER buffer.
+A    :CSRECON      NULL   Reconstructs the context address from A and places in :ANSWER.
+A    :CSSAVE       B      Stores data, B in context address, A.
+A    :DEBUG        NULL   Shows the database records, A.
+A    :DOMAIN       NULL   Creates a domain from 2 numbers, A.
+NULL :ERRORS       NULL   Shows the errors from the current session.
+A    :EXECUTE      B      Retrieves neural net B, and executes it on domain, A.
+NULL :HELP         [B]    Shows a list of help commands if there is no A specified, otherwise shows the syntax for a specific command.
+A :IF NULL [:else] :FI    Run ... if B is true else run the alternate
+A    :LEARN        B      Learn a neural network from data, A and save it to concept, B.
+NULL :LISTVARS     NULL   Shows all the data in variables.
+A    :NNCLEAR      NULL   Saves the neural network multiplexor, A.
+A    :NNADD        B      Adds :CAUSE... :EFFECT... to multiplexor, A.
+A    :NNMUL        NULL   Multiplex neural network, A.
+A    :NNGETCAUSE   B      Calculate cause from effect, B in A.
+A    :NNGETEFFECT  B      Calculate effect from cause, B in A.
+A    :NNREMOVE     B      Remove cause, B from A.
+A    :ODDMAN       NULL   Saves the oddman out of sequence A.
+NULL :OUTPUT       NULL   Shows command output from the current session.
+A    :POLYCALC     B      Retrieves a polynomial B, and executes it on domain, A.
+A    :POLYCREATE   B      Creates a polynomial from A and saves it to B.
+A    :POLYGET      NULL   Displays the polynomial for A.
+A    :POLYSET      B      Save polynomial A to record B.
+NULL :SAVESETTINGS NULL   Shows command output from the current session.
+A    :SHOWNEURAL   NULL   Shows a diagram of the neural network stored in record A.
+A    :SORT         NULL   Saves a sorted list of A to :ANSWER.
+NULL :SYNTAX       NULL   Shows language command syntax.
+A    :UNDERSTOOD   NULL   True if sequence A makes sense, false otherwise.
+A :WHILE NULL [:else] :FI Run ... if B is true else run the alternate
+
+<PERSON> : { test } :showneural
+<ENiX>   -[Neural Network Summary]----
+0: :WIRE    0
+1: :NOT     1
+
+
+
+<PERSON> :help :nn
+<ENiX>   A    :NNCLEAR      NULL   Saves the neural network multiplexor, A.
+A    :NNADD        B      Adds :CAUSE... :EFFECT... to multiplexor, A.
+A    :NNMUL        NULL   Multiplex neural network, A.
+A    :NNGETCAUSE   B      Calculate cause from effect, B in A.
+A    :NNGETEFFECT  B      Calculate effect from cause, B in A.
+A    :NNREMOVE     B      Remove cause, B from A.
+
+<PERSON> : { test } :nngeteffect { a b }
+<PERSON> :answer
+<ENiX>   a
+
+<PERSON> : { test } :nngetcause { }
+<PERSON> :answer
+<ENiX>   b b c
+
+<PERSON> : { test } :nngetcause { a } :answer
+<ENiX>   a b a b c
+
+<PERSON> : { 0 1 2 3 4 5 6 7 } :execute { test } :answer
+<ENiX>   2 3 0 1 2 3 0 1
+

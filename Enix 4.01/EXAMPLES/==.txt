@@ -1,0 +1,31 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 5680
+
+<PERSON> : { test } == { test2 } :answer
+<ENiX>   0
+
+<PERSON> : { test } == { test } :answer
+<ENiX>   1
+
+<PERSON> : { 1 } == { 10 } :answer
+<ENiX>   0
+
+<PERSON> : { 1 } == { 1.0 } :answer
+<ENiX>   1
+
+<PERSON> : { 1 } == { 1.01 } :answer
+<ENiX>   0
+
+<PERSON> : { 1 } == { .01 } :answer
+<ENiX>   0
+
+<PERSON> : { 0.01 } == { .01 } :answer
+<ENiX>   1
+
+<PERSON> : { 0.01 } == { .0100 } :answer
+<ENiX>   1
+
+<PERSON> : { 0.0100 } == { .01 } :answer
+<ENiX>   1
+

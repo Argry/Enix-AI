@@ -1,0 +1,51 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 5661
+
+<PERSON> :listvars
+<PERSON> : $var1 = 1
+<PERSON> :listvars
+<ENiX>   $var1 = {1}
+
+<PERSON> : $var2 = 1 2 3
+<PERSON> :listvars
+<ENiX>   $var1 = {1}
+$var2 = {1,2,3}
+
+<PERSON> : $var1 :answer
+<ENiX>   1
+
+<PERSON> : $var2 :answer
+<ENiX>   1 2 3
+
+<PERSON> : var3 = 42
+<PERSON> : { var2 } :answer
+<ENiX>   var2
+
+<PERSON> : var2 :answer
+<ENiX>   var2
+
+<PERSON> : { var2 } :debug
+<ENiX>   ============================================================
+Name                    var2 Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          17:49:18-2018/01/07
+Last Time           17:49:23-2018/01/07
+Probability                1 Commands                      ?
+============================================================
+
+<PERSON> : var3 :answer
+<ENiX>   42
+
+<PERSON> : { var3 } :answer
+<ENiX>   var3
+
+<PERSON> : { var3 } :debug
+<ENiX>   ============================================================
+Name                    var3 Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          17:48:59-2018/01/07
+Last Time           17:50:04-2018/01/07
+Probability                1 Commands                     42
+============================================================
+

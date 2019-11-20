@@ -1,0 +1,52 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 27328
+
+<PERSON> : { 1 2 3 4 5 6 } :polycreate { test }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          21:27:59-2018/01/13
+Last Time           01:58:53-2018/02/14
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:NEURALNET                    3 1 3 3 8 1 215 256 2 7 13 8 1 2 0 0 0 0 0 0 1 1 1 8 2 2 4 1 2 8 1 0 0 0 0 0 0 0 1 3 3 8 4 68 256 2 4 4 8 0 1 2 0 0 0 0 0 
+:POLYNOMIAL                                              1 1
+============================================================
+
+<PERSON> : { test } :polyget
+<ENiX>   1+x
+
+
+<PERSON> : { 1 2 3 } :polyset { test }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          21:27:59-2018/01/13
+Last Time           02:02:00-2018/02/14
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:NEURALNET                    3 1 3 3 8 1 215 256 2 7 13 8 1 2 0 0 0 0 0 0 1 1 1 8 2 2 4 1 2 8 1 0 0 0 0 0 0 0 1 3 3 8 4 68 256 2 4 4 8 0 1 2 0 0 0 0 0 
+:POLYNOMIAL                                            1 2 3
+============================================================
+
+<PERSON> : { 0 1 2 3 4 5 6 } :polycalc { test } :answer
+<ENiX>   1 6 17 34 57 86 121
+
+<PERSON> : { 6 17 34 57 86 121 } :polycreate { test }
+<PERSON> : { test } :debug
+<ENiX>   ============================================================
+Name                    test Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          21:27:59-2018/01/13
+Last Time           02:03:23-2018/02/14
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:NEURALNET                    3 1 3 3 8 1 215 256 2 7 13 8 1 2 0 0 0 0 0 0 1 1 1 8 2 2 4 1 2 8 1 0 0 0 0 0 0 0 1 3 3 8 4 68 256 2 4 4 8 0 1 2 0 0 0 0 0 
+:POLYNOMIAL                                            6 8 3
+============================================================
+
+<PERSON> : { test } :polyget
+<ENiX>   6+8x+3x^2

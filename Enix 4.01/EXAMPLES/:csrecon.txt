@@ -1,0 +1,30 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 7041
+
+<PERSON> :help :cs
+<ENiX>   A    :CSADDR        NULL   Saves the CS address into the :ANSWER buffer.
+A    :CSLOAD        NULL   Saves the contents in the address A to the :ANSWER buffer.
+A    :CSRECON       NULL   Reconstructs the context address from A and places in :ANSWER.
+A    :CSSAVE        B      Stores data, B in context address, A.
+
+<PERSON> :{ a b c d } :csaddr :answer
+<ENiX>   cs4
+
+<PERSON> :{ a b c d } :csaddr :answer
+<ENiX>   cs4
+
+<PERSON> :csrecon :answer
+<ENiX>   a b c d
+
+<PERSON> :{ a b c e } :csaddr :answer
+<ENiX>   cs5
+
+<PERSON> :csrecon :answer
+<ENiX>   a b c e
+
+<PERSON> :{ a b c d } :cssave f
+
+<PERSON> :{ a b c d } :csload :answer
+<ENiX>   f
+

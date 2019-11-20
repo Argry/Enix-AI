@@ -1,0 +1,6 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 17688
+
+<PERSON> : { b d e a c } :sort :answer
+<ENiX>   a b c d e

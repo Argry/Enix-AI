@@ -1,0 +1,10 @@
+<PERSON> !client localhost 576
+<PERSON> if the cat sat on the mat then the dog sat on the mat.
+<PERSON> if the cat sat on the mat, and the cat sat under the tree then the dog sat on the mat.
+<PERSON> if the cat sat on the mat then the dog sat on the mat, and the dog sat under the tree.
+
+<COMMENT> if the cat sat on the mat then ?
+
+<PERSON> when the cat sat on the mat then is the dog sat on the mat ?
+<COMMENT> when the cat sat on the mat then the dog sat on the mat ?
+

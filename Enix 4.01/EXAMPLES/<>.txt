@@ -1,0 +1,22 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 16749
+
+<PERSON> : { 1 } <> { 2 } :answer
+<ENiX>   1
+
+<PERSON> : { 1 } <> { 1 } :answer
+<ENiX>   0
+
+<PERSON> : { 1 } <> { 1.00 } :answer
+<ENiX>   0
+
+<PERSON> : { 1 } <> { 1.001 } :answer
+<ENiX>   1
+
+<PERSON> : { 0 } <> { .001 } :answer
+<ENiX>   1
+
+<PERSON> : { 0.001 } <> { .001 } :answer
+<ENiX>   0
+

@@ -1,0 +1,11 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 30333
+
+<PERSON> : 1 + 2 <=> 3 + :answer
+<ENiX>   6
+
+<PERSON> : 2 <=> 3 :answer :answer
+<ENiX>   3
+2
+

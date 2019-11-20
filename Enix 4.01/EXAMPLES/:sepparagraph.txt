@@ -1,0 +1,6 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 10336
+
+<PERSON> : { the cat sat on the mat . the dog sat on the mat . } :sepparagraph :answer
+

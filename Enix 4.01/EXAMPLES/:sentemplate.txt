@@ -1,0 +1,39 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 13741
+
+<PERSON> :resetgrammar
+
+<PERSON> :help :sen
+<ENiX>   A    :SENCLASS     NULL   Use directed graphs to classify sentence, A and save the type to :ANSWER.
+A    :SENTEMPLATE  B      Save the template, A to sentence mood, B.
+
+<PERSON> : { s pv pn } :sentemplate { indicative }
+<PERSON> :help :show
+<ENiX>   NULL :SHOWGRAMMAR  NULL   Displays the grammar graph data.
+A    :SHOWNEURAL   NULL   Shows a diagram of the neural network stored in record A.
+NULL :SHOWTEMPLATE NULL   Shows the grammar templates.
+
+<PERSON> :showtemplate
+<ENiX>   SentenceTemplates:
+indicative
+s pv pn
+
+<PERSON> :mode
+<ENiX>   ============================================================
+Name            martyn@Hades Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:33:09-2018/04/23
+Last Time           15:28:30-2018/05/06
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:vocab                        help startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark ynq whq indicative imperative cat mat the on sat a an living good bad furry grey large small black white afraid his quiet fast not how quietly very calmly patiently quickly also removed run be been being were had have am are will would is scared runs define put happens was do does doing done did sit sits sitting teach go ran feel and or nor either neither , enix martyn about under of down where to there near by life death opposite animal cats animals thing council tree mouse name computer home bed plant dog i he she it we you they them who whom us nothing . ? ! } ; her cat, what me s pv pn
+:answer                                              s pv pn
+:csnum                                                     1
+:articles                     startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:wordarticles                 verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction
+:moodlist                      ynq whq indicative imperative
+:startsentence                                 startsentence
+:endsentence                                     endsentence
+============================================================
+

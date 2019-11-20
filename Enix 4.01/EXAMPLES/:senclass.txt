@@ -1,0 +1,135 @@
+<PERSON> !client localhost 576
+<ENiX>   Natural Language Processing
+Pid: 26459
+
+<PERSON> : { startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark } :setarticles
+<PERSON> :mode
+<ENiX>   ============================================================
+Name            martyn@Hades Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:33:09-2018/04/23
+Last Time           22:35:56-2018/04/23
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:vocab                        help startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark ynq whq indicative imperative cat mat the on sat
+:answer                       startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:csnum                                                     1
+:articles                     startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:wordarticles                 verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction
+:moodlist                      ynq whq indicative imperative
+:startsentence                                 startsentence
+:endsentence                                     endsentence
+============================================================
+
+<PERSON> : { ynq whq indicative imperative } :setmoodlist
+<PERSON> :mode
+<ENiX>   ============================================================
+Name            martyn@Hades Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:33:09-2018/04/23
+Last Time           22:35:56-2018/04/23
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:vocab                        help startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark ynq whq indicative imperative cat mat the on sat
+:answer                        ynq whq indicative imperative
+:csnum                                                     1
+:articles                     startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:wordarticles                 verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction
+:moodlist                      ynq whq indicative imperative
+:startsentence                                 startsentence
+:endsentence                                     endsentence
+============================================================
+
+<PERSON> : { verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction } :setwords
+<PERSON> : { startsentence } :setsenstart
+<PERSON> : { endsentence } :setsenend
+<PERSON> :mode
+<ENiX>   ============================================================
+Name            martyn@Hades Grammar                       ?
+Purpose                    ? Emotion                       ?
+First Time          22:33:09-2018/04/23
+Last Time           22:35:56-2018/04/23
+Probability                1 Commands                      ?
+------------------------------------------------------------
+:vocab                        help startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark ynq whq indicative imperative cat mat the on sat
+:answer                                          endsentence
+:csnum                                                     1
+:articles                     startsentence endsentence verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction questionmark comma fullstop semicolon exclamationmark quotationmark
+:wordarticles                 verb noun pronoun preposition adverb adjective definitearticle indefinitearticle propernoun conjunction
+:moodlist                      ynq whq indicative imperative
+:startsentence                                 startsentence
+:endsentence                                     endsentence
+============================================================
+
+<PERSON> : { cat mat } :setgrammar { noun }
+<PERSON> : { the } :setgrammar { definitearticle }
+<PERSON> : { on } :setgrammar { preposition }
+<PERSON> : { sat } :setgrammar { verb }
+<PERSON> : { the cat mat sat on } :debug
+<ENiX>   ============================================================
+Name                     the Grammar         definitearticle
+Purpose                    ? Emotion                       ?
+First Time          22:33:27-2018/04/23
+Last Time           22:35:58-2018/04/23
+Probability                1 Commands                      ?
+============================================================
+============================================================
+Name                     cat Grammar                    noun
+Purpose                    ? Emotion                       ?
+First Time          22:33:26-2018/04/23
+Last Time           22:35:58-2018/04/23
+Probability                1 Commands                      ?
+============================================================
+============================================================
+Name                     mat Grammar                    noun
+Purpose                    ? Emotion                       ?
+First Time          22:33:26-2018/04/23
+Last Time           22:35:58-2018/04/23
+Probability                1 Commands                      ?
+============================================================
+============================================================
+Name                     sat Grammar                    verb
+Purpose                    ? Emotion                       ?
+First Time          22:33:27-2018/04/23
+Last Time           22:35:58-2018/04/23
+Probability                1 Commands                      ?
+============================================================
+============================================================
+Name                      on Grammar             preposition
+Purpose                    ? Emotion                       ?
+First Time          22:33:27-2018/04/23
+Last Time           22:35:58-2018/04/23
+Probability                1 Commands                      ?
+============================================================
+
+<PERSON> :resetgrammar
+<PERSON> :showgrammar
+<ENiX>   
+
+<PERSON> : { the cat sat on the mat } :setmood indicative
+<PERSON> :showgrammar
+<ENiX>   indicative
+ adjective -> 
+ adverb -> 
+ comma -> 
+ conjunction -> 
+ definitearticle -> noun
+ endsentence -> 
+ exclamationmark -> 
+ fullstop -> 
+ indefinitearticle -> 
+ noun -> endsentence verb
+ preposition -> definitearticle
+ pronoun -> 
+ propernoun -> 
+ questionmark -> 
+ quotationmark -> 
+ semicolon -> 
+ startsentence -> definitearticle
+ verb -> preposition
+
+
+<PERSON> : { the cat sat on the mat } :senclass :answer
+<ENiX>   the cat sat on the mat
+
+

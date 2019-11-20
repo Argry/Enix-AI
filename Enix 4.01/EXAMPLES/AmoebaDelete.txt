@@ -1,0 +1,44 @@
+<PERSON> !client localhost 575
+<ENiX>   Amoeba Database 2.0
+Pid: 15566
+
+<ENiX>   SENDING HELP
+ADD
+ADDFILE
+DELETEPAIR <Record ID> <Attribute 1> <Value 1>
+DEBUGALLOC
+DEBUGREC
+DEFRAG
+DELETE <Record ID>
+DELETEFILE <Record ID>
+DELETEPAIR <Record ID> <Attribute ID>
+DELETEPP <Personality Profile Name>
+EXIT
+FIND <Record Name>
+GETALL
+GETALLPP
+GETDATA <Record ID>
+GETFILE <Record Name>
+GETNAME <Record ID>
+GETPP
+HELP
+LISTPP
+LOAD <Filename>
+PURGE
+REPLACE <Record Position>
+SAVE <Filename>
+SETPP <Personality Profile Name>
+STATS
+
+<PERSON> FIND a
+<ENiX>   RESULT FOUND @: 60
+
+<PERSON> delete 60
+<ENiX>   ERROR: UNRECOGNISED COMMAND: delete
+
+<PERSON> DELETE 60
+<ENiX>   RECORD DELETED
+
+<PERSON> FIND a
+<ENiX>   RESULT FOUND @: 60
+
