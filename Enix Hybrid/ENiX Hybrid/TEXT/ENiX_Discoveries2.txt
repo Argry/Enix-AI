@@ -1,0 +1,87 @@
+Identities of R[n]=R[n-2]:
+R[n]=-R[n-1]+1
+R[n]=R[n-2]
+
+Identities of R[n]=R[n-1]:
+R[n]=1
+R[n]=R[n-1]
+
+Identities of R[n]=1:
+R[n]=1
+R[n]=R[n-1]
+
+Identities of R[n]=R[n-2]+1:
+R[n]=-2*R[n-1]-R[n-2]+1+2n
+R[n]=-R[n-1]+1+n
+R[n]=R[n-2]+1
+R[n]=R[n-1]+R[n-2]-R[n-3]
+
+Identities of R[n]=2*R[n-2]+1:
+R[n]=2*R[n-2]+1
+R[n]=R[n-1]+2*R[n-2]-2*R[n-3]
+
+Identities of R[n]=R[n-1]+1:
+R[n]=-2*R[n-1]+1+3n
+R[n]=-R[n-1]+1+2n
+R[n]=1+n
+R[n]=R[n-1]+1
+R[n]=2*R[n-1]-R[n-2]
+
+Identities of R[n]=R[n-1]+R[n-2]+1:
+R[n]=R[n-1]+R[n-2]+1
+R[n]=2*R[n-1]-R[n-3]
+
+Identities of R[n]=R[n-1]+2*R[n-2]+1:
+R[n]=R[n-1]+2*R[n-2]+1
+R[n]=2*R[n-1]+R[n-2]-2*R[n-3]
+
+Identities of R[n]=1+n:
+R[n]=-2*R[n-1]+1+3n
+R[n]=-R[n-1]+1+2n
+R[n]=1+n
+R[n]=R[n-1]+1
+R[n]=2*R[n-1]-R[n-2]
+
+Identities of R[n]=R[n-2]+1+n:
+R[n]=-2*R[n-1]-R[n-2]+1+2n+n^2
+R[n]=-2*R[n-1]+R[n-2]+2*R[n-3]+1+3n
+R[n]=-R[n-1]-R[n-2]-R[n-3]+1+n+n^2
+R[n]=-R[n-1]+R[n-2]+R[n-3]+1+2n
+R[n]=-R[n-2]-2*R[n-3]+1+n^2
+R[n]=R[n-2]+1+n
+R[n]=R[n-1]+R[n-2]-R[n-3]+1
+
+Identities of R[n]=2*R[n-2]+1+n:
+R[n]=-R[n-1]+2*R[n-2]+2*R[n-3]+1+2n
+R[n]=2*R[n-2]+1+n
+R[n]=R[n-1]+2*R[n-2]-2*R[n-3]+1
+
+Identities of R[n]=R[n-1]+1+n:
+R[n]=-2*R[n-1]-R[n-2]+1+2n+2n^2
+R[n]=-2*R[n-1]+R[n-2]+1+3n+n^2
+R[n]=-R[n-1]-2*R[n-2]+1+n+2n^2
+R[n]=-R[n-1]+1+2n+n^2
+R[n]=-R[n-1]+2*R[n-2]+1+3n
+R[n]=-R[n-2]+1+n+n^2
+R[n]=R[n-2]+1+2n
+R[n]=R[n-1]-2*R[n-2]+1+n^2
+R[n]=R[n-1]+1+n
+R[n]=2*R[n-1]-R[n-2]+1
+
+Identities of R[n]=R[n-1]+R[n-2]+1+n:
+R[n]=2*R[n-2]+R[n-3]+1+2n
+R[n]=R[n-1]+R[n-2]+1+n
+R[n]=2*R[n-1]-R[n-3]+1
+
+Identities of R[n]=R[n-1]+2*R[n-2]+1+n:
+R[n]=R[n-1]+2*R[n-2]+1+n
+R[n]=2*R[n-1]+R[n-2]-2*R[n-3]+1
+
+Identities of R[n]=2*R[n-1]+1+n:
+R[n]=R[n-1]+2*R[n-2]+1+2n
+R[n]=2*R[n-1]+1+n
+
+Identities of R[n]=R[n-1]+1+n+n^2:
+R[n]=-2*R[n-1]+1+3n+n^2+n^3
+R[n]=R[n-1]+1+n+n^2
+
